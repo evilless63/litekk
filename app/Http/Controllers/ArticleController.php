@@ -5,16 +5,18 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Article;
 use App\Settings;
+use Str;
 
 class ArticleController extends Controller
 {
 
     private $path;
 
-    public function __construct() {
+    public function __construct()
+    {
         $path = 'images/articles/';
     }
-    
+
     /**
      * Display a listing of the resource.
      *
@@ -22,7 +24,8 @@ class ArticleController extends Controller
      */
     public function index()
     {
-        return view('admin.articles.index', compact(Article::all()));
+        $articles = Article::all();
+        return view('admin.articles.index', compact('articles'));
     }
 
     /**
@@ -44,26 +47,27 @@ class ArticleController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'header' => 'required|unique:articles.header',
+            'header' => 'required|unique:articles,header',
             'description' => 'required',
             'text' => 'required',
-            'image' => 'required|dimensions:min_width=500,min_height=300|mimes:jpeg,png'
+            'image' => 'required|mimes:jpeg,png'
         ]);
 
         try {
             $article = new Article();
-            $fileName = pathinfo($request->file('image')->getClientOriginalName(), PATHINFO_FILENAME);
-            $fullFileName = $fileName."-".time().$request->file('image')->getClientOriginalExtension();
-            $filepath = $request->file('image')->store($path, $fullFileName);
+            $_IMAGE = $request->file('image');
+            $filename = $this->regexpImages(str_replace('"', '', time() . $_IMAGE->getClientOriginalName()));
+            $uploadPath = 'images/articles';
+            $_IMAGE->move($uploadPath, str_replace('"', '', $filename));
             $data = $request->all();
-            $data['image'] = $filepath;
+            $data['slug'] = Str::slug(transliterate($data['header']), '-');
+            $data['image'] = $filename;
             $article->create($data);
 
-            return redirect()->route('article.index');
-        } catch(Exception $e) {
-            return redirect()->back()->withError('Не удалось записать ! Обратитесь в техническую поддержку для решения проблемы');
+            return redirect()->route('article.index')->withSuccess('Запись успешно добавлена!');
+        } catch (Exception $e) {
+            return redirect()->back()->withError('Не удалось записать! Обратитесь в техническую поддержку для решения проблемы');
         }
-
     }
 
     /**
@@ -83,9 +87,9 @@ class ArticleController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Article $article)
     {
-        return view('admin.articles.edit')->with(['article' => $id]);
+        return view('admin.articles.edit')->with(['article' => $article]);
     }
 
     /**
@@ -95,21 +99,25 @@ class ArticleController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, Article $article)
     {
 
         try {
-            $article = new Article();
             $data = $request->all();
-            if($request->hasFile('image')) {
-                $filepath = $request->file('image')->store($path);
-                $data['image'] = $filepath;
-            }          
-            $id->update($data);
-        } catch(Exception $e) {
-            return redirect()->back()->withError('Не удалось записать ! Обратитесь в техническую поддержку для решения проблемы');
+            if ($request->hasFile('image')) {
+                $_IMAGE = $request->file('image');
+                $filename = $this->regexpImages(str_replace('"', '', time() . $_IMAGE->getClientOriginalName()));
+                $uploadPath = 'images/articles';
+                $_IMAGE->move($uploadPath, str_replace('"', '', $filename));
+                $data['image'] = $filename;
+            }
+            $data['slug'] = Str::slug(transliterate($data['header']), '-');
+
+            $article->update($data);
+            return redirect()->back()->withSuccess('Запись успешно изменена!');
+        } catch (Exception $e) {
+            return redirect()->back()->withError('Не удалось записать! Обратитесь в техническую поддержку для решения проблемы');
         }
-       
     }
 
     /**
@@ -118,8 +126,14 @@ class ArticleController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Article $article)
     {
-        $id->delete();
+        $article->delete();
+        return redirect()->route('article.index')->withSuccess('Запись успешно удалена!');
+    }
+
+    private function regexpImages($imageName)
+    {
+        return preg_replace("/[^A-Za-z\d\.]/", '', transliterate($imageName));
     }
 }
