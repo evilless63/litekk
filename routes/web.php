@@ -17,11 +17,12 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Auth::routes(['register' => false]);
+// Auth::routes(['register' => false]);
+Auth::routes();
 
-Route::group(['middleware' => 'auth', 'prefix'=>'admin'], function() {
-    Route::resource('article','ArticleController');
-    Route::resource('tagArticle','TagsArticleController');
-    Route::resource('categoryArticle','CategoriesArticleController');
+Route::group(['middleware' => 'auth', 'prefix' => 'admin'], function () {
+    Route::resource('article', 'ArticleController');
+    Route::resource('tagArticle', 'TagsArticleController');
+    Route::resource('categoryArticle', 'CategoriesArticleController');
     Route::get('/', 'AdminController@index');
 });

@@ -6,7 +6,14 @@ use Illuminate\Database\Eloquent\Model;
 
 class CategoriesArticle extends Model
 {
-    public function articles() {
+
+    protected $guarded = [
+        '_method',
+        '_token',
+    ];
+
+    public function articles()
+    {
         return $this->hasMany('App/Article');
     }
 }

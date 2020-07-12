@@ -17,6 +17,7 @@ class CreateTagsnewsTable extends Migration
             $table->id();
             $table->timestamps();
             $table->string('tagname');
+
         });
     }
 

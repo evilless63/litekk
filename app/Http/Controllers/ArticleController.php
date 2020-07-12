@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
 use App\Article;
-use App\Settings;
+use App\CategoriesArticle;
 use App\Tagsarticle;
+use Illuminate\Http\Request;
 use Str;
 
 class ArticleController extends Controller
@@ -36,7 +36,10 @@ class ArticleController extends Controller
      */
     public function create()
     {
-        return view('admin.articles.create')->with(['tags' => Tagsarticle::all()]);
+        return view('admin.articles.create')->with([
+            'tags' => Tagsarticle::all(),
+            'categories' => CategoriesArticle::all(),
+        ]);
     }
 
     /**
@@ -47,11 +50,13 @@ class ArticleController extends Controller
      */
     public function store(Request $request)
     {
+
         $request->validate([
             'header' => 'required|unique:articles,header',
             'description' => 'required',
             'text' => 'required',
-            'image' => 'required|mimes:jpeg,png'
+            'categoriesarticle_id' => 'required',
+            'image' => 'required|mimes:jpeg,png',
         ]);
 
         try {
@@ -64,8 +69,6 @@ class ArticleController extends Controller
             $data['slug'] = Str::slug(transliterate($data['header']), '-');
             $data['image'] = $filename;
 
-
-
             $articlecreated = $article->create($data);
 
             $tags = array_filter(explode(",", $data['tags']), fn($value) => !is_null($value) && $value !== '');
@@ -75,10 +78,10 @@ class ArticleController extends Controller
             }
 
             unset($tag);
-            
+
             $tags = array_unique($tags);
 
-            foreach($tags as &$tag) {
+            foreach ($tags as &$tag) {
                 try {
                     $tagarticle = Tagsarticle::where('tagname', $tag)->first();
 
@@ -122,7 +125,12 @@ class ArticleController extends Controller
      */
     public function edit(Article $article)
     {
-        return view('admin.articles.edit')->with(['article' => $article, 'tags' => Tagsarticle::all()]);
+        return view('admin.articles.edit')->with(
+            [
+                'article' => $article,
+                'tags' => Tagsarticle::all(),
+                'categories' => CategoriesArticle::all(),
+            ]);
     }
 
     /**
@@ -145,7 +153,6 @@ class ArticleController extends Controller
                 $data['image'] = $filename;
             }
             $data['slug'] = Str::slug(transliterate($data['header']), '-');
-
             $article->update($data);
             $article->tagsarticles()->detach();
 
@@ -158,7 +165,7 @@ class ArticleController extends Controller
 
             $tags = array_unique($tags);
 
-            foreach($tags as &$tag) {
+            foreach ($tags as &$tag) {
                 try {
                     $tagarticle = Tagsarticle::where('tagname', $tag)->first();
 

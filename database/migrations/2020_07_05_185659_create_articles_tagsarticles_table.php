@@ -16,10 +16,10 @@ class CreateArticlesTagsarticlesTable extends Migration
         Schema::create('article_tagsarticle', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
-            $table->integer('article_id');
-            $table->foreign('article_id')->references('id')->on('articles')->onDelete('cascade');  
-            $table->integer('tagsarticle_id');
-            $table->foreign('tagsarticle_id')->references('id')->on('tagsarticles')->onDelete('cascade'); 
+            $table->unsignedBigInteger('article_id');
+            $table->foreign('article_id')->references('id')->on('articles')->onDelete('cascade');
+            $table->unsignedBigInteger('tagsarticle_id');
+            $table->foreign('tagsarticle_id')->references('id')->on('tagsarticles')->onDelete('cascade');
         });
     }
 

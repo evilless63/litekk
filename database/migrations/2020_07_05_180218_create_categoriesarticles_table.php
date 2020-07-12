@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateCategoriesarticlesTable extends Migration
+class CreateCategoriesArticlesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,11 @@ class CreateCategoriesarticlesTable extends Migration
      */
     public function up()
     {
-        Schema::create('categoriesarticles', function (Blueprint $table) {
+        Schema::create('categories_articles', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
             $table->string('title');
+            $table->string('slug');
         });
     }
 

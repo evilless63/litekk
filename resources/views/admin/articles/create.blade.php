@@ -8,11 +8,6 @@
                 <div class="card-header">Создать статью</div>
 
                 <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
-                    @endif
 
                     <form action="{{route('article.store')}}" method="post" enctype="multipart/form-data">
                         @csrf
@@ -45,10 +40,21 @@
                         <div class="form-group {{ $errors->has('tags') ? ' has-error' : '' }}">
                             <label for="tags">Теги статьи</label>
                             @foreach($tags as $tag)
-                            <span class="tag-label">{{ $tag->tagname }}</span>
+                            <span class="tag-label" tag-id="{{$tag->id}}">{{ $tag->tagname }}
+                                <span class="tag-remove" data-role="remove"></span>
+                            </span>
                             @endforeach
                             <textarea type="text" value="{{ old('tags') }}" name="tags" class="form-control" id="tags" placeholder="Теги статьи" ></textarea>
                             <small id="descriptionHelp" class="form-text text-muted">Теги статьи для быстрого поиска</small>
+                        </div>
+
+                        <div>
+                            <label for="categories">Категория статьи</label>
+                            <select name="categoriesarticle_id" title="Выберите категорию статей" class="selectpicker">
+                            @foreach($categories as $category)
+                            <option value="{{ $category->id }}">{{$category->title}}</option>
+                            @endforeach
+                            </select>
                         </div>
 
                         <hr>

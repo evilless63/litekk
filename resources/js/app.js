@@ -33,6 +33,7 @@ const app = new Vue({
 
 
 // добавление тегов
+
 $(document).ready(function () {
 
     $.ajaxSetup({
@@ -46,10 +47,10 @@ $(document).ready(function () {
         if (window.confirm("Вы уверены? Тег будет автоматически удален для всех статей!")) {
             $.ajax({
                 type: 'DELETE',
-                url: "/admin/tagArticle/"+$(this).parent().attr('tag-id'),
+                url: "/admin/tagArticle/" + $(this).parent().attr('tag-id'),
                 data: { id: $(this).parent().attr('tag-id') },
                 success: function (data) {
-                    
+
                 }
             })
             $(this).parent().remove()

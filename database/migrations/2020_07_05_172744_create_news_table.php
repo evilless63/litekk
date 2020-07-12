@@ -18,14 +18,14 @@ class CreateNewsTable extends Migration
             $table->timestamps();
             $table->string('slug');
             $table->string('header');
-            $table->string('description');
-            $table->string('text');
+            $table->text('description');
+            $table->text('text');
             $table->integer('views');
             $table->string('image');
             $table->string('meta_keys');
-            $table->string('meta_description');
+            $table->text('meta_description');
             $table->string('meta_title');
-            $table->integer('categoriesnew_id')->nullable();
+            $table->bigInteger('categoriesnew_id')->nullable();
         });
     }
 

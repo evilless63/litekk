@@ -19,6 +19,7 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+
 </head>
 
 <body>
@@ -40,7 +41,7 @@
                                 Статьи
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="nav-link" href="{{route('article.index')}}">Категории статей</a>
+                                <a class="nav-link" href="{{route('categoryArticle.index')}}">Категории статей</a>
                                 <a class="nav-link" href="{{route('article.index')}}">Статьи</a>
                             </div>
                         </li>
@@ -88,6 +89,12 @@
                 <li>{{ $error }}</li>
                 @endforeach
             </ul>
+        </div>
+        @endif
+
+        @if (session('success'))
+        <div class="alert alert-success" role="alert">
+            {{ session('success') }}
         </div>
         @endif
         <main class="py-4">

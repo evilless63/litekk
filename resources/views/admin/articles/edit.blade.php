@@ -8,11 +8,7 @@
                 <div class="card-header">Редактировать статью</div>
 
                 <div class="card-body">
-                    @if (session('status'))
-                    <div class="alert alert-success" role="alert">
-                        {{ session('status') }}
-                    </div>
-                    @endif
+
 
                     <form action="{{route('article.update', $article->id)}}" method="post" enctype="multipart/form-data">
                         @csrf
@@ -52,6 +48,16 @@
                             @endforeach
                             <textarea type="text" value="{{ old('tags') }}" name="tags" class="form-control" id="tags" placeholder="Теги статьи">{{ $article->tagsarticles->implode('tagname', ',') }}</textarea>
                             <small id="descriptionHelp" class="form-text text-muted">Теги статьи для быстрого поиска</small>
+                        </div>
+
+                        <div>
+                            <label for="categories">Категория статьи</label>
+                            <input type="hidden" name="categoriesarticle_id" value="{{$article->categoriesarticle_id}}">
+                            <select name="categoriesarticle_id" class="selectpicker show-tick">
+                            @foreach($categories as $category)
+                                <option value="{{ $category->id }}" {{$category->id == $article->categoriesarticle_id ? "selected='selected'" : "" }} >{{$category->title}}</option>
+                            @endforeach
+                            </select>
                         </div>
 
                         <hr>

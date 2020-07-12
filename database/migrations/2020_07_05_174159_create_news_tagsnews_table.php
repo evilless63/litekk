@@ -13,11 +13,13 @@ class CreateNewsTagsnewsTable extends Migration
      */
     public function up()
     {
-        Schema::create('news_tagsnews', function (Blueprint $table) {
+        Schema::create('new_tagsnew', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
-            $table->integer('new_id');
-            $table->integer('tagsnew_id');
+            $table->unsignedBigInteger('new_id');
+            $table->foreign('new_id')->references('id')->on('news')->onDelete('cascade');
+            $table->unsignedBigInteger('tagsnew_id');
+            $table->foreign('tagsnew_id')->references('id')->on('tagsnews')->onDelete('cascade');
         });
     }
 
@@ -28,6 +30,6 @@ class CreateNewsTagsnewsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('news_tagsnews');
+        Schema::dropIfExists('new_tagsnew');
     }
 }

@@ -18,14 +18,14 @@ class CreateArticlesTable extends Migration
             $table->timestamps();
             $table->string('slug');
             $table->string('header');
-            $table->string('description');
-            $table->string('text');
+            $table->text('description');
+            $table->text('text');
             $table->integer('views')->nullable();
             $table->string('image');
             $table->string('meta_keys')->nullable();
-            $table->string('meta_description')->nullable();
+            $table->text('meta_description')->nullable();
             $table->string('meta_title')->nullable();
-            $table->integer('categoriesarticle_id')->nullable();
+            $table->bigInteger('categoriesarticle_id');
         });
     }
 
