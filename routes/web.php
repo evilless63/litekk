@@ -21,5 +21,6 @@ Auth::routes(['register' => false]);
 
 Route::group(['middleware' => 'auth', 'prefix'=>'admin'], function() {
     Route::resource('article','ArticleController');
+    Route::resource('tagArticle','TagsArticleController');
     Route::get('/', 'AdminController@index');
 });

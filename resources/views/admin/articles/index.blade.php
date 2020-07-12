@@ -5,7 +5,7 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">{{ __('Dashboard') }}</div>
+                <div class="card-header">Статьи</div>
 
                 <div class="card-body">
                     @if (session('status'))
@@ -16,8 +16,7 @@
 
                     <a href="{{route('article.create')}}">Создать статью</a>
 
-                    <h1>Статьи</h1>
-                    <div class="list-group">
+                    <div class="list-group mt-3">
                         @foreach($articles as $article)
                         <li class="list-group-item d-flex justify-content-between align-items-center">
                             <a href="{{route('article.edit', $article->id)}}">{{$article->header}}</a>

@@ -5,7 +5,7 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">{{ __('Dashboard') }}</div>
+                <div class="card-header">Создать статью</div>
 
                 <div class="card-body">
                     @if (session('status'))
@@ -13,8 +13,6 @@
                             {{ session('status') }}
                         </div>
                     @endif
-    
-                    <h1>Создать статью</h1>
 
                     <form action="{{route('article.store')}}" method="post" enctype="multipart/form-data">
                         @csrf
@@ -40,6 +38,17 @@
                             <label for="image">Основное изображение</label>
                             <input type="file" value="{{ old('image') }}" name="image"  id="image" placeholder="Основное изображение" required>
                             <small id="imageHelp" class="form-text text-muted">Основное изображение статьи, которое будет отображаться в общем списке статей</small>
+                        </div>
+
+
+
+                        <div class="form-group {{ $errors->has('tags') ? ' has-error' : '' }}">
+                            <label for="tags">Теги статьи</label>
+                            @foreach($tags as $tag)
+                            <span class="tag-label">{{ $tag->tagname }}</span>
+                            @endforeach
+                            <textarea type="text" value="{{ old('tags') }}" name="tags" class="form-control" id="tags" placeholder="Теги статьи" ></textarea>
+                            <small id="descriptionHelp" class="form-text text-muted">Теги статьи для быстрого поиска</small>
                         </div>
 
                         <hr>

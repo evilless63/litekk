@@ -6,3 +6,41 @@
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
+
+//Custom admin
+@import 'admin';
+
+.tag-label {
+    display: inline;
+    padding: .2em .6em .3em;
+    font-size: 75%;
+    font-weight: 700;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25em;
+    background-color: #5bc0de;
+    margin-right: 2px;
+    color: white;
+}
+
+.tag-label:hover {
+    cursor: pointer;
+}
+
+.tag-label [data-role="remove"] {
+    margin-left: 8px;
+}
+
+.tag-label [data-role="remove"]:after {
+    content: "x";
+    padding: 0px 2px;
+}
+
+.tag-label [data-role="remove"]:hover:after {
+    content: "x";
+    padding: 0px 2px;
+    color: red;
+}

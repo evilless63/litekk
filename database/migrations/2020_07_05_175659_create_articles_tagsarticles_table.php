@@ -13,11 +13,13 @@ class CreateArticlesTagsarticlesTable extends Migration
      */
     public function up()
     {
-        Schema::create('articles_tagsarticles', function (Blueprint $table) {
+        Schema::create('article_tagsarticle', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
             $table->integer('article_id');
+            $table->foreign('article_id')->references('id')->on('articles')->onDelete('cascade');  
             $table->integer('tagsarticle_id');
+            $table->foreign('tagsarticle_id')->references('id')->on('tagsarticles')->onDelete('cascade'); 
         });
     }
 
@@ -28,6 +30,6 @@ class CreateArticlesTagsarticlesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('articles_tagsarticles');
+        Schema::dropIfExists('article_tagsarticle');
     }
 }

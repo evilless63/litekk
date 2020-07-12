@@ -30,3 +30,36 @@ Vue.component('example-component', require('./components/ExampleComponent.vue').
 const app = new Vue({
     el: '#app',
 });
+
+
+// добавление тегов
+$(document).ready(function () {
+
+    $.ajaxSetup({
+        headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        }
+    })
+
+    $('.tag-remove').on('click', function (event) {
+
+        if (window.confirm("Вы уверены? Тег будет автоматически удален для всех статей!")) {
+            $.ajax({
+                type: 'DELETE',
+                url: "/admin/tagArticle/"+$(this).parent().attr('tag-id'),
+                data: { id: $(this).parent().attr('tag-id') },
+                success: function (data) {
+                    
+                }
+            })
+            $(this).parent().remove()
+        }
+    })
+
+    $('.tag-label').on('click', function (event) {
+        let currentTag = event.currentTarget.innerText;
+        let tagValue = `${$('#tags').val()}, ${currentTag}`
+        $('#tags').val(tagValue)
+    })
+
+}) 

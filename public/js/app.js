@@ -49698,6 +49698,32 @@ Vue.component('example-component', __webpack_require__(/*! ./components/ExampleC
 
 var app = new Vue({
   el: '#app'
+}); // добавление тегов
+
+$(document).ready(function () {
+  $.ajaxSetup({
+    headers: {
+      'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+    }
+  });
+  $('.tag-remove').on('click', function (event) {
+    if (window.confirm("Вы уверены ?")) {
+      $.ajax({
+        type: 'DELETE',
+        url: "/admin/tagArticle/" + $(this).parent().attr('tag-id'),
+        data: {
+          id: $(this).parent().attr('tag-id')
+        },
+        success: function success(data) {}
+      });
+      $(this).parent().remove();
+    }
+  });
+  $('.tag-label').on('click', function (event) {
+    var currentTag = event.currentTarget.innerText;
+    var tagValue = "".concat($('#tags').val(), ", ").concat(currentTag);
+    $('#tags').val(tagValue);
+  });
 });
 
 /***/ }),
@@ -49834,8 +49860,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /Users/vitaly/sites/litekk/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /Users/vitaly/sites/litekk/resources/sass/app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! /home/vagrant/litekk/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /home/vagrant/litekk/resources/sass/app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
