@@ -13,7 +13,7 @@ class SiteController extends Controller
 {
     public function index()
     {
-        return view('user.site.index')->with(['news' => News::all()->paginate(10)]);
+        return view('user.site.index')->with(['news' => News::paginate(10)]);
     }
 
     public function company()
