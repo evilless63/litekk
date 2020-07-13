@@ -22,6 +22,7 @@ Auth::routes();
 
 Route::group(['middleware' => 'auth', 'prefix' => 'admin'], function () {
     Route::resource('articles', 'ArticleController');
+    Route::resource('emails', 'EmailController');
     Route::resource('news', 'NewsController');
     Route::resource('tagArticle', 'TagsArticleController');
     Route::resource('categoryArticle', 'CategoriesArticleController');

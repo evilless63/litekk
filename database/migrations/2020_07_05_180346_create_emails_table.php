@@ -16,12 +16,13 @@ class CreateEmailsTable extends Migration
         Schema::create('emails', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
+            $table->string('title')->nullable();
             $table->string('email')->nullable();
             $table->string('phone')->nullable();
             $table->string('filepath')->nullable();
             $table->string('name')->nullable();
-            $table->string('message')->nullable();
-            $table->string('direction');
+            $table->text('message')->nullable();
+            $table->integer('direction');
             /*
         Направления:
         1) - Директору
