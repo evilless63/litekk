@@ -2,13 +2,12 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
-use App\News;
-use App\CategoriesNews;
-use App\TagsNews;
 use App\Article;
 use App\CategoriesArticle;
+use App\CategoriesNews;
+use App\News;
 use App\TagsArticle;
+use App\TagsNews;
 
 class SiteController extends Controller
 {
@@ -31,11 +30,11 @@ class SiteController extends Controller
         ]);
     }
 
-    public function onenews(News $news)
+    public function onenews($categoryslug, $newsslug)
     {
         return view('user.site.onenews')->with([
-            'new' => $news
-        ]); 
+            'new' => $news,
+        ]);
     }
 
     public function articles()
@@ -47,11 +46,11 @@ class SiteController extends Controller
         ]);
     }
 
-    public function onearticle(Article $article) 
+    public function onearticle($categoryslug, $articleslug)
     {
         return view('user.site.onearticle')->with([
-            'article' => $article
-        ]); 
+            'article' => $article,
+        ]);
     }
 
     public function delivery()
@@ -62,5 +61,61 @@ class SiteController extends Controller
     public function contacts()
     {
         return view('user.site.contacts');
+    }
+
+    // Products
+    public function telega()
+    {
+        return view('user.products.telega');
+    }
+
+    public function parts()
+    {
+        return view('user.products.parts');
+    }
+
+    public function p1pm2()
+    {
+        return view('user.products.p1pm2');
+    }
+
+    public function p1pna()
+    {
+        return view('user.products.p1pna');
+    }
+
+    public function p2r()
+    {
+        return view('user.products.p2r');
+    }
+
+    public function p2rn()
+    {
+        return view('user.products.p2rn');
+    }
+
+    public function rolgang()
+    {
+        return view('user.products.rolgang');
+    }
+
+    public function t001()
+    {
+        return view('user.products.t001');
+    }
+
+    public function t003()
+    {
+        return view('user.products.t003');
+    }
+
+    public function t004()
+    {
+        return view('user.products.t004');
+    }
+
+    public function tm2()
+    {
+        return view('user.products.tm2');
     }
 }

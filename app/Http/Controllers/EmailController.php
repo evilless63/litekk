@@ -2,8 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
 use App\Email;
+use Illuminate\Http\Request;
 use Mail;
 
 class EmailController extends Controller
@@ -15,7 +15,7 @@ class EmailController extends Controller
      */
     public function index()
     {
-        $emails = Email::all()->orderby('desc')->get();
+        $emails = Email::latest('updated_at')->get();
         return view('admin.emails.index')->with(['emails' => $emails]);
     }
 
@@ -37,13 +37,12 @@ class EmailController extends Controller
      */
     public function store(Request $request)
     {
-        if($request->direction == 1) { //Обратный звонок
+        if ($request->direction == 1) { //Обратный звонок
             $request->validate([
                 'email' => 'required|email',
                 // 'captcha' => 'required|captcha'
             ]);
-        } 
-        else { // Все остальное
+        } else { // Все остальное
             $request->validate([
                 'email' => 'required|email',
                 'name' => 'required',
@@ -51,14 +50,14 @@ class EmailController extends Controller
                 // 'captcha' => 'required|captcha'
             ]);
         }
-        
+
         try {
 
             $email = new Email();
             $_IMAGE = $request->file('filepath');
 
             if ($_IMAGE->getError() == 1) {
-                $max_size = $_IMAGE->getMaxFileSize() / 2048 / 2048;  // Get size in 2Mb
+                $max_size = $_IMAGE->getMaxFileSize() / 2048 / 2048; // Get size in 2Mb
                 $error = 'Размер документа должен быть меньше ' . $max_size . 'Mb. Отправка письма завершилась неудачно.';
                 return response()->json(array('msg' => $error), 500);
             }
@@ -68,34 +67,29 @@ class EmailController extends Controller
             $_IMAGE->move($uploadPath, str_replace('"', '', $filename));
             $data = $request->all();
 
-            
-            if($request->direction == 1) //Обратный звонок
+            if ($request->direction == 1) //Обратный звонок
             {
                 $data['title'] = "Обратный звонок";
                 $data['name'] = "Обратный звонок";
                 $data['message'] = "Заказ обратного звонка с сайта";
-            }
-            elseif($request->direction == 2) // Письмо директору
+            } elseif ($request->direction == 2) // Письмо директору
             {
                 $data['title'] = "Письмо директору";
-            }
-            elseif($request->direction == 3) //Письмо с контактов
+            } elseif ($request->direction == 3) //Письмо с контактов
             {
                 $data['title'] = "Письмо с контактов";
-            }
-            elseif($request->direction == 4) //Обратный звонок
+            } elseif ($request->direction == 4) //Обратный звонок
             {
                 $data['title'] = "Обратный звонок";
             }
 
             $data['filepath'] = $filename;
 
-            if($request->direction == 1) //Обратный звонок
+            if ($request->direction == 1) //Обратный звонок
             {
                 $to_email = 'test@example.com';
                 Mail::to($to_email)->send(new \App\Mail\SendEmail($data));
-            }
-            else // Все остальное
+            } else // Все остальное
             {
                 $to_email = 'test@example.com';
                 Mail::to($to_email)->send(new \App\Mail\SendEmail($data));

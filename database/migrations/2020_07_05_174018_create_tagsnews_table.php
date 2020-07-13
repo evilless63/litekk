@@ -13,7 +13,7 @@ class CreateTagsnewsTable extends Migration
      */
     public function up()
     {
-        Schema::create('tagsnews', function (Blueprint $table) {
+        Schema::create('tags_news', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
             $table->string('tagname');

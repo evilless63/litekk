@@ -2,13 +2,13 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
+use App\CategoriesNews;
 use App\News;
 use App\TagsNews;
-use App\CategoriesNews;
+use Illuminate\Http\Request;
 use Str;
 
-class NewController extends Controller
+class NewsController extends Controller
 {
 
     public function __construct()
@@ -196,5 +196,5 @@ class NewController extends Controller
         $news->delete();
         return redirect()->route('news.index')->withSuccess('Запись успешно удалена!');
     }
-    
+
 }

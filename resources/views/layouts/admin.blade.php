@@ -27,7 +27,7 @@
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    {{ config('app.name', 'Laravel') }}
+                    Литек - Админ панель
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
@@ -45,17 +45,20 @@
                                 <a class="nav-link" href="{{route('articles.index')}}">Статьи</a>
                             </div>
                         </li>
-                        </li>
+
 
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Новости
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="nav-link" href="{{route('CategoriesNews.index')}}">Категории новостей</a>
+                                <a class="nav-link" href="{{route('categoryNews.index')}}">Категории новостей</a>
                                 <a class="nav-link" href="{{route('news.index')}}">Новости</a>
                             </div>
                         </li>
+
+                        <li class="nav-item">
+                        <a class="nav-link" href="{{route('emails.index')}}">Сообщения от пользователей</a>
                         </li>
                     </ul>
 
