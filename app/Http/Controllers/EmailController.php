@@ -39,14 +39,16 @@ class EmailController extends Controller
     {
         if($request->direction == 1) { //Обратный звонок
             $request->validate([
-                'email' => 'required|email'
+                'email' => 'required|email',
+                // 'captcha' => 'required|captcha'
             ]);
         } 
         else { // Все остальное
             $request->validate([
                 'email' => 'required|email',
                 'name' => 'required',
-                'message' => 'required'
+                'message' => 'required',
+                // 'captcha' => 'required|captcha'
             ]);
         }
         

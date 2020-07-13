@@ -18,7 +18,7 @@ class SendEmail extends Mailable
      *
      * @return void
      */
-    public function __construct($data=[])
+    public function __construct($data = [])
     {
         $this->data = $data;
     }
@@ -29,15 +29,19 @@ class SendEmail extends Mailable
      * @return $this
      */
     public function build()
-    {
-        {
+    { {
             return $this->view('emails/sendemail')
-                    ->subject($this->data['title'])
-                    ->attach($this->data['filepath']->getRealPath(),
+                ->subject($this->data['title'])
+                ->with([
+                    'data' => $this->data
+                ])
+                ->attach(
+                    $this->data['filepath']->getRealPath(),
                     [
                         'as' => $this->data['filepath']->getClientOriginalName(),
                         'mime' => $this->data['filepath']->getClientMimeType(),
-                    ]);
+                    ]
+                );
         }
     }
 }

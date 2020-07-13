@@ -11,6 +11,7 @@ class CategoriesArticle extends Model
         '_method',
         '_token',
     ];
+    
 
     public function articles()
     {
