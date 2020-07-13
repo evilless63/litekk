@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Email;
+use Mail;
 
 class EmailController extends Controller
 {
@@ -49,10 +50,7 @@ class EmailController extends Controller
             ]);
         }
         
-
         try {
-
-                
 
             $email = new Email();
             $_IMAGE = $request->file('filepath');
@@ -92,15 +90,13 @@ class EmailController extends Controller
 
             if($request->direction == 1) //Обратный звонок
             {
-                $to_email = test@example.com;
+                $to_email = 'test@example.com';
                 Mail::to($to_email)->send(new \App\Mail\SendEmail($data));
-                return redirect()->back()->with('flash_success', 'Your document has been uploaded.');
             }
             else // Все остальное
             {
-                $to_email = test@example.com;
+                $to_email = 'test@example.com';
                 Mail::to($to_email)->send(new \App\Mail\SendEmail($data));
-                return redirect()->back()->with('flash_success', 'Your document has been uploaded.');
             }
 
             $emailCreated = $email->create($data);
@@ -114,7 +110,7 @@ class EmailController extends Controller
         }
     }
 
-    /**
+    /**s
      * Display the specified resource.
      *
      * @param  int  $id
@@ -122,7 +118,7 @@ class EmailController extends Controller
      */
     public function show(Email $email)
     {
-        //
+        return view('admin.emails.show')->with(['email' => $email]);
     }
 
     /**
