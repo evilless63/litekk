@@ -5,11 +5,11 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">Редактировать категорию статьи</div>
+                <div class="card-header">Редактировать категорию новости</div>
 
                 <div class="card-body">
 
-                    <form action="{{route('categoryArticle.update', $category->id)}}" method="post">
+                    <form action="{{route('categoryNews.update', $category->id)}}" method="post">
                         @csrf
                         @method('patch')
                         <div class="form-group {{ $errors->has('title') ? ' has-error' : '' }}">

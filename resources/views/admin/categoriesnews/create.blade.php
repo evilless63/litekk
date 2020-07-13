@@ -5,10 +5,10 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">Создать категорию статьи</div>
+                <div class="card-header">Создать категорию новости</div>
 
                 <div class="card-body">
-                    <form action="{{route('categoryArticle.store')}}" method="post">
+                    <form action="{{route('categoryNews.store')}}" method="post">
                         @csrf
                         <div class="form-group {{ $errors->has('title') ? ' has-error' : '' }}">
                             <label for="title">Название</label>
