@@ -24,7 +24,7 @@ class SiteController extends Controller
     public function news()
     {
         return view('user.site.news')->with([
-            'news' => News::all()->paginate(10),
+            'news' => News::paginate(10),
             'categories' => CategoriesNews::all(),
             'tags' => TagsNews::all(),
         ]);
@@ -40,7 +40,7 @@ class SiteController extends Controller
     public function articles()
     {
         return view('user.site.articles')->with([
-            'articles' => Article::all()->paginate(10),
+            'articles' => Article::paginate(10),
             'categories' => CategoriesArticle::all(),
             'tags' => TagsArticle::all(),
         ]);
