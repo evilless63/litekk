@@ -21,8 +21,10 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::group(['middleware' => 'auth', 'prefix' => 'admin'], function () {
-    Route::resource('article', 'ArticleController');
+    Route::resource('articles', 'ArticleController');
+    Route::resource('news', 'NewsController');
     Route::resource('tagArticle', 'TagsArticleController');
     Route::resource('categoryArticle', 'CategoriesArticleController');
+    Route::resource('categoryNews', 'CategoriesNewsController');
     Route::get('/', 'AdminController@index');
 });

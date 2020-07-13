@@ -10,7 +10,7 @@
                 <div class="card-body">
 
 
-                    <form action="{{route('article.update', $article->id)}}" method="post" enctype="multipart/form-data">
+                    <form action="{{route('articles.update', $article->id)}}" method="post" enctype="multipart/form-data">
                         @csrf
                         @method('patch')
                         <div class="form-group {{ $errors->has('header') ? ' has-error' : '' }}">

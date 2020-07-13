@@ -2,20 +2,19 @@
 
 namespace App\Http\Controllers;
 
-use App\Article;
-use App\CategoriesArticle;
-use App\Tagsarticle;
 use Illuminate\Http\Request;
+use App\News;
+use App\TagsNews;
+use App\CategoriesNews;
 use Str;
 
-class ArticleController extends Controller
+class NewController extends Controller
 {
 
     public function __construct()
     {
-        $path = 'images/articles/';
+        $path = 'images/news/';
     }
-
     /**
      * Display a listing of the resource.
      *
@@ -23,8 +22,8 @@ class ArticleController extends Controller
      */
     public function index()
     {
-        $articles = Article::all();
-        return view('admin.articles.index', compact('articles'));
+        $news = News::all();
+        return view('admin.news.index', compact('news'));
     }
 
     /**
@@ -34,9 +33,9 @@ class ArticleController extends Controller
      */
     public function create()
     {
-        return view('admin.articles.create')->with([
-            'tags' => Tagsarticle::all(),
-            'categories' => CategoriesArticle::all(),
+        return view('admin.news.create')->with([
+            'tags' => TagsNews::all(),
+            'categories' => CategoriesNews::all(),
         ]);
     }
 
@@ -48,26 +47,25 @@ class ArticleController extends Controller
      */
     public function store(Request $request)
     {
-
         $request->validate([
             'header' => 'required|unique:articles,header',
             'description' => 'required',
             'text' => 'required',
-            'categoriesarticle_id' => 'required',
+            'catigoriesnews_id' => 'required',
             'image' => 'required|mimes:jpeg,png',
         ]);
 
         try {
-            $article = new Article();
+            $news = new News();
             $_IMAGE = $request->file('image');
             $filename = $this->regexpImages(str_replace('"', '', time() . $_IMAGE->getClientOriginalName()));
-            $uploadPath = 'images/articles';
+            $uploadPath = 'images/news';
             $_IMAGE->move($uploadPath, str_replace('"', '', $filename));
             $data = $request->all();
             $data['slug'] = Str::slug(transliterate($data['header']), '-');
             $data['image'] = $filename;
 
-            $articlecreated = $article->create($data);
+            $newsCreated = $news->create($data);
 
             $tags = array_filter(explode(",", $data['tags']), fn($value) => !is_null($value) && $value !== '');
 
@@ -81,24 +79,24 @@ class ArticleController extends Controller
 
             foreach ($tags as &$tag) {
                 try {
-                    $tagarticle = Tagsarticle::where('tagname', $tag)->first();
+                    $newsTag = TagsNews::where('tagname', $tag)->first();
 
-                    if ($tagarticle == null) {
-                        $tagarticle = new Tagsarticle();
-                        $tagarticle->tagname = $tag;
-                        $tagarticlecreated = $tagarticle->create(['tagname' => $tag]);
+                    if ($newsTag == null) {
+                        $newsTag = new TagsNews();
+                        $newsTag->tagname = $tag;
+                        $newsTagCreated = $newsTag->create(['tagname' => $tag]);
                     } else {
-                        $tagarticlecreated = $tagarticle;
+                        $newsTagCreated = $newsTag;
                     }
 
-                    $articlecreated->tagsarticles()->attach($tagarticlecreated);
+                    $newsCreated->tagsarticles()->attach($newsTagCreated);
                 } catch (Exception $e) {
                 }
 
                 unset($tag);
             }
 
-            return redirect()->route('articles.index')->withSuccess('Запись успешно добавлена!');
+            return redirect()->route('news.index')->withSuccess('Запись успешно добавлена!');
         } catch (Exception $e) {
             return redirect()->back()->withError('Не удалось записать! Обратитесь в техническую поддержку для решения проблемы');
         }
@@ -121,13 +119,13 @@ class ArticleController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit(Article $article)
+    public function edit(News $news)
     {
-        return view('admin.articles.edit')->with(
+        return view('admin.news.edit')->with(
             [
-                'article' => $article,
-                'tags' => Tagsarticle::all(),
-                'categories' => CategoriesArticle::all(),
+                'news' => $news,
+                'tags' => TagsNews::all(),
+                'categories' => CategoriesNews::all(),
             ]);
     }
 
@@ -138,9 +136,8 @@ class ArticleController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Article $article)
+    public function update(Request $request, News $news)
     {
-
         try {
             $data = $request->all();
             if ($request->hasFile('image')) {
@@ -151,8 +148,8 @@ class ArticleController extends Controller
                 $data['image'] = $filename;
             }
             $data['slug'] = Str::slug(transliterate($data['header']), '-');
-            $article->update($data);
-            $article->tagsarticles()->detach();
+            $news->update($data);
+            $news->tagsarticles()->detach();
 
             $tags = array_filter(explode(",", $data['tags']), fn($value) => !is_null($value) && $value !== '');
 
@@ -165,17 +162,17 @@ class ArticleController extends Controller
 
             foreach ($tags as &$tag) {
                 try {
-                    $tagarticle = Tagsarticle::where('tagname', $tag)->first();
+                    $newsTag = TagsNews::where('tagname', $tag)->first();
 
-                    if ($tagarticle == null) {
-                        $tagarticle = new Tagsarticle();
-                        $tagarticle->tagname = $tag;
-                        $tagarticlecreated = $tagarticle->create(['tagname' => $tag]);
+                    if ($newsTag == null) {
+                        $newsTag = new TagsNews();
+                        $newsTag->tagname = $tag;
+                        $newsTagCreated = $newsTag->create(['tagname' => $tag]);
                     } else {
-                        $tagarticlecreated = $tagarticle;
+                        $newsTagCreated = $newsTag;
                     }
 
-                    $article->tagsarticles()->attach($tagarticlecreated);
+                    $news->tagsarticles()->attach($newsTagCreated);
                 } catch (Exception $e) {
                 }
 
@@ -194,10 +191,10 @@ class ArticleController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Article $article)
+    public function destroy(News $news)
     {
-        $article->delete();
-        return redirect()->route('articles.index')->withSuccess('Запись успешно удалена!');
+        $news->delete();
+        return redirect()->route('news.index')->withSuccess('Запись успешно удалена!');
     }
-
+    
 }

@@ -9,7 +9,7 @@
 
                 <div class="card-body">
 
-                    <form action="{{route('articles.store')}}" method="post" enctype="multipart/form-data">
+                    <form action="{{route('news.store')}}" method="post" enctype="multipart/form-data">
                         @csrf
                         <div class="form-group {{ $errors->has('header') ? ' has-error' : '' }}">
                             <label for="header">Название</label>
@@ -77,7 +77,7 @@
                             <small id="meta_titleHelp" class="form-text text-muted">Мета заголовок. Этот заголовок будет использоваться в качествте заголовка сниппета Google или Yandex. Достаточно указать только заголовок темы. Заголовок будет выведен в поисковой выдаче в виде "Литэк - Мета заголовок"</small>
                         </div>
 
-                        <button type="submit" class="btn btn-primary">Создать статью</button>
+                        <button type="submit" class="btn btn-primary">Создать новость</button>
                     </form>
                 </div>
             </div>

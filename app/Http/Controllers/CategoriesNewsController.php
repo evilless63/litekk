@@ -2,11 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\CategoriesArticle;
+use App\CategoriesNews;
 use Illuminate\Http\Request;
 use Str;
 
-class CategoriesArticleController extends Controller
+class CategoriesNewsController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,8 +15,8 @@ class CategoriesArticleController extends Controller
      */
     public function index()
     {
-        $categories = CategoriesArticle::all();
-        return view('admin.categoriesarticle.index', compact('categories'));
+        $categories = CategoriesNews::all();
+        return view('admin.categoriesnews.index', compact('categories'));
     }
 
     /**
@@ -26,7 +26,7 @@ class CategoriesArticleController extends Controller
      */
     public function create()
     {
-        return view('admin.categoriesarticle.create');
+        return view('admin.categoriesnews.create');
     }
 
     /**
@@ -37,17 +37,16 @@ class CategoriesArticleController extends Controller
      */
     public function store(Request $request)
     {
-
         $request->validate([
-            'title' => 'required|unique:categories_articles,title',
+            'title' => 'required|unique:categories_news,title',
         ]);
 
         try {
             $data = $request->all();
             $data['slug'] = Str::slug(transliterate($data['title']), '-');
-            $category = new CategoriesArticle();
+            $category = new CategoriesNews();
             $category->create($data);
-            return redirect()->route('categoryArticle.index')->withSuccess('Запись успешно добавлена!');
+            return redirect()->route('categoryNews.index')->withSuccess('Запись успешно добавлена!');
         } catch (Extention $e) {
             return redirect()->back()->withError('Не удалось записать! Обратитесь в техническую поддержку для решения проблемы');
         }
@@ -70,9 +69,9 @@ class CategoriesArticleController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit(CategoriesArticle $categoriesarticle)
+    public function edit(CategoriesNews $categoriesnews)
     {
-        return view('admin.categoriesarticle.create')->with(['category' => $categoriesarticle]);
+        return view('admin.categoriesnews.create')->with(['category' => $categoriesnews]);
     }
 
     /**
@@ -82,7 +81,7 @@ class CategoriesArticleController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, CategoriesArticle $categoriesarticle)
+    public function update(Request $request, CategoriesNews $categoriesnews)
     {
         $request->validate([
             'title' => 'required|unique:categories_articles,title',
@@ -91,7 +90,7 @@ class CategoriesArticleController extends Controller
         try {
             $data = $request->all();
             $data['slug'] = Str::slug(transliterate($data['title']), '-');
-            $categoriesarticle->update($data);
+            $categoriesnews->update($data);
             return redirect()->back()->withSuccess('Запись успешно изменена!');
         } catch (Extention $e) {
             return redirect()->back()->withError('Не удалось записать! Обратитесь в техническую поддержку для решения проблемы');
@@ -104,9 +103,9 @@ class CategoriesArticleController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy(CategoriesArticle $categoriesarticle)
+    public function destroy(CategoriesNews $categoriesnews)
     {
-        $categoriesarticle->delete();
-        return redirect()->route('categoryArticle.index')->withSuccess('Запись успешно удалена!');
+        $categoriesnews->delete();
+        return redirect()->route('categoryNews.index')->withSuccess('Запись успешно удалена!');
     }
 }

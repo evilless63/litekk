@@ -42,7 +42,18 @@
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <a class="nav-link" href="{{route('categoryArticle.index')}}">Категории статей</a>
-                                <a class="nav-link" href="{{route('article.index')}}">Статьи</a>
+                                <a class="nav-link" href="{{route('articles.index')}}">Статьи</a>
+                            </div>
+                        </li>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Новости
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="nav-link" href="{{route('CategoriesNews.index')}}">Категории новостей</a>
+                                <a class="nav-link" href="{{route('news.index')}}">Новости</a>
                             </div>
                         </li>
                         </li>
