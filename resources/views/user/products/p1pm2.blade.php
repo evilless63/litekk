@@ -1,12 +1,12 @@
 @extends('layouts.user')
 
 @section('content')
-<main class="mb-5 mt-5 text-sm-center text-md-left product-background product">
+<main class="pb-5 pt-5 text-sm-center text-md-left product-background product">
 
         <div class="container breadcrumbs">
             <a href="">Главная</a> > <a href="">Товары</a> > <a href="">Тележка рольганг</a>
         </div>
-        <div class="container">
+        <div class="container pt-5">
             <div class="row product d-flex align-items-center">
                 <div class="col-md-6 col-xs-12">
                     <img src="{{asset('images/products/p1pm2/perspective.png')}}" class="img-fluid product__image"
@@ -98,7 +98,7 @@
             <div class="row mt-5 d-flex">
                 <div class="col">
                     <button class="model-show d-flex align-items-center">
-                        <img class="img-fluid" src="{{asset('images/products/p1pm2/front.jpg')}}" alt="">
+                        <img class="img-fluid" src="{{asset('images/template/products/3dmodel.png')}}" alt="">
                         <span>3D МОДЕЛЬ</span>
                     </button>
                 </div>
@@ -106,7 +106,7 @@
 
             <div class="row mt-5">
                 <div class="col d-flex justify-content-center">
-                    <img src="{{asset('images/products/p1pm2/left.jpg')}}" alt="">
+                    <img src="{{asset('images/products/p1pm2/front.jpg')}}" alt="">
                 </div>
             </div>
 
@@ -129,7 +129,7 @@
                     </div>
                 </div>
                 <div class="col-md-5 d-flex justify-content-center">
-                    <img src="images/template/products/rolgang/front.png" alt="">
+                    <img class="img-fluid" src="{{asset('images/products/p1pm2/left.jpg')}}" alt="">
                 </div>
                 <div class="col-md-3">
                     <div class="d-flex flex-column">

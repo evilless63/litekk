@@ -1,7 +1,7 @@
 @extends('layouts.user')
 
 @section('content')
-<main class="mb-5 pt-5 text-sm-center text-md-left news">
+<main class="pb-5 pt-5 text-sm-center text-md-left news">
 
         <div class="container breadcrumbs">
             <a href="">Главная</a> > <a href="">Новости</a> > <a href="">Интересное</a>

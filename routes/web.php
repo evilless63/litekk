@@ -23,17 +23,17 @@ Route::get('/dostavka', 'SiteController@delivery')->name('site.delivery');
 Route::get('/kontakty', 'SiteController@contacts')->name('site.contacts');
 
 // products
-Route::get('product/telega', 'SiteController@telega')->name('product.telega');
-Route::get('product/parts', 'SiteController@parts')->name('product.parts');
-Route::get('product/p1pm2', 'SiteController@p1pm2')->name('product.p1pm2');
-Route::get('product/p1pna', 'SiteController@p1pna')->name('product.p1pna');
-Route::get('product/p2r', 'SiteController@p2r')->name('product.p2r');
-Route::get('product/p2rn', 'SiteController@p2rn')->name('product.p2rn');
-Route::get('product/rolgang', 'SiteController@rolgang')->name('product.rolgang');
-Route::get('product/t001', 'SiteController@t001')->name('product.t001');
-Route::get('product/t003', 'SiteController@t003')->name('product.t003');
-Route::get('product/t004', 'SiteController@contacts')->name('product.t004');
-Route::get('product/tm2', 'SiteController@contacts')->name('product.tm2');
+Route::get('products/telega', 'SiteController@telega')->name('products.telega');
+Route::get('products/parts', 'SiteController@parts')->name('products.parts'); //TODO VIEW
+Route::get('products/p1pm2', 'SiteController@p1pm2')->name('products.p1pm2');
+Route::get('products/p1pna', 'SiteController@p1pna')->name('products.p1pna');
+Route::get('products/p2r', 'SiteController@p2r')->name('products.p2r');
+Route::get('products/p2rn', 'SiteController@p2rn')->name('products.p2rn');
+Route::get('products/rolgang', 'SiteController@rolgang')->name('products.rolgang');
+Route::get('products/t001', 'SiteController@t001')->name('products.t001');
+Route::get('products/t003', 'SiteController@t003')->name('products.t003');
+Route::get('products/t004', 'SiteController@t004')->name('products.t004');
+Route::get('products/tm2', 'SiteController@tm2')->name('products.tm2');
 
 // Auth::routes(['register' => false]);
 Auth::routes();
