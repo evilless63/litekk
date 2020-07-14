@@ -19,23 +19,23 @@
 
 </head>
 
-<body class="product" style="background: linear-gradient(90deg, #054900 0%, #355e30 80%);">
+<body class="product admin"  style="background: linear-gradient(90deg, #054900 0%, #355e30 80%);">
     <div id="app">
         <div class="container-fluid header-nav-outer  pt-3 pb-3">
             <div class="container header-nav-inner">
-                <nav class="nav justify-content-around align-items-center mt-1">
+                <nav class="nav navbar navbar-expand-lg justify-content-around align-items-center mt-1">
                     <a class="nav__navbar-brand navbar-brand d-md-flex justify-content-between" href="{{route('site.index')}}">
                         <img src="{{asset('images/template/logo.png')}}" class="d-inline-block align-top img-fluid" alt="">
                     </a>
 
-                    <div class="navbar-collapse" id="navbarSupportedContent">
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <!-- Left Side Of Navbar -->
                         <ul class="navbar-nav mr-auto">
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     Статьи
                                 </a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <div class="dropdown-menu navbarDropdown" aria-labelledby="navbarDropdown">
                                     <a class="nav-link" href="{{route('categoryArticle.index')}}">Категории статей</a>
                                     <a class="nav-link" href="{{route('articles.index')}}">Статьи</a>
                                 </div>
@@ -46,7 +46,7 @@
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     Новости
                                 </a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <div class="dropdown-menu navbarDropdown" aria-labelledby="navbarDropdown">
                                     <a class="nav-link" href="{{route('categoryNews.index')}}">Категории новостей</a>
                                     <a class="nav-link" href="{{route('news.index')}}">Новости</a>
                                 </div>
@@ -70,15 +70,15 @@
                             </li>
                             @endif
                             @else
-                            <li class="nav-item dropdown">
+                            <li class="nav-item dropdown ">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     {{ Auth::user()->name }} <span class="caret"></span>
                                 </a>
 
-                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                <div class="dropdown-menu navbarDropdown dropdown-menu-right" aria-labelledby="navbarDropdown">
                                     <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
-                                        {{ __('Logout') }}
+                                        {{ __('Выйти') }}
                                     </a>
 
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
@@ -107,10 +107,11 @@
                 {{ session('success') }}
             </div>
             @endif
-            <main class="py-4">
+
+        </div>
+        <main class="py-4">
                 @yield('content')
             </main>
-        </div>
         <script src="{{ asset('js/app.js') }}" defer></script>
         <script src="{{ asset('js/custom.js') }}" defer></script>
 </body>

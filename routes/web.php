@@ -36,7 +36,7 @@ Route::get('products/t004', 'SiteController@t004')->name('products.t004');
 Route::get('products/tm2', 'SiteController@tm2')->name('products.tm2');
 
 // Auth::routes(['register' => false]);
-Auth::routes();
+Auth::routes(['register' => false, 'request' => false, 'reset' => false]);
 
 Route::group(['middleware' => 'auth', 'prefix' => 'admin'], function () {
     Route::resource('articles', 'ArticleController');

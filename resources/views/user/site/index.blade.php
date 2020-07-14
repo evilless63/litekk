@@ -24,28 +24,6 @@
             </div>
         </div>
     </div>
-    <div class="slider">
-        <div class="container-fluid slider-block block-1 pt-5 pb-3">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4 slider-block-text">
-                        <h2 class="slider-block__header">Делаем под вас</h2>
-                        <p class="slider-block__description">
-                            Делаем любые варианты исполнения
-                            по вашему техническому заданию.
-                            Под любые размеры под любые
-                            труборельсы, нагрузка, ширина
-                            высота, под ваши
-                            потребности !
-                        </p>
-                    </div>
-                    <div class="col-md-8">
-                        <img src="images/template/slider/block-1/image.png" alt="Делаем под вас">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
     <div class="container-fluid catalog-outer pt-3 pb-2 mt-4" id="catalog-parallax">
         <div class="catalog-tomato"></div>
         <div class="catalog-pepper"></div>
@@ -61,79 +39,123 @@
                     <div class="row">
                         <div class="owl-carousel products-catalog">
                             <div class="mb-2 catalog-block">
-                                <a href="">
-                                    <img src="images/template/catalog/1.png" class="catalog-block__image" alt="">
+                                <a href="{{route('products.t001')}}">
+                                    <img src="{{ asset('images/template/catalog/t001.png')}}" class="catalog-block__image" alt="">
                                     <h2 class="catalog-block__header mt-3">
-                                        Пример товара 1
+                                    t001
                                     </h2>
                                     <p class="catalog-block__description mt-2">
-                                        Пример короткого описания товара
+                                        Пример короткого описания t001
                                     </p>
                                 </a>
                             </div>
                             <div class="mb-2 catalog-block">
-                                <a href="">
-                                    <img src="images/template/catalog/1.png" class="catalog-block__image" alt="">
+                                <a href="{{route('products.t004')}}">
+                                    <img src="{{ asset('images/template/catalog/t004.png')}}" class="catalog-block__image" alt="">
                                     <h2 class="catalog-block__header mt-3">
-                                        Пример товара 1
+                                    t004
                                     </h2>
                                     <p class="catalog-block__description mt-2">
-                                        Пример короткого описания товара
+                                        Пример короткого описания t004
                                     </p>
                                 </a>
                             </div>
                             <div class="mb-2 catalog-block">
-                                <a href="">
-                                    <img src="images/template/catalog/1.png" class="catalog-block__image" alt="">
+                                <a href="{{route('products.rolgang')}}">
+                                    <img src="{{ asset('images/template/catalog/rolgang.png')}}" class="catalog-block__image" alt="">
                                     <h2 class="catalog-block__header mt-3">
-                                        Пример товара 1
+                                    rolgang
                                     </h2>
                                     <p class="catalog-block__description mt-2">
-                                        Пример короткого описания товара
+                                        Пример короткого описания rolgang
                                     </p>
                                 </a>
                             </div>
                             <div class="mb-2 catalog-block">
-                                <a href="">
-                                    <img src="images/template/catalog/1.png" class="catalog-block__image" alt="">
+                                <a href="{{route('products.t003')}}">
+                                    <img src="{{ asset('images/template/catalog/t003.png')}}" class="catalog-block__image" alt="">
                                     <h2 class="catalog-block__header mt-3">
-                                        Пример товара 1
+                                    t003
                                     </h2>
                                     <p class="catalog-block__description mt-2">
-                                        Пример короткого описания товара
+                                        Пример короткого описания t003
                                     </p>
                                 </a>
                             </div>
                             <div class="mb-2 catalog-block">
-                                <a href="">
-                                    <img src="images/template/catalog/1.png" class="catalog-block__image" alt="">
+                                <a href="{{route('products.telega')}}">
+                                    <img src="{{ asset('images/template/catalog/telega.png')}}" class="catalog-block__image" alt="">
                                     <h2 class="catalog-block__header mt-3">
-                                        Пример товара 1
+                                    telega
                                     </h2>
                                     <p class="catalog-block__description mt-2">
-                                        Пример короткого описания товара
+                                        Пример короткого описания telega
                                     </p>
                                 </a>
                             </div>
                             <div class="mb-2 catalog-block">
-                                <a href="">
-                                    <img src="images/template/catalog/1.png" class="catalog-block__image" alt="">
+                                <a href="{{route('products.p1pm2')}}">
+                                    <img src="{{ asset('images/template/catalog/p1pm2.png')}}" class="catalog-block__image" alt="">
                                     <h2 class="catalog-block__header mt-3">
-                                        Пример товара 1
+                                    p1pm2
                                     </h2>
                                     <p class="catalog-block__description mt-2">
-                                        Пример короткого описания товара
+                                        Пример короткого описания p1pm2
                                     </p>
                                 </a>
                             </div>
                             <div class="mb-2 catalog-block">
-                                <a href="">
-                                    <img src="images/template/catalog/1.png" class="catalog-block__image" alt="">
+                                <a href="{{route('products.p1pna')}}">
+                                    <img src="{{ asset('images/template/catalog/p1pna.png')}}" class="catalog-block__image" alt="">
                                     <h2 class="catalog-block__header mt-3">
-                                        Пример товара 1
+                                    p1pna
                                     </h2>
                                     <p class="catalog-block__description mt-2">
-                                        Пример короткого описания товара
+                                        Пример короткого описания p1pna
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="mb-2 catalog-block">
+                                <a href="{{route('products.p2r')}}">
+                                    <img src="{{ asset('images/template/catalog/p2r.png')}}" class="catalog-block__image" alt="">
+                                    <h2 class="catalog-block__header mt-3">
+                                    p2r
+                                    </h2>
+                                    <p class="catalog-block__description mt-2">
+                                        Пример короткого описания p2r
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="mb-2 catalog-block">
+                                <a href="{{route('products.p2rn')}}">
+                                    <img src="{{ asset('images/template/catalog/p2rn.png')}}" class="catalog-block__image" alt="">
+                                    <h2 class="catalog-block__header mt-3">
+                                    p2rn
+                                    </h2>
+                                    <p class="catalog-block__description mt-2">
+                                        Пример короткого описания p2rn
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="mb-2 catalog-block">
+                                <a href="{{route('products.tm2')}}">
+                                    <img src="{{ asset('images/template/catalog/tm2.png')}}" class="catalog-block__image" alt="">
+                                    <h2 class="catalog-block__header mt-3">
+                                    tm2
+                                    </h2>
+                                    <p class="catalog-block__description mt-2">
+                                        Пример короткого описания tm2
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="mb-2 catalog-block">
+                                <a href="{{route('products.parts')}}">
+                                    <img src="{{ asset('images/template/catalog/parts.png')}}" class="catalog-block__image" alt="">
+                                    <h2 class="catalog-block__header mt-3">
+                                    parts
+                                    </h2>
+                                    <p class="catalog-block__description mt-2">
+                                        Пример короткого описания parts
                                     </p>
                                 </a>
                             </div>

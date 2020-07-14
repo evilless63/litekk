@@ -77,6 +77,8 @@
                 </nav>
             </div>
         </div>
+
+
         <div class="collapse" id="collapseCatalog">
             <div class="card card-body collapse-catalog">
                 <div class="container">
@@ -85,10 +87,12 @@
                             <i class="fa fa-angle-left mr-5 customPrevBtn"></i>
                         </div>
                         <div class="col-md-10">
-                            <div class="row collapse-catalog-inner">
-                                <div class="col collapse-catalog-inner-item">
+                            <div class="collapse-catalog-inner owl-carousel owl-theme">
+
+
+                            <div class="collapse-catalog-inner-item">
                                     <a href="{{route('products.telega')}}">
-                                        <div class="collapse-catalog-inner-item__image d-flex align-items-center">
+                                        <div class="collapse-catalog-inner-item__image d-flex align-items-end justify-content-center">
                                             <img class="img-fluid" src="{{asset('images/products/telega/perspective.png')}}" alt="Пример модели">
                                         </div>
                                         <h3 class="collapse-catalog-inner-item__name">telega</h3>
@@ -97,9 +101,9 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="col collapse-catalog-inner-item">
+                                <div class="collapse-catalog-inner-item">
                                 <a href="{{route('products.p1pm2')}}">
-                                        <div class="collapse-catalog-inner-item__image d-flex align-items-center">
+                                        <div class="collapse-catalog-inner-item__image d-flex align-items-end justify-content-center">
                                             <img class="img-fluid" src="{{asset('images/products/p1pm2/perspective.png')}}" alt="Пример модели">
                                         </div>
                                         <h3 class="collapse-catalog-inner-item__name">p1pm2</h3>
@@ -108,9 +112,9 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="col collapse-catalog-inner-item">
+                                <div class="collapse-catalog-inner-item">
                                 <a href="{{route('products.p1pna')}}">
-                                        <div class="collapse-catalog-inner-item__image d-flex align-items-center">
+                                        <div class="collapse-catalog-inner-item__image d-flex align-items-end justify-content-center">
                                             <img class="img-fluid" src="{{asset('images/products/p1pna/perspective.png')}}" alt="Пример модели">
                                         </div>
                                         <h3 class="collapse-catalog-inner-item__name">p1pna</h3>
@@ -119,9 +123,9 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="col collapse-catalog-inner-item">
+                                <div class="collapse-catalog-inner-item">
                                 <a href="{{route('products.p2r')}}">
-                                        <div class="collapse-catalog-inner-item__image d-flex align-items-center">
+                                        <div class="collapse-catalog-inner-item__image d-flex align-items-end justify-content-center">
                                             <img class="img-fluid" src="{{asset('images/products/p2r/perspective.png')}}" alt="Пример модели">
                                         </div>
                                         <h3 class="collapse-catalog-inner-item__name">p2r</h3>
@@ -130,9 +134,9 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="col collapse-catalog-inner-item">
+                                <div class="collapse-catalog-inner-item">
                                 <a href="{{route('products.p2rn')}}">
-                                        <div class="collapse-catalog-inner-item__image d-flex align-items-center">
+                                        <div class="collapse-catalog-inner-item__image d-flex align-items-end justify-content-center">
                                             <img class="img-fluid" src="{{asset('images/products/p2rn/perspective.png')}}" alt="Пример модели">
                                         </div>
                                         <h3 class="collapse-catalog-inner-item__name">p2rn</h3>
@@ -141,9 +145,9 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="col collapse-catalog-inner-item">
+                                <div class="collapse-catalog-inner-item">
                                 <a href="{{route('products.rolgang')}}">
-                                        <div class="collapse-catalog-inner-item__image d-flex align-items-center">
+                                        <div class="collapse-catalog-inner-item__image d-flex align-items-end justify-content-center">
                                             <img class="img-fluid" src="{{asset('images/products/rolgang/perspective.png')}}" alt="Пример модели">
                                         </div>
                                         <h3 class="collapse-catalog-inner-item__name">rolgang</h3>
@@ -152,9 +156,9 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="col collapse-catalog-inner-item">
+                                <div class="collapse-catalog-inner-item">
                                 <a href="{{route('products.t001')}}">
-                                        <div class="collapse-catalog-inner-item__image d-flex align-items-center">
+                                        <div class="collapse-catalog-inner-item__image d-flex align-items-end justify-content-center">
                                             <img class="img-fluid" src="{{asset('images/products/t001/perspective.png')}}" alt="Пример модели">
                                         </div>
                                         <h3 class="collapse-catalog-inner-item__name">t001</h3>
@@ -163,9 +167,9 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="col collapse-catalog-inner-item">
+                                <div class="collapse-catalog-inner-item">
                                 <a href="{{route('products.t003')}}">
-                                        <div class="collapse-catalog-inner-item__image d-flex align-items-center">
+                                        <div class="collapse-catalog-inner-item__image d-flex align-items-end justify-content-center">
                                             <img class="img-fluid" src="{{asset('images/products/t003/perspective.png')}}" alt="Пример модели">
                                         </div>
                                         <h3 class="collapse-catalog-inner-item__name">t003</h3>
@@ -174,9 +178,9 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="col collapse-catalog-inner-item">
+                                <div class="collapse-catalog-inner-item">
                                 <a href="{{route('products.t004')}}">
-                                        <div class="collapse-catalog-inner-item__image d-flex align-items-center">
+                                        <div class="collapse-catalog-inner-item__image d-flex align-items-end justify-content-center">
                                             <img class="img-fluid" src="{{asset('images/products/t004/perspective.png')}}" alt="Пример модели">
                                         </div>
                                         <h3 class="collapse-catalog-inner-item__name">t004</h3>
@@ -185,10 +189,10 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="col collapse-catalog-inner-item">
+                                <div class="collapse-catalog-inner-item">
                                 <a href="{{route('products.tm2')}}">
-                                        <div class="collapse-catalog-inner-item__image d-flex align-items-center">
-                                            <img class="img-fluid" src="{{asset('images/products/tm2/perspective.png')}}" alt="Пример модели">
+                                        <div class="collapse-catalog-inner-item__image d-flex align-items-end justify-content-center">
+                                            <img class="img-fluid" style="width: 50%;" src="{{asset('images/products/tm2/perspective.png')}}" alt="Пример модели">
                                         </div>
                                         <h3 class="collapse-catalog-inner-item__name">tm2</h3>
                                         <div class="collapse-catalog-inner-item__number">
@@ -196,6 +200,8 @@
                                         </div>
                                     </a>
                                 </div>
+
+
                             </div>
                         </div>
                         <div class="col-md-1 collapse-catalog__arrow-right d-flex align-items-center owl-nav disabled">
@@ -206,6 +212,9 @@
 
             </div>
         </div>
+
+
+
     </header>
 
         @yield('content')
@@ -305,10 +314,19 @@
         </footer>
     </div>
     <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}" defer></script>
+    <!-- <script src="{{ asset('js/app.js') }}" defer></script> -->
+    <script
+  src="https://code.jquery.com/jquery-3.5.1.min.js"
+  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+  crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/imask"></script>
-    <script src="{{ asset('plugins/owlcarousel/owl.carousel.min.js')}}"></script>
+    <!-- <script src="{{ asset('plugins/owlcarousel/owl.carousel.min.js')}}"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
     <script src="https://api-maps.yandex.ru/2.0/?load=package.standard,package.geoObjects&lang=ru-RU" type="text/javascript"></script>
+
     <script src="{{ asset('js/custom.js') }}" defer></script>
 </body>
 
