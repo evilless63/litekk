@@ -1,7 +1,7 @@
 @extends('layouts.user')
 
 @section('content')
-<main class="mb-5 mt-5 text-sm-center text-md-left product-background">
+<main class="mb-5 mt-5 text-sm-center text-md-left product-background product">
 
         <div class="container breadcrumbs">
             <a href="">Главная</a> > <a href="">Товары</a> > <a href="">Тележка рольганг</a>
@@ -106,7 +106,7 @@
 
             <div class="row mt-5">
                 <div class="col d-flex justify-content-center">
-                    <img src="{{asset('images/products/p1pm2/left.png')}}" alt="">
+                    <img src="{{asset('images/products/p1pm2/left.jpg')}}" alt="">
                 </div>
             </div>
 

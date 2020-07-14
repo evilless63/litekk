@@ -1,7 +1,7 @@
 @extends('layouts.user')
 
 @section('content')
-<main class="text-sm-center text-md-left">
+<main class="text-sm-center text-md-left news">
     <div class="slider">
         <div class="container-fluid slider-block block-1 pt-5 pb-3">
             <div class="container">
@@ -160,6 +160,16 @@
                     <img src="images/template/about-slider/1.png" class="about-slider__item img-fluid" alt="Литек. Правильные технические решения">
                     <img src="images/template/about-slider/2.png" class="about-slider__item img-fluid" alt="Литек. Правильные технические решения">
                     <img src="images/template/about-slider/3.png" class="about-slider__item img-fluid" alt="Литек. Правильные технические решения">
+                    <img src="images/template/about-slider/4.png" class="about-slider__item img-fluid" alt="Литек. Правильные технические решения">
+                    <img src="images/template/about-slider/5.png" class="about-slider__item img-fluid" alt="Литек. Правильные технические решения">
+                    <img src="images/template/about-slider/6.png" class="about-slider__item img-fluid" alt="Литек. Правильные технические решения">
+                    <img src="images/template/about-slider/7.png" class="about-slider__item img-fluid" alt="Литек. Правильные технические решения">
+                    <img src="images/template/about-slider/8.png" class="about-slider__item img-fluid" alt="Литек. Правильные технические решения">
+                    <img src="images/template/about-slider/9.png" class="about-slider__item img-fluid" alt="Литек. Правильные технические решения">
+                    <img src="images/template/about-slider/10.png" class="about-slider__item img-fluid" alt="Литек. Правильные технические решения">
+                    <img src="images/template/about-slider/11.png" class="about-slider__item img-fluid" alt="Литек. Правильные технические решения">
+                    <img src="images/template/about-slider/12.png" class="about-slider__item img-fluid" alt="Литек. Правильные технические решения">
+                    <img src="images/template/about-slider/13.png" class="about-slider__item img-fluid" alt="Литек. Правильные технические решения">
                 </div>
                 <div class="col-md-5 col-xs-12 about">
                     <img src="images/template/logo.png" class="about__logo img-fluid" alt="Литек. Правильные технические решения" title="Литек. Правильные технические решения" />

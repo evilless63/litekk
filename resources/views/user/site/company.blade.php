@@ -1,7 +1,7 @@
 @extends('layouts.user')
 
 @section('content')
-<main class="text-sm-center text-md-left">
+<main class="text-sm-center text-md-left company">
 
     <div class="promo-company">
         <div class="container-fluid promo-company-block block-1 pt-5">
