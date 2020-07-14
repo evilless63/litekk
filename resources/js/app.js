@@ -109,7 +109,7 @@ $(document).ready(function () {
     const owlCatalog = $('.collapse-catalog-inner')
     const owlProducts = $('.products-catalog')
     const owlNews = $('.newsCarousel')
-    if (owlCatalog.length > 0) {
+    if (owlCatalog.length) {
 
         owlCatalog.owlCarousel({
             onInitialized: hideOldControls,
@@ -153,7 +153,7 @@ $(document).ready(function () {
         })
     }
 
-    if (owlProducts.length > 0) {
+    if (owlProducts.length) {
         owlProducts.owlCarousel({
             onInitialized: hideOldControlsProduct,
             loop: true,

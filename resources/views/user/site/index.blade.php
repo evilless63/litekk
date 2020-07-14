@@ -24,6 +24,28 @@
             </div>
         </div>
     </div>
+    <div class="slider">
+        <div class="container-fluid slider-block block-1 pt-5 pb-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 slider-block-text">
+                        <h2 class="slider-block__header">Делаем под вас</h2>
+                        <p class="slider-block__description">
+                            Делаем любые варианты исполнения
+                            по вашему техническому заданию.
+                            Под любые размеры под любые
+                            труборельсы, нагрузка, ширина
+                            высота, под ваши
+                            потребности !
+                        </p>
+                    </div>
+                    <div class="col-md-8">
+                        <img src="images/template/slider/block-1/image.png" alt="Делаем под вас">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="container-fluid catalog-outer pt-3 pb-2 mt-4" id="catalog-parallax">
         <div class="catalog-tomato"></div>
         <div class="catalog-pepper"></div>

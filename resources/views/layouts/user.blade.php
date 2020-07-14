@@ -84,8 +84,8 @@
             <div class="card card-body collapse-catalog">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-1 collapse-catalog__arrow-left d-flex align-items-center">
-                            <i class="fa fa-angle-left mr-5"></i>
+                        <div class="col-md-1 collapse-catalog__arrow-left d-flex align-items-center owl-nav disabled">
+                            <i class="fa fa-angle-left mr-5 customPrevBtn"></i>
                         </div>
                         <div class="col-md-10">
                             <div class="row collapse-catalog-inner">
@@ -151,7 +151,7 @@
                                         </div>
                                         <h3 class="collapse-catalog-inner-item__name">rolgang</h3>
                                         <div class="collapse-catalog-inner-item__number">
-                                            05
+                                            06
                                         </div>
                                     </a>
                                 </div>
@@ -162,7 +162,7 @@
                                         </div>
                                         <h3 class="collapse-catalog-inner-item__name">t001</h3>
                                         <div class="collapse-catalog-inner-item__number">
-                                            05
+                                            07
                                         </div>
                                     </a>
                                 </div>
@@ -173,7 +173,7 @@
                                         </div>
                                         <h3 class="collapse-catalog-inner-item__name">t003</h3>
                                         <div class="collapse-catalog-inner-item__number">
-                                            05
+                                            08
                                         </div>
                                     </a>
                                 </div>
@@ -184,7 +184,7 @@
                                         </div>
                                         <h3 class="collapse-catalog-inner-item__name">t004</h3>
                                         <div class="collapse-catalog-inner-item__number">
-                                            05
+                                            09
                                         </div>
                                     </a>
                                 </div>
@@ -195,14 +195,14 @@
                                         </div>
                                         <h3 class="collapse-catalog-inner-item__name">tm2</h3>
                                         <div class="collapse-catalog-inner-item__number">
-                                            05
+                                            10
                                         </div>
                                     </a>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-1 collapse-catalog__arrow-right d-flex align-items-center">
-                            <i class="fa fa-angle-right mr-5"></i>
+                        <div class="col-md-1 collapse-catalog__arrow-right d-flex align-items-center owl-nav disabled">
+                            <i class="fa fa-angle-right mr-5 customNextBtn"></i>
                         </div>
                     </div>
                 </div>
