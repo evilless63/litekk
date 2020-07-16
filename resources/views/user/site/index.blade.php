@@ -2,7 +2,7 @@
 
 @section('content')
 <main class="text-sm-center text-md-left news">
-    <div class="slider">
+    <div class="slider main-slider">
         <div class="container-fluid slider-block block-1 pt-5 pb-3">
             <div class="container">
                 <div class="row">
@@ -18,13 +18,33 @@
                         </p>
                     </div>
                     <div class="col-md-8">
-                        <img src="images/template/slider/block-1/image.png" alt="Делаем под вас">
+                        <img class="img-fluid" src="images/template/slider/block-1/image.png" alt="Делаем под вас">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid slider-block block-1 pt-5 pb-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <img class="img-fluid" src="images/template/slider/block-2/image.png" alt="Делаем под вас">
+                    </div>
+                    <div class="col-md-4 slider-block-text">
+                        <h2 class="slider-block__header">Делаем под вас</h2>
+                        <p class="slider-block__description">
+                            Делаем любые варианты исполнения
+                            по вашему техническому заданию.
+                            Под любые размеры под любые
+                            труборельсы, нагрузка, ширина
+                            высота, под ваши
+                            потребности !
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="container-fluid catalog-outer pt-3 pb-2 mt-4" id="catalog-parallax">
+    <div class="container-fluid catalog-outer pt-5 pb-3" id="catalog-parallax">
         <div class="catalog-tomato"></div>
         <div class="catalog-pepper"></div>
         <div class="catalog-leaf"></div>
@@ -199,8 +219,8 @@
     </div>
     <div class="container-fluid about-outer pt-3 pb-2" id="about-parallax">
         <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-xs-12 about-slider">
+            <div class="row justify-content-between">
+                <div class="col-md-5 col-xs-12 about-slider">
                     <img src="images/template/about-slider/1.png" class="about-slider__item img-fluid" alt="Литек. Правильные технические решения">
                     <img src="images/template/about-slider/2.png" class="about-slider__item img-fluid" alt="Литек. Правильные технические решения">
                     <img src="images/template/about-slider/3.png" class="about-slider__item img-fluid" alt="Литек. Правильные технические решения">
@@ -213,9 +233,9 @@
                     <img src="images/template/about-slider/10.png" class="about-slider__item img-fluid" alt="Литек. Правильные технические решения">
                     <img src="images/template/about-slider/11.png" class="about-slider__item img-fluid" alt="Литек. Правильные технические решения">
                     <img src="images/template/about-slider/12.png" class="about-slider__item img-fluid" alt="Литек. Правильные технические решения">
-                    <img src="images/template/about-slider/13.png" class="about-slider__item img-fluid" alt="Литек. Правильные технические решения">
+                    <img src="images/template/about-slider/13.png" class="about-slider__item img-fluid width50" alt="Литек. Правильные технические решения">
                 </div>
-                <div class="col-md-5 col-xs-12 about">
+                <div class="col-md-6 col-xs-12 about">
                     <img src="images/template/logo.png" class="about__logo img-fluid" alt="Литек. Правильные технические решения" title="Литек. Правильные технические решения" />
                     <h3 class="about__header mt-3 mb-3">Коротко о нашей компании</h3>
                     <p class="about__text">Наша компания является многопрофильным
@@ -261,7 +281,7 @@
                                 «Тепличные Комплексы России и СНГ»</p>
                         </div>
                         <div class="">
-                            <a href="novost.html" class="news-short-info__show-more">
+                            <a href="#" class="news-short-info__show-more">
                                 Узнать подробнее
                             </a>
                         </div>
@@ -288,7 +308,7 @@
                                 «Тепличные Комплексы России и СНГ»</p>
                         </div>
                         <div class="">
-                            <a href="novost.html" class="news-short-info__show-more">
+                            <a href="#" class="news-short-info__show-more">
                                 Узнать подробнее
                             </a>
                         </div>
@@ -315,7 +335,7 @@
                                 «Тепличные Комплексы России и СНГ»</p>
                         </div>
                         <div class="">
-                            <a href="novost.html" class="news-short-info__show-more">
+                            <a href="#" class="news-short-info__show-more">
                                 Узнать подробнее
                             </a>
                         </div>

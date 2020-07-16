@@ -6,7 +6,7 @@ use App\Article;
 use App\CategoriesArticle;
 use App\CategoriesNews;
 use App\News;
-use App\TagsArticle;
+use App\Tagsarticle;
 use App\TagsNews;
 
 class SiteController extends Controller
@@ -33,7 +33,7 @@ class SiteController extends Controller
     public function onenews($categoryslug, $newsslug)
     {
         return view('user.site.onenews')->with([
-            'new' => $news,
+            'new' => News::where('slug', $newsslug)->firstOrFail(),
         ]);
     }
 
@@ -42,14 +42,14 @@ class SiteController extends Controller
         return view('user.site.articles')->with([
             'articles' => Article::paginate(10),
             'categories' => CategoriesArticle::all(),
-            'tags' => TagsArticle::all(),
+            'tags' => Tagsarticle::all(),
         ]);
     }
 
     public function onearticle($categoryslug, $articleslug)
     {
         return view('user.site.onearticle')->with([
-            'article' => $article,
+            'article' => Article::where('slug', $articleslug)->firstOrFail(),
         ]);
     }
 

@@ -4,7 +4,7 @@
 <main class="pb-5 pt-5 text-sm-center text-md-left product-background product">
 
     <div class="container breadcrumbs">
-        <a href="">Главная</a> > <a href="">Товары</a> > <a href="">Тележка рольганг</a>
+        <a href="">Главная</a> > <a data-toggle="collapse" href="#collapseCatalog">Товары</a> > <a href="">Тележка рольганг</a>
     </div>
     <div class="container pt-5">
         <div class="row product d-flex align-items-center">

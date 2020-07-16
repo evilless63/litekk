@@ -512,33 +512,33 @@ main h1 {
     position: relative;
 }
 
-/* .catalog-tomato {
-    position: absolute;
-    background: url('../images/template/catalog/background/tomato.png');
-    width: 308px;
-    height: 392px;
-}
+//  .catalog-tomato {
+//     position: absolute;
+//     background: url('../images/template/catalog/background/tomato.png');
+//     width: 308px;
+//     height: 392px;
+// }
 
-.catalog-pepper {
-    position: absolute;
-    background: url('../images/template/catalog/background/pepper.png');
-    width: 329px;
-    height: 361px;
-}
+// .catalog-pepper {
+//     position: absolute;
+//     background: url('../images/template/catalog/background/pepper.png');
+//     width: 329px;
+//     height: 361px;
+// }
 
-.catalog-leaf {
-    position: absolute;
-    background: url('../images/template/catalog/background/leaf.png');
-    width: 308px;
-    height: 424px;
-}
+// .catalog-leaf {
+//     position: absolute;
+//     background: url('../images/template/catalog/background/leaf.png');
+//     width: 308px;
+//     height: 424px;
+// }
 
-.catalog-cabbage {
-    position: absolute;
-    background: url('../images/template/catalog/background/cabbage.png');
-    width: 255px;
-    height: 407px;
-} */
+// .catalog-cabbage {
+//     position: absolute;
+//     background: url('../images/template/catalog/background/cabbage.png');
+//     width: 255px;
+//     height: 407px;
+// } 
 
 .catalog-block {
     text-align: center;
@@ -648,6 +648,13 @@ svg {
 
 .block-1 {
     background: center no-repeat url('../images/template/slider/block-1/background.jpg');
+}
+
+.slider-block {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1s;
+    animation-name: fade;
+    animation-duration: 1s;
 }
 
 .slider-block__header {
@@ -906,4 +913,8 @@ svg {
 
     .admin .navbarDropdown {
         background: #37882e;
+    }
+
+    .width50 {
+        width: 50% !important;  
     }

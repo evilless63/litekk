@@ -52,7 +52,7 @@
                                     «Тепличные Комплексы России и СНГ»</p>
                             </div>
                             <div class="">
-                                <a href="novost.html" class="news-short-info__show-more">
+                                <a href="#" class="news-short-info__show-more">
                                     Узнать подробнее
                                 </a>
                             </div>
@@ -79,7 +79,7 @@
                                     «Тепличные Комплексы России и СНГ»</p>
                             </div>
                             <div class="">
-                                <a href="novost.html" class="news-short-info__show-more">
+                                <a href="#" class="news-short-info__show-more">
                                     Узнать подробнее
                                 </a>
                             </div>
@@ -106,7 +106,7 @@
                                     «Тепличные Комплексы России и СНГ»</p>
                             </div>
                             <div class="">
-                                <a href="novost.html" class="news-short-info__show-more">
+                                <a href="#" class="news-short-info__show-more">
                                     Узнать подробнее
                                 </a>
                             </div>
@@ -133,7 +133,7 @@
                                     «Тепличные Комплексы России и СНГ»</p>
                             </div>
                             <div class="">
-                                <a href="novost.html" class="news-short-info__show-more">
+                                <a href="#" class="news-short-info__show-more">
                                     Узнать подробнее
                                 </a>
                             </div>
@@ -160,7 +160,7 @@
                                     «Тепличные Комплексы России и СНГ»</p>
                             </div>
                             <div class="">
-                                <a href="novost.html" class="news-short-info__show-more">
+                                <a href="#" class="news-short-info__show-more">
                                     Узнать подробнее
                                 </a>
                             </div>
@@ -187,7 +187,7 @@
                                     «Тепличные Комплексы России и СНГ»</p>
                             </div>
                             <div class="">
-                                <a href="novost.html" class="news-short-info__show-more">
+                                <a href="#" class="news-short-info__show-more">
                                     Узнать подробнее
                                 </a>
                             </div>
@@ -214,7 +214,7 @@
                                     «Тепличные Комплексы России и СНГ»</p>
                             </div>
                             <div class="">
-                                <a href="novost.html" class="news-short-info__show-more">
+                                <a href="#" class="news-short-info__show-more">
                                     Узнать подробнее
                                 </a>
                             </div>
@@ -240,7 +240,7 @@
                                     «Тепличные Комплексы России и СНГ»</p>
                             </div>
                             <div class="">
-                                <a href="novost.html" class="news-short-info__show-more">
+                                <a href="#" class="news-short-info__show-more">
                                     Узнать подробнее
                                 </a>
                             </div>

@@ -70,6 +70,22 @@ $(document).ready(function () {
         }
     }
 
+    if (document.getElementsByClassName("main-slider").length > 0) {
+        var sliderCarouselIndex = 0;
+        sliderCarousel();
+
+        function sliderCarousel() {
+            var i;
+            var x = document.getElementsByClassName("slider-block");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            sliderCarouselIndex++;
+            if (sliderCarouselIndex > x.length) { sliderCarouselIndex = 1 }
+            x[sliderCarouselIndex - 1].style.display = "block";
+            setTimeout(sliderCarousel, 5000); // Change image every 2 seconds
+        }
+    }
 
 
     const owlCatalog = $('.collapse-catalog-inner')
