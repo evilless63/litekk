@@ -13,7 +13,7 @@ class SiteController extends Controller
 {
     public function index()
     {
-        return view('user.site.index')->with(['news' => News::paginate(10)]);
+        return view('user.site.index')->with(['news' => News::paginate(3)]);
     }
 
     public function company()
@@ -56,6 +56,11 @@ class SiteController extends Controller
     public function delivery()
     {
         return view('user.site.delivery');
+    }
+
+    public function policy()
+    {
+        return view('user.site.policy');
     }
 
     public function contacts()

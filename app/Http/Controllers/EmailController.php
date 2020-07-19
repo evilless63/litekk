@@ -39,7 +39,7 @@ class EmailController extends Controller
     {
         if ($request->direction == 1) { //Обратный звонок
             $request->validate([
-                'email' => 'required|email',
+                'phone' => 'required|phone',
                 // 'captcha' => 'required|captcha'
             ]);
         } else { // Все остальное
@@ -47,6 +47,7 @@ class EmailController extends Controller
                 'email' => 'required|email',
                 'name' => 'required',
                 'message' => 'required',
+                'policy' => 'required',
                 // 'captcha' => 'required|captcha'
             ]);
         }
@@ -55,17 +56,20 @@ class EmailController extends Controller
 
             $email = new Email();
             $_IMAGE = $request->file('filepath');
-
-            if ($_IMAGE->getError() == 1) {
-                $max_size = $_IMAGE->getMaxFileSize() / 2048 / 2048; // Get size in 2Mb
-                $error = 'Размер документа должен быть меньше ' . $max_size . 'Mb. Отправка письма завершилась неудачно.';
-                return response()->json(array('msg' => $error), 500);
-            }
-
-            $filename = $this->regexpImages(str_replace('"', '', time() . $_IMAGE->getClientOriginalName()));
-            $uploadPath = 'images/emails/';
-            $_IMAGE->move($uploadPath, str_replace('"', '', $filename));
             $data = $request->all();
+            $data['filepath'] = "";
+            if($_IMAGE !== null) {
+                if ($_IMAGE->getError() == 1) {
+                    $max_size = $_IMAGE->getMaxFileSize() / 2048 / 2048; // Get size in 2Mb
+                    $error = 'Размер документа должен быть меньше ' . $max_size . 'Mb. Отправка письма завершилась неудачно.';
+                    return response()->json(array('msg' => $error), 500);
+                }
+    
+                $filename = $this->regexpImages(str_replace('"', '', time() . $_IMAGE->getClientOriginalName()));
+                $uploadPath = 'images/emails/';
+                $_IMAGE->move($uploadPath, str_replace('"', '', $filename));      
+                $data['filepath'] = $filename;         
+            }           
 
             if ($request->direction == 1) //Обратный звонок
             {
@@ -78,20 +82,18 @@ class EmailController extends Controller
             } elseif ($request->direction == 3) //Письмо с контактов
             {
                 $data['title'] = "Письмо с контактов";
-            } elseif ($request->direction == 4) //Обратный звонок
+            } elseif ($request->direction == 4) //Письмо с контактов
             {
-                $data['title'] = "Обратный звонок";
-            }
-
-            $data['filepath'] = $filename;
-
+                $data['title'] = "Письмо со страницы товара: " + $data['product'];
+            } 
+            
             if ($request->direction == 1) //Обратный звонок
             {
-                $to_email = 'test@example.com';
+                $to_email = 'vitaliy030589@gmail.com';
                 Mail::to($to_email)->send(new \App\Mail\SendEmail($data));
             } else // Все остальное
             {
-                $to_email = 'test@example.com';
+                $to_email = 'vitaliy030589@gmail.com';
                 Mail::to($to_email)->send(new \App\Mail\SendEmail($data));
             }
 

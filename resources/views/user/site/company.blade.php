@@ -125,17 +125,16 @@
             <h2>Остались вопросы?</h2>
             <div class="row feedback-form mt-5">
                 <div class="col-md-5 col-sx-12">
-                    <input type="text" class="feedback-form__name" placeholder="Введите Ваше имя">
-                    <input type="text" class="feedback-form__email" placeholder="Введите Ваш email">
-                    <input type="hidden" class="feedback-form__file_hidden">
-                    <button type="text" class="feedback-form__file d-flex justify-content-start align-items-center"><img src="images/template/add_files.png" class="mr-3" alt="">Приложите файлы (при
-                        желании)</button>
+                    <input type="text" class="feedback-form__name" id="feedbakContactsName" placeholder="Введите Ваше имя">
+                    <input type="text" class="feedback-form__email" id="feedbakContactsEmail" placeholder="Введите Ваш email">
+                    <input type="hidden" class="feedback-form__file_hidden" id="feedbakContactsFile">
+                    <button type="text" class="feedback-form__file d-flex justify-content-start align-items-center"><img src="{{asset('images/template/add_files.png')}}" class="mr-3" alt="">Приложите файлы (при желании)</button>
                 </div>
                 <div class="col-md-7 col-sx-12">
                     <div class="row">
-                        <textarea rows="5" cols="45" class="feedback-form__textarea" placeholder="Введите Ваше сообщение"></textarea>
+                        <textarea rows="5" cols="45" class="feedback-form__textarea" id="feedbakContactsText" placeholder="Введите Ваше сообщение"></textarea>
                         <div class="col-md-12"></div>
-                        <button type="text" class="feedback-form__push">Отправить</button>
+                        <button type="text" class="feedback-form__push" id="feedbakContactsSend">Отправить</button>
                     </div>
                 </div>
             </div>

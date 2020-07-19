@@ -2,14 +2,18 @@
 
 $(document).ready(function () {
 
+
+
+
     if ($('.tag-remove').length > 0) {
-        $.ajaxSetup({
-            headers: {
-                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-            }
-        })
 
         $('.tag-remove').on('click', function (event) {
+
+            $.ajaxSetup({
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                }
+            })
 
             if (window.confirm("Вы уверены? Тег будет автоматически удален для всех статей!")) {
                 $.ajax({
@@ -31,12 +35,114 @@ $(document).ready(function () {
         })
     }
 
+    if ($('#sendDirectorEmail').length > 0) {
+        $('#sendDirectorEmail').on('click', function (event) {
 
-    if (document.getElementById('callback-number').length == 0
-        && document.getElementById('feedback-number').length == 0) { }
+            $.ajax({
+                method: 'post',
+                url: "/emails",
+                data: {
+                    'name': $('#DirectorEmailName').val(),
+                    'email': $('#DirectorEmailEmail').val(),
+                    'filepath': $('#DirectorEmailFile').val(),
+                    'message': $('#DirectorEmailText').val(),
+                    'direction': 2
+                },
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                },
+                contentType: "application/json",
+                success: function (data) {
+                    alert("письмо успешно отправлено")
+                    console.log(data)
+                }
+            })
+
+        })
+    }
+
+    if ($('#feedbakContactsSend').length > 0) {
+        $('#feedbakContactsSend').on('click', function (event) {
+
+            $.ajax({
+                method: 'post',
+                url: "/emails",
+                data: {
+                    'name': $('#feedbakContactsName').val(),
+                    'email': $('#feedbakContactsEmail').val(),
+                    'filepath': $('#feedbakContactsFile').val(),
+                    'message': $('#feedbakContactsText').val(),
+                    'product': $('.product__header').text(),
+                    'direction': 4
+                },
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                },
+                contentType: "application/json",
+                success: function (data) {
+                    alert("письмо успешно отправлено")
+                    console.log(data)
+                }
+            })
+
+        })
+    }
+
+    if ($('#callbackAction').length > 0) {
+        $('#callbackAction').on('click', function (event) {
+
+            $.ajax({
+                method: 'post',
+                url: "/emails",
+                data: {
+                    'phone': $('#callbackNumber').val(),
+                    'direction': 1
+                },
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                },
+                contentType: "application/json",
+                success: function (data) {
+                    alert("письмо успешно отправлено")
+                    console.log(data)
+                }
+            })
+
+        })
+    }
+
+
+    if ($('#feedbackFooterSend').length > 0) {
+        $('#feedbackFooterSend').on('click', function (event) {
+
+            $.ajax({
+                method: 'post',
+                url: "/emails",
+                data: {
+                    'name': $('#feedbackFooterName').val(),
+                    'email': $('#feedbackFooterEmail').val(),
+                    'message': $('#feedbackFooterText').val(),
+                    'policy': $('#feedbackFooterConcentPolicy').val(),
+                    'direction': 3
+                },
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                },
+                contentType: "application/json",
+                success: function (data) {
+                    alert("письмо успешно отправлено")
+                    console.log(data)
+                }
+            })
+
+        })
+    }
+
+    if (document.getElementById('callbackNumber').length == 0
+        && document.getElementById('feedbackFooterNumber').length == 0) { }
     else {
-        const imaskEl = document.getElementById('callback-number')
-        const imaskEl2 = document.getElementById('feedback-number')
+        const imaskEl = document.getElementById('callbackNumber')
+        const imaskEl2 = document.getElementById('feedbackFooterNumber')
         const regMask = '+{7} (000) 000-00-00'
         const imaskOptions = {
             mask: regMask
@@ -44,12 +150,6 @@ $(document).ready(function () {
         mask = IMask(imaskEl, imaskOptions)
         mask2 = IMask(imaskEl2, imaskOptions)
 
-        const callbackAction = document.getElementById('callback-action')
-        if (callbackAction !== undefined) {
-            callbackAction.addEventListener('click', function () {
-                console.log(imaskEl.value)
-            })
-        }
     }
 
 
@@ -177,6 +277,11 @@ $(document).ready(function () {
             owlProducts.trigger('prev.owl.carousel', [300])
         })
     }
+
+    if($('#catalogParallax').length > 0) {
+        $('#catalogParallax').parallax({imageSrc: 'images/template/vegetables.jpg'})
+    }
+    
 
 })
 

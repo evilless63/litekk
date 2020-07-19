@@ -21,6 +21,7 @@ Route::get('/stati', 'SiteController@articles')->name('site.articles');
 Route::get('/stati/{categoryslug}/{slug}', 'SiteController@onearticle')->name('site.onearticle');
 Route::get('/dostavka', 'SiteController@delivery')->name('site.delivery');
 Route::get('/kontakty', 'SiteController@contacts')->name('site.contacts');
+Route::get('/politika', 'SiteController@policy')->name('site.policy');
 
 // products
 Route::get('products/telega', 'SiteController@telega')->name('products.telega');
@@ -35,12 +36,13 @@ Route::get('products/t003', 'SiteController@t003')->name('products.t003');
 Route::get('products/t004', 'SiteController@t004')->name('products.t004');
 Route::get('products/tm2', 'SiteController@tm2')->name('products.tm2');
 
+Route::resource('emails', 'EmailController');
+
 // Auth::routes(['register' => false]);
 Auth::routes(['register' => false, 'request' => false, 'reset' => false]);
 
 Route::group(['middleware' => 'auth', 'prefix' => 'admin'], function () {
-    Route::resource('articles', 'ArticleController');
-    Route::resource('emails', 'EmailController');
+    Route::resource('articles', 'ArticleController');    
     Route::resource('news', 'NewsController');
     Route::resource('tagArticle', 'TagsArticleController');
     Route::resource('categoryArticle', 'CategoriesArticleController');

@@ -44,7 +44,7 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid catalog-outer pt-5 pb-3" id="catalog-parallax">
+    <div class="container-fluid catalog-outer pt-5 pb-3" id="catalogParallax">
         <div class="catalog-tomato"></div>
         <div class="catalog-pepper"></div>
         <div class="catalog-leaf"></div>
@@ -62,7 +62,7 @@
                                 <a href="{{route('products.t001')}}">
                                     <img src="{{ asset('images/template/catalog/t001.png')}}" class="catalog-block__image" alt="">
                                     <h2 class="catalog-block__header mt-3">
-                                    t001
+                                        t001
                                     </h2>
                                     <p class="catalog-block__description mt-2">
                                         Пример короткого описания t001
@@ -73,7 +73,7 @@
                                 <a href="{{route('products.t004')}}">
                                     <img src="{{ asset('images/template/catalog/t004.png')}}" class="catalog-block__image" alt="">
                                     <h2 class="catalog-block__header mt-3">
-                                    t004
+                                        t004
                                     </h2>
                                     <p class="catalog-block__description mt-2">
                                         Пример короткого описания t004
@@ -84,7 +84,7 @@
                                 <a href="{{route('products.rolgang')}}">
                                     <img src="{{ asset('images/template/catalog/rolgang.png')}}" class="catalog-block__image" alt="">
                                     <h2 class="catalog-block__header mt-3">
-                                    rolgang
+                                        rolgang
                                     </h2>
                                     <p class="catalog-block__description mt-2">
                                         Пример короткого описания rolgang
@@ -95,7 +95,7 @@
                                 <a href="{{route('products.t003')}}">
                                     <img src="{{ asset('images/template/catalog/t003.png')}}" class="catalog-block__image" alt="">
                                     <h2 class="catalog-block__header mt-3">
-                                    t003
+                                        t003
                                     </h2>
                                     <p class="catalog-block__description mt-2">
                                         Пример короткого описания t003
@@ -106,7 +106,7 @@
                                 <a href="{{route('products.telega')}}">
                                     <img src="{{ asset('images/template/catalog/telega.png')}}" class="catalog-block__image" alt="">
                                     <h2 class="catalog-block__header mt-3">
-                                    telega
+                                        telega
                                     </h2>
                                     <p class="catalog-block__description mt-2">
                                         Пример короткого описания telega
@@ -117,7 +117,7 @@
                                 <a href="{{route('products.p1pm2')}}">
                                     <img src="{{ asset('images/template/catalog/p1pm2.png')}}" class="catalog-block__image" alt="">
                                     <h2 class="catalog-block__header mt-3">
-                                    p1pm2
+                                        p1pm2
                                     </h2>
                                     <p class="catalog-block__description mt-2">
                                         Пример короткого описания p1pm2
@@ -128,7 +128,7 @@
                                 <a href="{{route('products.p1pna')}}">
                                     <img src="{{ asset('images/template/catalog/p1pna.png')}}" class="catalog-block__image" alt="">
                                     <h2 class="catalog-block__header mt-3">
-                                    p1pna
+                                        p1pna
                                     </h2>
                                     <p class="catalog-block__description mt-2">
                                         Пример короткого описания p1pna
@@ -139,7 +139,7 @@
                                 <a href="{{route('products.p2r')}}">
                                     <img src="{{ asset('images/template/catalog/p2r.png')}}" class="catalog-block__image" alt="">
                                     <h2 class="catalog-block__header mt-3">
-                                    p2r
+                                        p2r
                                     </h2>
                                     <p class="catalog-block__description mt-2">
                                         Пример короткого описания p2r
@@ -150,7 +150,7 @@
                                 <a href="{{route('products.p2rn')}}">
                                     <img src="{{ asset('images/template/catalog/p2rn.png')}}" class="catalog-block__image" alt="">
                                     <h2 class="catalog-block__header mt-3">
-                                    p2rn
+                                        p2rn
                                     </h2>
                                     <p class="catalog-block__description mt-2">
                                         Пример короткого описания p2rn
@@ -161,7 +161,7 @@
                                 <a href="{{route('products.tm2')}}">
                                     <img src="{{ asset('images/template/catalog/tm2.png')}}" class="catalog-block__image" alt="">
                                     <h2 class="catalog-block__header mt-3">
-                                    tm2
+                                        tm2
                                     </h2>
                                     <p class="catalog-block__description mt-2">
                                         Пример короткого описания tm2
@@ -172,7 +172,7 @@
                                 <a href="{{route('products.parts')}}">
                                     <img src="{{ asset('images/template/catalog/parts.png')}}" class="catalog-block__image" alt="">
                                     <h2 class="catalog-block__header mt-3">
-                                    parts
+                                        parts
                                     </h2>
                                     <p class="catalog-block__description mt-2">
                                         Пример короткого описания parts
@@ -196,7 +196,7 @@
     <div class="container-fluid download-catalog-outer pt-3 pb-2">
         <div class="container">
             <div class="row d-md-flex justify-content-between download-catalog">
-                <div class="col-md-6 col-xs-12 d-flex justify-content-start">
+                <div class="col-md-6 col-xs-12 d-sm-flex justify-content-start">
                     <img src="images/template/download-catalog.png" class="img-fluid mr-4" alt="Полный каталог">
                     <div>
                         <div class="download-catalog__text">
@@ -210,9 +210,9 @@
 
                 </div>
                 <div class="col-md-3 col-xs-12">
-                    <button class="download-catalog__button" id="callback-action">
+                    <a href="{{asset('files/sample.pdf')}}" target="_blank" class="download-catalog__button" id="callback-action">
                         Скачать
-                    </button>
+                    </a>
                 </div>
             </div>
         </div>
@@ -252,7 +252,7 @@
                         ремонтно-эксплуатационных нужд
                         и планов технического развития
                         Вашего предприятия.</p>
-                    <a href="" class="about__link">Читать подробнее</a>
+                    <a href="{{route('site.company')}}" class="about__link">Читать подробнее</a>
                 </div>
             </div>
         </div>
@@ -260,91 +260,38 @@
     <div class="container">
         <div class="row align-items-center">
             <div class="col-11 newsCarousel">
+                @foreach($news as $new)
                 <div class="row news-block mt-5 mb-5">
                     <div class="col-md-4 col-xs-12 news-block__image">
-                        <img src="images/template/novosti.jpg" alt="Новость" class="img-fluid">
+                        <img src="{{$new->image}}" alt="{{$new->header}}" class="img-fluid">
                     </div>
                     <div class="col-md-6 col-xs-12 news-short-info">
                         <div class="row news-short-info__misc d-flex align-items-center justify-content-start">
-                            <span class="mr-4 col-5">12.05.2020</span>
-                            <div class="col-5">
+                            <span class="mr-4 col-5">{{$new->published_at}}</span>
+                            <!-- <div class="col-5">
                                 <i class="fa fa-eye"></i>
                                 <span>222002</span>
-                            </div>
+                            </div> -->
                         </div>
                         <h2 class="news-short-info__header mt-3 mb-3">
-                            Новость на сайт
+                        {{$new->header}}
                         </h2>
                         <div class="news-short-info__short-desc">
-                            <p>С 4 по 5 декабря 2020 г. в Москве, в гостинице «Балчуг Кемпински Москва»
-                                по адресу: ул. Балчуг, д.1 состоится 4-й ежегодный форум и выставка
-                                «Тепличные Комплексы России и СНГ»</p>
+                            <p>{{$new->description}}</p>
                         </div>
                         <div class="">
-                            <a href="#" class="news-short-info__show-more">
+                            <a href="{{$new->slug}}" class="news-short-info__show-more">
                                 Узнать подробнее
                             </a>
                         </div>
                     </div>
                 </div>
-                <div class="row news-block mb-5">
-                    <div class="col-md-4 col-xs-12 news-block__image">
-                        <img src="images/template/novosti.jpg" alt="Новость" class="img-fluid">
-                    </div>
-                    <div class="col-md-6 col-xs-12 news-short-info">
-                        <div class="row news-short-info__misc d-flex align-items-center justify-content-start">
-                            <span class="mr-4 col-5">12.05.2020</span>
-                            <div class="col-5">
-                                <i class="fa fa-eye"></i>
-                                <span>222002</span>
-                            </div>
-                        </div>
-                        <h2 class="news-short-info__header mt-3 mb-3">
-                            Новость на сайт
-                        </h2>
-                        <div class="news-short-info__short-desc">
-                            <p>С 4 по 5 декабря 2020 г. в Москве, в гостинице «Балчуг Кемпински Москва»
-                                по адресу: ул. Балчуг, д.1 состоится 4-й ежегодный форум и выставка
-                                «Тепличные Комплексы России и СНГ»</p>
-                        </div>
-                        <div class="">
-                            <a href="#" class="news-short-info__show-more">
-                                Узнать подробнее
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="row news-block mb-5">
-                    <div class="col-md-4 col-xs-12 news-block__image">
-                        <img src="images/template/novosti.jpg" alt="Новость" class="img-fluid">
-                    </div>
-                    <div class="col-md-6 col-xs-12 news-short-info">
-                        <div class="row news-short-info__misc d-flex align-items-center justify-content-start">
-                            <span class="mr-4 col-5">12.05.2020</span>
-                            <div class="col-5">
-                                <i class="fa fa-eye"></i>
-                                <span>222002</span>
-                            </div>
-                        </div>
-                        <h2 class="news-short-info__header mt-3 mb-3">
-                            Новость на сайт
-                        </h2>
-                        <div class="news-short-info__short-desc">
-                            <p>С 4 по 5 декабря 2020 г. в Москве, в гостинице «Балчуг Кемпински Москва»
-                                по адресу: ул. Балчуг, д.1 состоится 4-й ежегодный форум и выставка
-                                «Тепличные Комплексы России и СНГ»</p>
-                        </div>
-                        <div class="">
-                            <a href="#" class="news-short-info__show-more">
-                                Узнать подробнее
-                            </a>
-                        </div>
-                    </div>
-                </div>
+                @endforeach
             </div>
             <div class="col-1 news-controls flex-column justify-content-around d-none d-sm-block">
-                <i class="fa fa-arrow-circle-o-up news-controls__up"></i>
-                <i class="fa fa-arrow-circle-o-down news-controls__down"></i>
+            {{ $news->links() }}
+                <i class="fa fa-angle-up news-controls__up mb-5"></i>
+                <i class="fa fa-angle-down news-controls__down"></i>
             </div>
         </div>
     </div>

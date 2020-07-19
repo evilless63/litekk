@@ -4,7 +4,7 @@
 <main class="pb-5 pt-5 text-sm-center text-md-left news">
 
         <div class="container breadcrumbs">
-            <a href="">Главная</a> > <a href="">Статьи</a> > <a href="">Категория</a>
+            <a href="/">Главная</a> > <a href="">Статьи</a> > <a href="">Категория</a>
         </div>
         <div class="container">
             <h1 class="mt-5">Интересные статьи</h1>

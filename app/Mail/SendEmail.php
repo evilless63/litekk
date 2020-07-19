@@ -11,7 +11,7 @@ class SendEmail extends Mailable
 {
     use Queueable, SerializesModels;
 
-    protected $data;
+    public $data;
 
     /**
      * Create a new message instance.
@@ -30,18 +30,19 @@ class SendEmail extends Mailable
      */
     public function build()
     { {
-            return $this->view('emails/sendemail')
-                ->subject($this->data['title'])
-                ->with([
-                    'data' => $this->data
-                ])
-                ->attach(
+        $mailView = $this->view('emails/sendemail')
+        ->subject($this->data['title'])
+        ->with([
+            'data' => $this->data
+        ]);
+            return $this->data['filepath'] !== '' ? 
+            $mailView->attach(
                     $this->data['filepath']->getRealPath(),
                     [
                         'as' => $this->data['filepath']->getClientOriginalName(),
                         'mime' => $this->data['filepath']->getClientMimeType(),
                     ]
-                );
+                ) : $mailView;
         }
     }
 }

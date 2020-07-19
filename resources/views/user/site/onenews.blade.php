@@ -4,7 +4,7 @@
 <main class="pb-5 pt-5 text-sm-center text-md-left new">
 
     <div class="container breadcrumbs">
-        <a href="">Главная</a> > <a href="">Новости</a> > <a href="">Интересное</a> > <a href="">Профессиональная
+        <a href="/">Главная</a> > <a href="">Новости</a> > <a href="">Интересное</a> > <a href="">Профессиональная
             работа</a>
     </div>
     <div class="container d-md-flex align-items-center justify-content-between mt-5">

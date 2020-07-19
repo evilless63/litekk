@@ -125,6 +125,10 @@ a:hover {
     font-size: 32px;
 }
 
+.header-contacts__email {
+    cursor: pointer;
+}
+
 .nav__navbar-brand {
     font: 32px 'Muller Bold', Arial, Helvetica, sans-serif;
 }
@@ -444,11 +448,14 @@ main h1 {
     text-transform: uppercase;
     color: #fff;
     width: 100%;
+    display: block;
     cursor: pointer;
+    text-align: center;
 }
 
 .download-catalog__button:hover {
     background: #e05754;
+    text-decoration: none;
 }
 
 .about {
@@ -508,7 +515,8 @@ main h1 {
 
 /* CATALOG MAIN PAGE */
 .catalog-outer {
-    background: no-repeat #8c9d9b url('../images/template/catalog/background/background.jpg');
+    // background: no-repeat #8c9d9b url('../images/template/catalog/background/background.jpg');
+    background: no-repeat #8c9d9b url('../images/template/vegetables.jpg');
     position: relative;
 }
 
@@ -648,6 +656,10 @@ svg {
 
 .block-1 {
     background: center no-repeat url('../images/template/slider/block-1/background.jpg');
+}
+
+.slider {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
 }
 
 .slider-block {
