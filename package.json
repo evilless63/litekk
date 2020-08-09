@@ -24,7 +24,6 @@
         "vue-template-compiler": "^2.6.10"
     },
     "dependencies": {
-        "bootstrap-select": "^1.13.18",
-        "imask": "^6.0.5"
+        "bootstrap-select": "^1.13.18"
     }
 }

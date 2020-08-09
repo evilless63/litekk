@@ -4,17 +4,17 @@
 <main class="pb-5 pt-5 text-sm-center text-md-left product-background product">
 
     <div class="container breadcrumbs">
-        <a href="/">Главная</a> > <a data-toggle="collapse" href="#collapseCatalog">Товары</a> > <a href="">Тележка рольганг</a>
+        <a href="/">Главная</a> > <a data-toggle="collapse" href="#collapseCatalog">Товары</a> > <a href="">Серия П1пна</a>
     </div>
     <div class="container pt-5">
         <div class="row product d-flex align-items-center">
             <div class="col-md-6 col-xs-12">
-                <img src="{{asset('images/products/p1pna/perspective.png')}}" class="img-fluid product__image" alt="Тележка рольганг">
+                <img src="{{asset('images/products/p1pna/perspective.png')}}" class="img-fluid product__image" alt="Серия П1пна">
             </div>
             <div class="col-md-6 col-xs-12">
-                <h1 class="product__header">Тележка рольганг</h1>
+                <h1 class="product__header">Серия П1пна</h1>
                 <p class="product__subheader">
-                    Тележки для сбора урожая, серия П3рпш
+                    Тележка для сбора урожая и обслуживания теплиц
                 </p>
             </div>
         </div>
@@ -31,32 +31,24 @@
                     <table class="table table-striped">
                         <tbody>
                             <tr>
-                                <td>Длина (по осям сцепки в поезд при опущенном дышле) </td>
-                                <td>2860 мм</td>
+                                <td>Длина по осям сцепки в поезд</td>
+                                <td>2300 мм</td>
                             </tr>
                             <tr>
-                                <td>Высота (с верхней полкой)</td>
-                                <td>1532 мм</td>
+                                <td>Длина по краям поручней</td>
+                                <td>2086 мм</td>
                             </tr>
                             <tr>
-                                <td>Ширина (по кожухам центральных колес) </td>
-                                <td>766 мм</td>
+                                <td>Высота (по верху поручня)</td>
+                                <td>800 мм</td>
                             </tr>
                             <tr>
-                                <td>Роликовая платформа (рольганг)</td>
-                                <td>2415х474 мм с 47 роликами Ø 32 мм</td>
-                            </tr>
-                            <tr>
-                                <td>Просвет между роликовой и ходовой платформами</td>
-                                <td>255 мм</td>
-                            </tr>
-                            <tr>
-                                <td>Верхняя полка</td>
-                                <td>2105х410 мм глубиной 30 мм</td>
+                                <td>Ширина (по краям площадок крепления поворотных колес)</td>
+                                <td>838 мм</td>
                             </tr>
                             <tr>
                                 <td>Масса тележки</td>
-                                <td>95 кг</td>
+                                <td>69 кг</td>
                             </tr>
                             <tr>
                                 <td>Максимальная нагрузка на телегу</td>
@@ -67,8 +59,20 @@
 
                     </table>
                     <div class="table__e2e2e2">
-                        Ходовая платформа 2490х700мм оснащена центр. (рулевыми) колесами Ø200- 2шт.,
-                        поворотными колесами Ø125- 4шт.,полиамидными катками Ø Ø140/90хL145 -4шт
+                        <p>
+                            Ходовая платформа с грузоприемной площадкой 1930х590мм, покрытой рифленым алюминиевым листом, оснащена:
+                        </p>
+                        <ul>
+                            <li>центр. (рулевыми) колесами Ø200 - 2шт. с примыкающими к ним на одной оси полиамидными роликами Ø87мм</li>
+                            <li>поворотными колесами Ø125 - 4шт</li>
+                            <li>полиамидными катками с ребордами Ø Ø140/90хL145 - 4шт</li>
+                        </ul>
+                        <p>
+                            Имеются – съемные поручени для ручного перемещения, фаркоп и опускное дышло для сцепки тележек в поезд.
+                        </p>
+                        <p>
+                            Окраска непокрытых поверхностей – порошковой эмалью.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -79,20 +83,13 @@
         <div class="row mt-5">
             <div class="col-md-6 col-xs-12 top__product">
                 <img class="img-fluid" src="{{asset('images/products/p1pna/top.jpg')}}" alt="">
-                <p class="mt-5">Изготовлены ООО «ЛИТЭК» для ООО «Агро-Инвест»
-                    по договору поставки №АИ/2018/С и спецификации
-                    №7 от 04.02.19г. в соответствии с согласованным
-                    сторонами черт. П3рпш.00.00.00.000ВО и КД
-                    из приложения №2 к спецификации.</p>
+                <p class="mt-5">Тележки предназначены для сбора урожая и обслуживания теплиц.
+                    При эксплуатации происходит их индивидуальное перемещение вручную по труборельсам (отопительные регистры) и полу теплиц или в сцепке с другими тележками напольным транспортом.</p>
             </div>
             <div class="col-md-6 col-xs-12 bottom__product">
                 <img class="img-fluid" src="{{asset('images/products/p1pna/bottom.jpg')}}" alt="">
                 <p class="mt-5">
-                    Тележки П3рпш (зав. №№ 126аи/2019 – 170аи/2019)
-                    прошли выходной контроль на соответствие условиям
-                    договора, техническим требованиям заказчика и
-                    кон-структорской документации изготовителя и
-                    признаны годными к эксплуатации и поставке.
+                    Гарантийный срок эксплуатации тележек 1год, покупных колес – 6 месяцев. Расчетный срок службы тележек – 7 лет.
                 </p>
             </div>
         </div>
@@ -169,7 +166,7 @@
                 <div class="row">
                     <textarea rows="5" cols="45" class="feedback-form__textarea" id="feedbakContactsText" placeholder="Введите Ваше сообщение"></textarea>
                     <div class="col-md-12"></div>
-                    <button type="text" class="feedback-form__push" id="feedbakContactsSend" >Отправить</button>
+                    <button type="text" class="feedback-form__push" id="feedbakContactsSend">Отправить</button>
                 </div>
             </div>
         </div>

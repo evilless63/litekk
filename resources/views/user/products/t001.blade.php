@@ -4,17 +4,17 @@
 <main class="pb-5 pt-5 text-sm-center text-md-left product-background product">
 
     <div class="container breadcrumbs">
-        <a href="/">Главная</a> > <a data-toggle="collapse" href="#collapseCatalog">Товары</a> > <a href="">Тележка рольганг</a>
+        <a href="/">Главная</a> > <a data-toggle="collapse" href="#collapseCatalog">Товары</a> > <a href="">Серия Пхр-б/г</a>
     </div>
     <div class="container pt-5">
         <div class="row product d-flex align-items-center">
             <div class="col-md-6 col-xs-12">
-                <img src="{{asset('images/products/t001/perspective.png')}}" class="img-fluid product__image" alt="Тележка рольганг">
+                <img src="{{asset('images/products/t001/perspective.png')}}" class="img-fluid product__image" alt="Серия Пхр-б/г">
             </div>
             <div class="col-md-6 col-xs-12">
-                <h1 class="product__header">Тележка рольганг</h1>
+                <h1 class="product__header">Серия Пхр-б/г</h1>
                 <p class="product__subheader">
-                    Тележки для сбора урожая, серия П3рпш
+                    Тележка химостойкая большегрузная под еврокуб 1м3
                 </p>
             </div>
         </div>
@@ -31,44 +31,46 @@
                     <table class="table table-striped">
                         <tbody>
                             <tr>
-                                <td>Длина (по осям сцепки в поезд при опущенном дышле) </td>
-                                <td>2860 мм</td>
+                                <td>Длина (по рукоятку поручня) </td>
+                                <td>1418 мм</td>
                             </tr>
                             <tr>
-                                <td>Высота (с верхней полкой)</td>
-                                <td>1532 мм</td>
+                                <td>Высота (от пола по поручню)</td>
+                                <td>927 мм</td>
                             </tr>
                             <tr>
-                                <td>Ширина (по кожухам центральных колес) </td>
-                                <td>766 мм</td>
+                                <td>Ширина (по боковым упорам) </td>
+                                <td>1048 мм</td>
                             </tr>
                             <tr>
-                                <td>Роликовая платформа (рольганг)</td>
-                                <td>2415х474 мм с 47 роликами Ø 32 мм</td>
+                                <td>Просвет между полом и платформой</td>
+                                <td>276 мм</td>
                             </tr>
                             <tr>
-                                <td>Просвет между роликовой и ходовой платформами</td>
-                                <td>255 мм</td>
-                            </tr>
-                            <tr>
-                                <td>Верхняя полка</td>
-                                <td>2105х410 мм глубиной 30 мм</td>
+                                <td>Ходовая платформа</td>
+                                <td>1320х1020 мм</td>
                             </tr>
                             <tr>
                                 <td>Масса тележки</td>
-                                <td>95 кг</td>
+                                <td>74 кг</td>
                             </tr>
                             <tr>
                                 <td>Максимальная нагрузка на телегу</td>
-                                <td>500 кг</td>
+                                <td>1700 кг</td>
                             </tr>
 
                         </tbody>
 
                     </table>
                     <div class="table__e2e2e2">
-                        Ходовая платформа 2490х700мм оснащена центр. (рулевыми) колесами Ø200- 2шт.,
-                        поворотными колесами Ø125- 4шт.,полиамидными катками Ø Ø140/90хL145 -4шт
+                        <p>Тележка оснащена</p>
+                        <ul>
+                            <li>2мя поворотными Ø200 (с мощными прецизионными подшипниками в поворотном узле и тормозами)</li>
+                            <li>2мя неповоротными колесами Ø200 грузоподъемностью 600кг каждое</li>
+                        </ul> 
+                        <p>Шинка литая из химостойкой резины на натуральном каучуке,  ступица - чугунная с химостойким покрытием,  осевой подшипник - шариковый прецизионный.</p>
+                        <p>Покрытие тележки - химостойкая порошковая эмаль, имеются - поручень для ручного перемещения, торцевые и боковые упоры для исключения сползания груза с платформы. </p>    
+                    
                     </div>
                 </div>
             </div>
@@ -79,23 +81,16 @@
         <div class="row mt-5">
             <div class="col-md-6 col-xs-12 top__product">
                 <img class="img-fluid" src="{{asset('images/products/t001/top.jpg')}}" alt="">
-                <p class="mt-5">Изготовлены ООО «ЛИТЭК» для ООО «Агро-Инвест»
-                    по договору поставки №АИ/2018/С и спецификации
-                    №7 от 04.02.19г. в соответствии с согласованным
-                    сторонами черт. П3рпш.00.00.00.000ВО и КД
-                    из приложения №2 к спецификации.</p>
+                <p class="mt-5">Тележка химостойкая большегрузная предназначена для перемещения (и хранения) еврокуба с химически активными веществами (азотная кислота 55%, ортофосфорная кислота 85%, перекись водорода 50%) на плиточном покрытии пола.</p>
             </div>
             <div class="col-md-6 col-xs-12 bottom__product">
                 <img class="img-fluid" src="{{asset('images/products/t001/bottom.jpg')}}" alt="">
                 <p class="mt-5">
-                    Тележки П3рпш (зав. №№ 126аи/2019 – 170аи/2019)
-                    прошли выходной контроль на соответствие условиям
-                    договора, техническим требованиям заказчика и
-                    кон-структорской документации изготовителя и
-                    признаны годными к эксплуатации и поставке.
+                    Гарантийный срок эксплуатации – покупные колеса – 6 месяцев, остальное изделие - 1год. Расчетный срок службы –7 лет.
                 </p>
             </div>
         </div>
+
         <div class="row mt-5 d-flex">
             <div class="col">
                 <button class="model-show d-flex align-items-center">
@@ -169,7 +164,7 @@
                 <div class="row">
                     <textarea rows="5" cols="45" class="feedback-form__textarea" id="feedbakContactsText" placeholder="Введите Ваше сообщение"></textarea>
                     <div class="col-md-12"></div>
-                    <button type="text" class="feedback-form__push" id="feedbakContactsSend" >Отправить</button>
+                    <button type="text" class="feedback-form__push" id="feedbakContactsSend">Отправить</button>
                 </div>
             </div>
         </div>
