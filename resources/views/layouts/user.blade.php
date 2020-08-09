@@ -124,9 +124,9 @@
                                     <div class="collapse-catalog-inner-item">
                                         <a href="{{route('products.telega')}}">
                                             <div class="collapse-catalog-inner-item__image d-flex align-items-end justify-content-center">
-                                                <img class="img-fluid" src="{{asset('images/products/telega/perspective.png')}}" alt="Пример модели">
+                                                <img class="img-fluid" src="{{asset('images/products/telega/perspective.png')}}" alt="Серия П1р-б/г">
                                             </div>
-                                            <h3 class="collapse-catalog-inner-item__name">telega</h3>
+                                            <h3 class="collapse-catalog-inner-item__name">Серия П1р-б/г</h3>
                                             <div class="collapse-catalog-inner-item__number">
                                                 01
                                             </div>
@@ -135,9 +135,9 @@
                                     <div class="collapse-catalog-inner-item">
                                         <a href="{{route('products.p1pm2')}}">
                                             <div class="collapse-catalog-inner-item__image d-flex align-items-end justify-content-center">
-                                                <img class="img-fluid" src="{{asset('images/products/p1pm2/perspective.png')}}" alt="Пример модели">
+                                                <img class="img-fluid" src="{{asset('images/products/p1pm2/perspective.png')}}" alt="Серия П1пм3-шнк">
                                             </div>
-                                            <h3 class="collapse-catalog-inner-item__name">p1pm2</h3>
+                                            <h3 class="collapse-catalog-inner-item__name">Серия П1пм3-шнк</h3>
                                             <div class="collapse-catalog-inner-item__number">
                                                 02
                                             </div>
@@ -146,9 +146,9 @@
                                     <div class="collapse-catalog-inner-item">
                                         <a href="{{route('products.p1pna')}}">
                                             <div class="collapse-catalog-inner-item__image d-flex align-items-end justify-content-center">
-                                                <img class="img-fluid" src="{{asset('images/products/p1pna/perspective.png')}}" alt="Пример модели">
+                                                <img class="img-fluid" src="{{asset('images/products/p1pna/perspective.png')}}" alt="Серия П1пна">
                                             </div>
-                                            <h3 class="collapse-catalog-inner-item__name">p1pna</h3>
+                                            <h3 class="collapse-catalog-inner-item__name">Серия П1пна</h3>
                                             <div class="collapse-catalog-inner-item__number">
                                                 03
                                             </div>
@@ -157,9 +157,9 @@
                                     <div class="collapse-catalog-inner-item">
                                         <a href="{{route('products.p2r')}}">
                                             <div class="collapse-catalog-inner-item__image d-flex align-items-end justify-content-center">
-                                                <img class="img-fluid" src="{{asset('images/products/p2r/perspective.png')}}" alt="Пример модели">
+                                                <img class="img-fluid" src="{{asset('images/products/p2r/perspective.png')}}" alt="Серия П2Р">
                                             </div>
-                                            <h3 class="collapse-catalog-inner-item__name">p2r</h3>
+                                            <h3 class="collapse-catalog-inner-item__name">Серия П2Р</h3>
                                             <div class="collapse-catalog-inner-item__number">
                                                 04
                                             </div>
@@ -168,9 +168,9 @@
                                     <div class="collapse-catalog-inner-item">
                                         <a href="{{route('products.p2rn')}}">
                                             <div class="collapse-catalog-inner-item__image d-flex align-items-end justify-content-center">
-                                                <img class="img-fluid" src="{{asset('images/products/p2rn/perspective.png')}}" alt="Пример модели">
+                                                <img class="img-fluid" src="{{asset('images/products/p2rn/perspective.png')}}" alt="Серия П2рн-1х0.85мг">
                                             </div>
-                                            <h3 class="collapse-catalog-inner-item__name">p2rn</h3>
+                                            <h3 class="collapse-catalog-inner-item__name">Серия П2рн-1х0.85мг</h3>
                                             <div class="collapse-catalog-inner-item__number">
                                                 05
                                             </div>
@@ -179,9 +179,9 @@
                                     <div class="collapse-catalog-inner-item">
                                         <a href="{{route('products.rolgang')}}">
                                             <div class="collapse-catalog-inner-item__image d-flex align-items-end justify-content-center">
-                                                <img class="img-fluid" src="{{asset('images/products/rolgang/perspective.png')}}" alt="Пример модели">
+                                                <img class="img-fluid" src="{{asset('images/products/rolgang/perspective.png')}}" alt="Серия П3рпш">
                                             </div>
-                                            <h3 class="collapse-catalog-inner-item__name">rolgang</h3>
+                                            <h3 class="collapse-catalog-inner-item__name">Серия П3рпш</h3>
                                             <div class="collapse-catalog-inner-item__number">
                                                 06
                                             </div>
@@ -190,9 +190,9 @@
                                     <div class="collapse-catalog-inner-item">
                                         <a href="{{route('products.t001')}}">
                                             <div class="collapse-catalog-inner-item__image d-flex align-items-end justify-content-center">
-                                                <img class="img-fluid" src="{{asset('images/products/t001/perspective.png')}}" alt="Пример модели">
+                                                <img class="img-fluid" src="{{asset('images/products/t001/perspective.png')}}" alt="Серия Пхр-б/г">
                                             </div>
-                                            <h3 class="collapse-catalog-inner-item__name">t001</h3>
+                                            <h3 class="collapse-catalog-inner-item__name">Серия Пхр-б/г</h3>
                                             <div class="collapse-catalog-inner-item__number">
                                                 07
                                             </div>
@@ -201,9 +201,9 @@
                                     <div class="collapse-catalog-inner-item">
                                         <a href="{{route('products.t003')}}">
                                             <div class="collapse-catalog-inner-item__image d-flex align-items-end justify-content-center">
-                                                <img class="img-fluid" src="{{asset('images/products/t003/perspective.png')}}" alt="Пример модели">
+                                                <img class="img-fluid" src="{{asset('images/products/t003/perspective.png')}}" alt="Серия П1кпм">
                                             </div>
-                                            <h3 class="collapse-catalog-inner-item__name">t003</h3>
+                                            <h3 class="collapse-catalog-inner-item__name">Серия П1кпм</h3>
                                             <div class="collapse-catalog-inner-item__number">
                                                 08
                                             </div>
@@ -212,9 +212,9 @@
                                     <div class="collapse-catalog-inner-item">
                                         <a href="{{route('products.t004')}}">
                                             <div class="collapse-catalog-inner-item__image d-flex align-items-end justify-content-center">
-                                                <img class="img-fluid" src="{{asset('images/products/t004/perspective.png')}}" alt="Пример модели">
+                                                <img class="img-fluid" src="{{asset('images/products/t004/perspective.png')}}" alt="Серия П2пм-2н">
                                             </div>
-                                            <h3 class="collapse-catalog-inner-item__name">t004</h3>
+                                            <h3 class="collapse-catalog-inner-item__name">Серия П2пм-2н</h3>
                                             <div class="collapse-catalog-inner-item__number">
                                                 09
                                             </div>
@@ -223,9 +223,9 @@
                                     <div class="collapse-catalog-inner-item">
                                         <a href="{{route('products.tm2')}}">
                                             <div class="collapse-catalog-inner-item__image d-flex align-items-end justify-content-center">
-                                                <img class="img-fluid" style="width: 50%;" src="{{asset('images/products/tm2/perspective.png')}}" alt="Пример модели">
+                                                <img class="img-fluid" style="width: 50%;" src="{{asset('images/products/tm2/perspective.png')}}" alt="Серия ПЕТ">
                                             </div>
-                                            <h3 class="collapse-catalog-inner-item__name">tm2</h3>
+                                            <h3 class="collapse-catalog-inner-item__name">Серия ПЕТ</h3>
                                             <div class="collapse-catalog-inner-item__number">
                                                 10
                                             </div>
@@ -234,9 +234,9 @@
                                     <div class="collapse-catalog-inner-item">
                                         <a href="{{route('products.parts')}}">
                                             <div class="collapse-catalog-inner-item__image d-flex align-items-end justify-content-center">
-                                                <img class="img-fluid" style="width: 50%;" src="{{asset('images/products/parts/perspective.png')}}" alt="Пример модели">
+                                                <img class="img-fluid" style="width: 50%;" src="{{asset('images/products/parts/perspective.png')}}" alt="Запасные части">
                                             </div>
-                                            <h3 class="collapse-catalog-inner-item__name">Запчасти</h3>
+                                            <h3 class="collapse-catalog-inner-item__name">Запасные части</h3>
                                             <div class="collapse-catalog-inner-item__number">
                                                 11
                                             </div>

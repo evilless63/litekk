@@ -62,10 +62,10 @@
                                 <a href="{{route('products.t001')}}">
                                     <img src="{{ asset('images/template/catalog/t001.png')}}" class="catalog-block__image" alt="">
                                     <h2 class="catalog-block__header mt-3">
-                                        t001
+                                        Серия Пхр-б/г
                                     </h2>
                                     <p class="catalog-block__description mt-2">
-                                        Пример короткого описания t001
+                                        Тележка химостойкая большегрузная под еврокуб 1м3
                                     </p>
                                 </a>
                             </div>
@@ -73,10 +73,10 @@
                                 <a href="{{route('products.t004')}}">
                                     <img src="{{ asset('images/template/catalog/t004.png')}}" class="catalog-block__image" alt="">
                                     <h2 class="catalog-block__header mt-3">
-                                        t004
+                                        Серия П2пм-2н
                                     </h2>
                                     <p class="catalog-block__description mt-2">
-                                        Пример короткого описания t004
+                                        Тележка 2х ярусная прицепная для сбора урожая и обслуживания теплиц
                                     </p>
                                 </a>
                             </div>
@@ -84,10 +84,10 @@
                                 <a href="{{route('products.rolgang')}}">
                                     <img src="{{ asset('images/template/catalog/rolgang.png')}}" class="catalog-block__image" alt="">
                                     <h2 class="catalog-block__header mt-3">
-                                        rolgang
+                                        Серия П3рпш
                                     </h2>
                                     <p class="catalog-block__description mt-2">
-                                        Пример короткого описания rolgang
+                                        Тележка-рольганг для сбора урожая
                                     </p>
                                 </a>
                             </div>
@@ -95,10 +95,10 @@
                                 <a href="{{route('products.t003')}}">
                                     <img src="{{ asset('images/template/catalog/t003.png')}}" class="catalog-block__image" alt="">
                                     <h2 class="catalog-block__header mt-3">
-                                        t003
+                                        Серия П1кпм
                                     </h2>
                                     <p class="catalog-block__description mt-2">
-                                        Пример короткого описания t003
+                                        Тележка для сбора растительных отходов
                                     </p>
                                 </a>
                             </div>
@@ -106,10 +106,10 @@
                                 <a href="{{route('products.telega')}}">
                                     <img src="{{ asset('images/template/catalog/telega.png')}}" class="catalog-block__image" alt="">
                                     <h2 class="catalog-block__header mt-3">
-                                        telega
+                                        Серия П1р-б/г
                                     </h2>
                                     <p class="catalog-block__description mt-2">
-                                        Пример короткого описания telega
+                                        Тележка большегрузная под европаллет
                                     </p>
                                 </a>
                             </div>
@@ -117,10 +117,10 @@
                                 <a href="{{route('products.p1pm2')}}">
                                     <img src="{{ asset('images/template/catalog/p1pm2.png')}}" class="catalog-block__image" alt="">
                                     <h2 class="catalog-block__header mt-3">
-                                        p1pm2
+                                        Серия П1пм3-шнк
                                     </h2>
                                     <p class="catalog-block__description mt-2">
-                                        Пример короткого описания p1pm2
+                                        Тележка для сбора урожая и обслуживания теплиц
                                     </p>
                                 </a>
                             </div>
@@ -128,10 +128,10 @@
                                 <a href="{{route('products.p1pna')}}">
                                     <img src="{{ asset('images/template/catalog/p1pna.png')}}" class="catalog-block__image" alt="">
                                     <h2 class="catalog-block__header mt-3">
-                                        p1pna
+                                        Серия П1пна
                                     </h2>
                                     <p class="catalog-block__description mt-2">
-                                        Пример короткого описания p1pna
+                                        Тележка для сбора урожая и обслуживания теплиц
                                     </p>
                                 </a>
                             </div>
@@ -139,10 +139,10 @@
                                 <a href="{{route('products.p2r')}}">
                                     <img src="{{ asset('images/template/catalog/p2r.png')}}" class="catalog-block__image" alt="">
                                     <h2 class="catalog-block__header mt-3">
-                                        p2r
+                                        Серия П2Р
                                     </h2>
                                     <p class="catalog-block__description mt-2">
-                                        Пример короткого описания p2r
+                                        Тележка для сбора урожая и обслуживания теплиц
                                     </p>
                                 </a>
                             </div>
@@ -150,10 +150,10 @@
                                 <a href="{{route('products.p2rn')}}">
                                     <img src="{{ asset('images/template/catalog/p2rn.png')}}" class="catalog-block__image" alt="">
                                     <h2 class="catalog-block__header mt-3">
-                                        p2rn
+                                        Серия П2рн-1х0.85мг
                                     </h2>
                                     <p class="catalog-block__description mt-2">
-                                        Пример короткого описания p2rn
+                                        Тележка 2х ярусная ручная для обслуживания теплиц
                                     </p>
                                 </a>
                             </div>
@@ -161,10 +161,10 @@
                                 <a href="{{route('products.tm2')}}">
                                     <img src="{{ asset('images/template/catalog/tm2.png')}}" class="catalog-block__image" alt="">
                                     <h2 class="catalog-block__header mt-3">
-                                        tm2
+                                        Серия ПЕТ
                                     </h2>
                                     <p class="catalog-block__description mt-2">
-                                        Пример короткого описания tm2
+                                        Тележка многоярусная для обслуживания теплиц
                                     </p>
                                 </a>
                             </div>
@@ -172,10 +172,10 @@
                                 <a href="{{route('products.parts')}}">
                                     <img src="{{ asset('images/template/catalog/parts.png')}}" class="catalog-block__image" alt="">
                                     <h2 class="catalog-block__header mt-3">
-                                        parts
+                                        Запасные части
                                     </h2>
                                     <p class="catalog-block__description mt-2">
-                                        Пример короткого описания parts
+                                        Катки, дышла, прочие запчасти для телег
                                     </p>
                                 </a>
                             </div>
@@ -274,7 +274,7 @@
                             </div> -->
                         </div>
                         <h2 class="news-short-info__header mt-3 mb-3">
-                        {{$new->header}}
+                            {{$new->header}}
                         </h2>
                         <div class="news-short-info__short-desc">
                             <p>{{$new->description}}</p>
@@ -289,7 +289,7 @@
                 @endforeach
             </div>
             <div class="col-1 news-controls flex-column justify-content-around d-none d-sm-block">
-            {{ $news->links() }}
+                {{ $news->links() }}
                 <i class="fa fa-angle-up news-controls__up mb-5"></i>
                 <i class="fa fa-angle-down news-controls__down"></i>
             </div>
