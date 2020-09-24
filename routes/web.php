@@ -24,17 +24,19 @@ Route::get('/kontakty', 'SiteController@contacts')->name('site.contacts');
 Route::get('/politika', 'SiteController@policy')->name('site.policy');
 
 // products
-Route::get('products/telega', 'SiteController@telega')->name('products.telega');
+Route::get('products/p1rbg', 'SiteController@p1rbg')->name('products.p1rbg');
 Route::get('products/parts', 'SiteController@parts')->name('products.parts'); //TODO VIEW
-Route::get('products/p1pm2', 'SiteController@p1pm2')->name('products.p1pm2');
+// Route::get('products/p1pm2', 'SiteController@p1pm2')->name('products.p1pm2');
+Route::get('products/p1pm3shnk', 'SiteController@p1pm3shnk')->name('products.p1pm3shnk');
 Route::get('products/p1pna', 'SiteController@p1pna')->name('products.p1pna');
 Route::get('products/p2r', 'SiteController@p2r')->name('products.p2r');
 Route::get('products/p2rn', 'SiteController@p2rn')->name('products.p2rn');
-Route::get('products/rolgang', 'SiteController@rolgang')->name('products.rolgang');
-Route::get('products/t001', 'SiteController@t001')->name('products.t001');
-Route::get('products/t003', 'SiteController@t003')->name('products.t003');
-Route::get('products/t004', 'SiteController@t004')->name('products.t004');
+Route::get('products/p3rpsh', 'SiteController@p3rpsh')->name('products.p3rpsh');
+Route::get('products/phrbg', 'SiteController@phrbg')->name('products.phrbg');
+Route::get('products/p1kpm', 'SiteController@p1kpm')->name('products.p1kpm');
+Route::get('products/p2pm2n', 'SiteController@p2pm2n')->name('products.p2pm2n');
 Route::get('products/tm2', 'SiteController@tm2')->name('products.tm2');
+Route::get('products/p2rv', 'SiteController@p2rv')->name('products.p2rv');
 
 Route::resource('emails', 'EmailController');
 

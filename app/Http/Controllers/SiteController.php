@@ -69,9 +69,9 @@ class SiteController extends Controller
     }
 
     // Products
-    public function telega()
+    public function p1rbg()
     {
-        return view('user.products.telega');
+        return view('user.products.p1rbg');
     }
 
     public function parts()
@@ -99,28 +99,39 @@ class SiteController extends Controller
         return view('user.products.p2rn');
     }
 
-    public function rolgang()
+    public function p3rpsh()
     {
-        return view('user.products.rolgang');
+        return view('user.products.p3rpsh');
     }
 
-    public function t001()
+    public function phrbg()
     {
-        return view('user.products.t001');
+        return view('user.products.phrbg');
     }
 
-    public function t003()
+    public function p1kpm()
     {
-        return view('user.products.t003');
+        return view('user.products.p1kpm');
     }
 
-    public function t004()
+    public function p2pm2n()
     {
-        return view('user.products.t004');
+        return view('user.products.p2pm2n');
     }
 
     public function tm2()
     {
         return view('user.products.tm2');
     }
+
+    public function p1pm3shnk()
+    {
+        return view('user.products.p1pm3shnk');
+    }
+
+    public function p2rv()
+    {
+        return view('user.products.p2rv');
+    }
+    
 }

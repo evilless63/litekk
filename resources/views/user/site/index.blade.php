@@ -59,8 +59,8 @@
                     <div class="row">
                         <div class="owl-carousel products-catalog">
                             <div class="mb-2 catalog-block">
-                                <a href="{{route('products.t001')}}">
-                                    <img src="{{ asset('images/template/catalog/t001.png')}}" class="catalog-block__image" alt="">
+                                <a href="{{route('products.phrbg')}}">
+                                    <img src="{{ asset('images/template/catalog/phrbg.png')}}" class="catalog-block__image" alt="">
                                     <h2 class="catalog-block__header mt-3">
                                         Серия Пхр-б/г
                                     </h2>
@@ -70,8 +70,8 @@
                                 </a>
                             </div>
                             <div class="mb-2 catalog-block">
-                                <a href="{{route('products.t004')}}">
-                                    <img src="{{ asset('images/template/catalog/t004.png')}}" class="catalog-block__image" alt="">
+                                <a href="{{route('products.p2pm2n')}}">
+                                    <img src="{{ asset('images/template/catalog/p2pm2n.png')}}" class="catalog-block__image" alt="">
                                     <h2 class="catalog-block__header mt-3">
                                         Серия П2пм-2н
                                     </h2>
@@ -81,8 +81,8 @@
                                 </a>
                             </div>
                             <div class="mb-2 catalog-block">
-                                <a href="{{route('products.rolgang')}}">
-                                    <img src="{{ asset('images/template/catalog/rolgang.png')}}" class="catalog-block__image" alt="">
+                                <a href="{{route('products.p3rpsh')}}">
+                                    <img src="{{ asset('images/template/catalog/p3rpsh.png')}}" class="catalog-block__image" alt="">
                                     <h2 class="catalog-block__header mt-3">
                                         Серия П3рпш
                                     </h2>
@@ -92,8 +92,8 @@
                                 </a>
                             </div>
                             <div class="mb-2 catalog-block">
-                                <a href="{{route('products.t003')}}">
-                                    <img src="{{ asset('images/template/catalog/t003.png')}}" class="catalog-block__image" alt="">
+                                <a href="{{route('products.p1kpm')}}">
+                                    <img src="{{ asset('images/template/catalog/p1kpm.png')}}" class="catalog-block__image" alt="">
                                     <h2 class="catalog-block__header mt-3">
                                         Серия П1кпм
                                     </h2>
@@ -103,8 +103,8 @@
                                 </a>
                             </div>
                             <div class="mb-2 catalog-block">
-                                <a href="{{route('products.telega')}}">
-                                    <img src="{{ asset('images/template/catalog/telega.png')}}" class="catalog-block__image" alt="">
+                                <a href="{{route('products.p1rbg')}}">
+                                    <img src="{{ asset('images/template/catalog/p1rbg.png')}}" class="catalog-block__image" alt="">
                                     <h2 class="catalog-block__header mt-3">
                                         Серия П1р-б/г
                                     </h2>
@@ -113,8 +113,19 @@
                                     </p>
                                 </a>
                             </div>
-                            <div class="mb-2 catalog-block">
+                            {{-- <div class="mb-2 catalog-block">
                                 <a href="{{route('products.p1pm2')}}">
+                                    <img src="{{ asset('images/template/catalog/p1pm2.png')}}" class="catalog-block__image" alt="">
+                                    <h2 class="catalog-block__header mt-3">
+                                        Серия П1пм3-шнк
+                                    </h2>
+                                    <p class="catalog-block__description mt-2">
+                                        Тележка для сбора урожая и обслуживания теплиц
+                                    </p>
+                                </a>
+                            </div> --}}
+                            <div class="mb-2 catalog-block">
+                                <a href="{{route('products.p1pm3shnk')}}">
                                     <img src="{{ asset('images/template/catalog/p1pm2.png')}}" class="catalog-block__image" alt="">
                                     <h2 class="catalog-block__header mt-3">
                                         Серия П1пм3-шнк
@@ -168,7 +179,19 @@
                                     </p>
                                 </a>
                             </div>
+
                             <div class="mb-2 catalog-block">
+                                <a href="{{route('products.p2rv')}}">
+                                    <img src="{{ asset('images/template/catalog/p2rv.png')}}" class="catalog-block__image" alt="">
+                                    <h2 class="catalog-block__header mt-3">
+                                        Серия П2рв
+                                    </h2>
+                                    <p class="catalog-block__description mt-2">
+                                        111111111
+                                    </p>
+                                </a>
+                            </div>
+                            {{-- <div class="mb-2 catalog-block">
                                 <a href="{{route('products.parts')}}">
                                     <img src="{{ asset('images/template/catalog/parts.png')}}" class="catalog-block__image" alt="">
                                     <h2 class="catalog-block__header mt-3">
@@ -178,7 +201,7 @@
                                         Катки, дышла, прочие запчасти для телег
                                     </p>
                                 </a>
-                            </div>
+                            </div> --}}
                         </div>
                     </div>
 
