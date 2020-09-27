@@ -11,7 +11,7 @@
 <script src="{{ asset('js/components/gltfloader.js')}}"></script>
 <script src="{{ asset('js/components/orbitcontrols.js')}}"></script>
 {{-- <script src="{{ asset('js/components/scene.js')}}"></script> --}}
-<script> 
+<script>
     // Scene({{asset('3dmodels/' . $path . '/' . $path . '.gltf')}});
     // Scene('{{$path}}');
 
@@ -57,7 +57,17 @@
         controls = new THREE.OrbitControls(camera, renderer.domElement);
         controls.addEventListener('change', renderer);
 
-        let loader = new THREE.GLTFLoader();
+        let manager = new THREE.LoadingManager();
+        manager.onStart = function ( url, itemsLoaded, itemsTotal ) {
+            console.log( 'Started loading file: ' + url + '.\nLoaded ' + itemsLoaded + ' of ' + itemsTotal + ' files.' );
+            let bodyMain = document.getElementsByName('body');
+        };
+
+        manager.onLoad = function ( ) {
+            console.log( 'Loading complete!');
+        };
+
+        let loader = new THREE.GLTFLoader(manager);
 
         loader.load('{{$path}}', function (gltf) {
             console.log(gltf);
