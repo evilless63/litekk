@@ -70,65 +70,10 @@
                                 </a>
                             </div>
                             <div class="mb-2 catalog-block">
-                                <a href="{{route('products.p2pm2n')}}">
-                                    <img src="{{ asset('images/template/catalog/p2pm2n.png')}}" class="catalog-block__image" alt="">
+                                <a href="{{route('products.p2r')}}">
+                                    <img src="{{ asset('images/template/catalog/p2r.png')}}" class="catalog-block__image" alt="">
                                     <h2 class="catalog-block__header mt-3">
-                                        Серия П2пм-2н
-                                    </h2>
-                                    <p class="catalog-block__description mt-2">
-                                        Тележка 2х ярусная прицепная для сбора урожая и обслуживания теплиц
-                                    </p>
-                                </a>
-                            </div>
-                            <div class="mb-2 catalog-block">
-                                <a href="{{route('products.p3rpsh')}}">
-                                    <img src="{{ asset('images/template/catalog/p3rpsh.png')}}" class="catalog-block__image" alt="">
-                                    <h2 class="catalog-block__header mt-3">
-                                        Серия П3рпш
-                                    </h2>
-                                    <p class="catalog-block__description mt-2">
-                                        Тележка-рольганг для сбора урожая
-                                    </p>
-                                </a>
-                            </div>
-                            <div class="mb-2 catalog-block">
-                                <a href="{{route('products.p1kpm')}}">
-                                    <img src="{{ asset('images/template/catalog/p1kpm.png')}}" class="catalog-block__image" alt="">
-                                    <h2 class="catalog-block__header mt-3">
-                                        Серия П1кпм
-                                    </h2>
-                                    <p class="catalog-block__description mt-2">
-                                        Тележка для сбора растительных отходов
-                                    </p>
-                                </a>
-                            </div>
-                            <div class="mb-2 catalog-block">
-                                <a href="{{route('products.p1rbg')}}">
-                                    <img src="{{ asset('images/template/catalog/p1rbg.png')}}" class="catalog-block__image" alt="">
-                                    <h2 class="catalog-block__header mt-3">
-                                        Серия П1р-б/г
-                                    </h2>
-                                    <p class="catalog-block__description mt-2">
-                                        Тележка большегрузная под европаллет
-                                    </p>
-                                </a>
-                            </div>
-                            {{-- <div class="mb-2 catalog-block">
-                                <a href="{{route('products.p1pm2')}}">
-                                    <img src="{{ asset('images/template/catalog/p1pm2.png')}}" class="catalog-block__image" alt="">
-                                    <h2 class="catalog-block__header mt-3">
-                                        Серия П1пм3-шнк
-                                    </h2>
-                                    <p class="catalog-block__description mt-2">
-                                        Тележка для сбора урожая и обслуживания теплиц
-                                    </p>
-                                </a>
-                            </div> --}}
-                            <div class="mb-2 catalog-block">
-                                <a href="{{route('products.p1pm3shnk')}}">
-                                    <img src="{{ asset('images/template/catalog/p1pm2.png')}}" class="catalog-block__image" alt="">
-                                    <h2 class="catalog-block__header mt-3">
-                                        Серия П1пм3-шнк
+                                        Серия П2Р
                                     </h2>
                                     <p class="catalog-block__description mt-2">
                                         Тележка для сбора урожая и обслуживания теплиц
@@ -147,13 +92,46 @@
                                 </a>
                             </div>
                             <div class="mb-2 catalog-block">
-                                <a href="{{route('products.p2r')}}">
-                                    <img src="{{ asset('images/template/catalog/p2r.png')}}" class="catalog-block__image" alt="">
+                                <a href="{{route('products.p1rbg')}}">
+                                    <img src="{{ asset('images/template/catalog/p1rbg.png')}}" class="catalog-block__image" alt="">
                                     <h2 class="catalog-block__header mt-3">
-                                        Серия П2Р
+                                        Серия П1р-б/г
+                                    </h2>
+                                    <p class="catalog-block__description mt-2">
+                                        Тележка большегрузная под европаллет
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="mb-2 catalog-block">
+                                <a href="{{route('products.p1kpm')}}">
+                                    <img src="{{ asset('images/template/catalog/p1kpm.png')}}" class="catalog-block__image" alt="">
+                                    <h2 class="catalog-block__header mt-3">
+                                        Серия П1кпм
+                                    </h2>
+                                    <p class="catalog-block__description mt-2">
+                                        Тележка для сбора растительных отходов
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="mb-2 catalog-block">
+                                <a href="{{route('products.p1pm3shnk')}}">
+                                    <img src="{{ asset('images/template/catalog/p1pm2.png')}}" class="catalog-block__image" alt="">
+                                    <h2 class="catalog-block__header mt-3">
+                                        Серия П1пм3-шнк
                                     </h2>
                                     <p class="catalog-block__description mt-2">
                                         Тележка для сбора урожая и обслуживания теплиц
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="mb-2 catalog-block">
+                                <a href="{{route('products.p2pm2n')}}">
+                                    <img src="{{ asset('images/template/catalog/p2pm2n.png')}}" class="catalog-block__image" alt="">
+                                    <h2 class="catalog-block__header mt-3">
+                                        Серия П2пм-2н
+                                    </h2>
+                                    <p class="catalog-block__description mt-2">
+                                        Тележка 2х ярусная прицепная для сбора урожая и обслуживания теплиц
                                     </p>
                                 </a>
                             </div>
@@ -169,18 +147,6 @@
                                 </a>
                             </div>
                             <div class="mb-2 catalog-block">
-                                <a href="{{route('products.tm2')}}">
-                                    <img src="{{ asset('images/template/catalog/tm2.png')}}" class="catalog-block__image" alt="">
-                                    <h2 class="catalog-block__header mt-3">
-                                        Серия ПЕТ
-                                    </h2>
-                                    <p class="catalog-block__description mt-2">
-                                        Тележка многоярусная для обслуживания теплиц
-                                    </p>
-                                </a>
-                            </div>
-
-                            <div class="mb-2 catalog-block">
                                 <a href="{{route('products.p2rv')}}">
                                     <img src="{{ asset('images/template/catalog/p2rv.png')}}" class="catalog-block__image" alt="">
                                     <h2 class="catalog-block__header mt-3">
@@ -188,6 +154,39 @@
                                     </h2>
                                     <p class="catalog-block__description mt-2">
                                         111111111
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="mb-2 catalog-block">
+                                <a href="{{route('products.p3rpsh')}}">
+                                    <img src="{{ asset('images/template/catalog/p3rpsh.png')}}" class="catalog-block__image" alt="">
+                                    <h2 class="catalog-block__header mt-3">
+                                        Серия П3рпш
+                                    </h2>
+                                    <p class="catalog-block__description mt-2">
+                                        Тележка-рольганг для сбора урожая
+                                    </p>
+                                </a>
+                            </div>
+                            {{-- <div class="mb-2 catalog-block">
+                                <a href="{{route('products.p1pm2')}}">
+                                    <img src="{{ asset('images/template/catalog/p1pm2.png')}}" class="catalog-block__image" alt="">
+                                    <h2 class="catalog-block__header mt-3">
+                                        Серия П1пм3-шнк
+                                    </h2>
+                                    <p class="catalog-block__description mt-2">
+                                        Тележка для сбора урожая и обслуживания теплиц
+                                    </p>
+                                </a>
+                            </div> --}}
+                            <div class="mb-2 catalog-block">
+                                <a href="{{route('products.tm2')}}">
+                                    <img src="{{ asset('images/template/catalog/tm2.png')}}" class="catalog-block__image" alt="">
+                                    <h2 class="catalog-block__header mt-3">
+                                        Серия ПЕТ
+                                    </h2>
+                                    <p class="catalog-block__description mt-2">
+                                        Тележка многоярусная для обслуживания теплиц
                                     </p>
                                 </a>
                             </div>

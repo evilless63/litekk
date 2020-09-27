@@ -97,10 +97,11 @@
         </div>
         <div class="row mt-5 d-flex">
             <div class="col">
-                <button class="model-show d-flex align-items-center">
+                <a href="{{route('3dmodel', 'p1kpm')}}" target="_blank" class="model-show d-flex align-items-center">
                     <img class="img-fluid" src="{{asset('images/template/products/3dmodel.png')}}" alt="">
-                    <span>3D МОДЕЛЬ</span>
-                </button>
+                    <span>3D МОДЕЛЬ<br> 
+                        <span>откроется в новом окне. Для загрузки требуется некоторое время, в зависимости от скорости Вашего интернет-соединения</span> </span>
+                </a>
             </div>
         </div>
 

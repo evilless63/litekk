@@ -12016,3 +12016,16 @@ main h1.product__header {
   width: 50% !important;
 }
 
+
+a.model-show span {
+  color: black;
+}
+
+a.model-show span:hover,
+a.model-show:hover {
+  text-decoration: none;
+}
+
+a.model-show span span{
+  font-size: smaller;
+}
