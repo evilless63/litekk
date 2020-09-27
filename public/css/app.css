@@ -12029,3 +12029,14 @@ a.model-show:hover {
 a.model-show span span{
   font-size: smaller;
 }
+
+.information-scene {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.information-scene span {
+  margin: 25px 10px 10px 10px;
+  display: block;
+}

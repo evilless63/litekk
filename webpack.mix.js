@@ -14,9 +14,9 @@ const mix = require('laravel-mix');
 // mix.js('resources/js/app.js', 'public/js')
 //     .sass('resources/sass/app.scss', 'public/css');
 
-mix.js([
-    'resources/js/threejs/three.js',
-    'resources/js/threejs/gltfloader.js',
-    'resources/js/threejs/orbitcontrols.js',
-    'resources/js/threejs/scene.js',
-], 'public/js/components/threebundle.js');
+// mix.js([
+//     'resources/js/threejs/three.js',
+//     'resources/js/threejs/gltfloader.js',
+//     'resources/js/threejs/orbitcontrols.js',
+//     'resources/js/threejs/scene.js',
+// ], 'public/js/components/threebundle.js');

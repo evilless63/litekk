@@ -107,7 +107,7 @@
 
         <div class="row mt-5">
             <div class="col d-flex justify-content-center">
-                <img src="{{asset('images/products/p1kpm/front.jpg')}}" alt="">
+                <img class="img-fluid" src="{{asset('images/products/p1kpm/front.jpg')}}" alt="">
             </div>
         </div>
 

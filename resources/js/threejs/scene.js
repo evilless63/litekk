@@ -3,8 +3,8 @@ function Scene(path) {
     let scene, camera, renderer;
 
     function init(scene, camera, renderer) {
-        scene = new THREE.scene();
-        scene.background = new THREE.color(0xdddddd);
+        scene = new THREE.Scene();
+        scene.background = new THREE.Color(0xdddddd);
 
         camera = new THREE.PerspectiveCamera(40, window.innerWidth/window.innerHeight, 1, 5000);
         camera.rotation.y = 45/180*Math.PI;
@@ -18,7 +18,7 @@ function Scene(path) {
         hlight = new THREE.AmbientLight(0x404040,100);
         scene.add(hlight);
 
-        directionalLight = new THREE.directionalLight(0xffffff,100);
+        directionalLight = new THREE.DirectionalLight(0xffffff,100);
         directionalLight.position.set(0,1,0);
         directionalLight.castShadow = true;
 
