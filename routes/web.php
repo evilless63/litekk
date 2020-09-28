@@ -39,7 +39,7 @@ Route::get('products/tm2', 'SiteController@tm2')->name('products.tm2');
 Route::get('products/p2rv', 'SiteController@p2rv')->name('products.p2rv');
 
 Route::get('products/3dmodel/{slug}', function($slug) {
-    return view('user.3dmodels.3dmodel')->with(['path' => asset('3dmodels/' . $slug . '/' . $slug . '.glb') ]);
+    return view('user.3dmodels.3dmodel')->with(['path' => asset('3dmodels/' . $slug . '/' . $slug ) ]);
 })->name('3dmodel');
 
 Route::resource('emails', 'EmailController');
