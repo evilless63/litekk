@@ -65,7 +65,7 @@
         
         const textureLoader = new THREE.TextureLoader();
         
-        const texture2 = textureLoader.load( 'http://litekk.test/3dmodels/phrbg/texture.jpg' );
+        const texture2 = textureLoader.load( 'http://test.litekk.ru/3dmodels/phrbg/texture.jpg' );
         texture2.wrapS = THREE.RepeatWrapping;
         texture2.wrapT = THREE.RepeatWrapping;
         texture2.repeat.set( 4, 4 );
