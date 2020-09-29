@@ -232,9 +232,9 @@
                                         </a>
                                     </div>
                                     <div class="collapse-catalog-inner-item">
-                                        <a href="{{route('products.tm2')}}">
+                                        <a href="{{route('products.pet')}}">
                                             <div class="collapse-catalog-inner-item__image d-flex align-items-end justify-content-center">
-                                                <img class="img-fluid" style="width: 50%;" src="{{asset('images/products/tm2/perspective.png')}}" alt="Серия ПЕТ">
+                                                <img class="img-fluid" style="width: 50%;" src="{{asset('images/products/pet/perspective.png')}}" alt="Серия ПЕТ">
                                             </div>
                                             <h3 class="collapse-catalog-inner-item__name">Серия ПЕТ</h3>
                                             <div class="collapse-catalog-inner-item__number">

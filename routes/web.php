@@ -35,7 +35,7 @@ Route::get('products/p3rpsh', 'SiteController@p3rpsh')->name('products.p3rpsh');
 Route::get('products/phrbg', 'SiteController@phrbg')->name('products.phrbg');
 Route::get('products/p1kpm', 'SiteController@p1kpm')->name('products.p1kpm');
 Route::get('products/p2pm2n', 'SiteController@p2pm2n')->name('products.p2pm2n');
-Route::get('products/tm2', 'SiteController@tm2')->name('products.tm2');
+Route::get('products/pet', 'SiteController@pet')->name('products.pet');
 Route::get('products/p2rv', 'SiteController@p2rv')->name('products.p2rv');
 
 Route::get('products/3dmodel/{slug}', function($slug) {

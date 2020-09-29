@@ -180,8 +180,8 @@
                                 </a>
                             </div> --}}
                             <div class="mb-2 catalog-block">
-                                <a href="{{route('products.tm2')}}">
-                                    <img src="{{ asset('images/template/catalog/tm2.png')}}" class="catalog-block__image" alt="">
+                                <a href="{{route('products.pet')}}">
+                                    <img src="{{ asset('images/template/catalog/pet.png')}}" class="catalog-block__image" alt="">
                                     <h2 class="catalog-block__header mt-3">
                                         Серия ПЕТ
                                     </h2>

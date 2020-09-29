@@ -17,7 +17,8 @@
     function init() {
 
         scene = new THREE.Scene();
-        scene.background = new THREE.Color(0xffffff);
+        // scene.background = new THREE.Color(0xffffff);
+        scene.background = new THREE.Color("rgb(251, 241, 231)");
 
         camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 1, 5000);
         camera.rotation.y = 45 / 180 * Math.PI;
@@ -25,23 +26,23 @@
         camera.position.y = 17.342529159278097;
         camera.position.z = 20.210352308588313;
 
-        hlight = new THREE.AmbientLight(0x404040, 20);
+        hlight = new THREE.AmbientLight(0x404040, 1);
         scene.add(hlight);
 
-        directionalLight = new THREE.DirectionalLight(0xffffff, 10);
+        directionalLight = new THREE.DirectionalLight(0xffffff, 1);
         directionalLight.position.set(0, 1, 10);
         directionalLight.castShadow = true;
         scene.add(directionalLight);
-        light = new THREE.PointLight(0xc4c4c4, 10);
+        light = new THREE.PointLight(0xc4c4c4, 1);
         light.position.set(0, 300, 500);
         scene.add(light);
-        light2 = new THREE.PointLight(0xc4c4c4, 10);
+        light2 = new THREE.PointLight(0xc4c4c4, 1);
         light2.position.set(500, 100, 0);
         scene.add(light2);
-        light3 = new THREE.PointLight(0xc4c4c4, 10);
+        light3 = new THREE.PointLight(0xc4c4c4, 1);
         light3.position.set(0, 100, -500);
         scene.add(light3);
-        light4 = new THREE.PointLight(0xc4c4c4, 10);
+        light4 = new THREE.PointLight(0xc4c4c4, 1);
         light4.position.set(-500, 300, 500);
         scene.add(light4);
 
@@ -64,12 +65,6 @@
         };
         
         const textureLoader = new THREE.TextureLoader();
-        
-        const texture2 = textureLoader.load( 'http://test.litekk.ru/3dmodels/phrbg/texture.jpg' );
-        texture2.wrapS = THREE.RepeatWrapping;
-        texture2.wrapT = THREE.RepeatWrapping;
-        texture2.repeat.set( 4, 4 );
-        texture2.needsUpdate = true;
         let loader = new THREE.GLTFLoader();
         loader.load(
             
@@ -78,18 +73,135 @@
         
             function (gltf) {
 
-                const material = new THREE.MeshStandardMaterial({
-                    color: new THREE.Color("rgb(28, 112, 88)"),
+                let GltfMeshArray = gltf.scene
+                console.log(GltfMeshArray)
+                if(GltfMeshArray.children[1] !== undefined) {
+                    GltfMeshArray.children[1].scale.set(1.2, 1.2, 1.2); // let baza
 
-                    metalness: 1,
-                    map: texture2,
-                    roughness: 0.16
-                });
-                product_mesh = gltf.scene.children[1];
-                product_mesh.material = material
-                product_mesh.scale.set(1.2, 1.2, 1.2);
+                    if(GltfMeshArray.children[1].name == "pokryshki005") {
+                        newColor =  new THREE.Color("rgb(39, 39, 37)")
+                    } else if(GltfMeshArray.children[1].name == "b_p2rn") {
+                        newColor =  new THREE.Color("rgb(253, 216, 76)")
+                    } else if(GltfMeshArray.children[1].name == "b_pet") {
+                        newColor =  new THREE.Color("rgb(82, 37, 31)")
+                    } else {
+                        newColor = new THREE.Color("rgb(55, 119, 95)")
+                    }
 
-                scene.add(product_mesh);
+                    GltfMeshArray.children[1].material = new THREE.MeshStandardMaterial({
+                        color: newColor,
+                        metalness: 1,
+                        roughness: 0.4
+                    });
+                }   
+
+                if(GltfMeshArray.children[2] !== undefined) {
+                    GltfMeshArray.children[2].scale.set(1.2, 1.2, 1.2); // let pokryshki
+
+                    if(GltfMeshArray.children[2].name == "pokryshki004") {
+                        newColor = new THREE.Color("rgb(197, 123, 124)")
+                    } else if(GltfMeshArray.children[2].name == "pokryshki008") {
+                        newColor = new THREE.Color("rgb(43, 41, 29)")
+                    } else if(GltfMeshArray.children[2].name == "p_pet") {
+                        newColor = new THREE.Color("rgb(120, 119, 115)") 
+                    } else {
+                        newColor =  new THREE.Color("rgb(39, 39, 37)")
+                    }
+
+                    GltfMeshArray.children[2].material = new THREE.MeshStandardMaterial({
+                        color: newColor,
+                        metalness: 1,
+                        roughness: 0.4
+                    });
+                }
+
+                if(GltfMeshArray.children[3] !== undefined) {
+                    
+                    GltfMeshArray.children[3].scale.set(1.2, 1.2, 1.2); // let kolpaki
+
+                    if(GltfMeshArray.children[3].name == "stoiki004") {
+                        newColor = new THREE.Color("rgb(155, 154, 152)") 
+                    } else if (
+                        GltfMeshArray.children[3].name == "stoiki005" || 
+                        GltfMeshArray.children[3].name == "stoiki007" ||
+                        GltfMeshArray.children[3].name == "stoiki008"
+                    ) {
+                        newColor = new THREE.Color("rgb(155, 154, 152)") 
+                    } else if( GltfMeshArray.children[3].name ==  "kolpaki005") {
+                        newColor =  new THREE.Color("rgb(197, 123, 124)")
+                    } else if(GltfMeshArray.children[3].name == "kolpaki002"
+                    || GltfMeshArray.children[3].name ==  "kolpaki003") {
+                        newColor = new THREE.Color("rgb(120, 119, 115)") 
+                    } else if(GltfMeshArray.children[3].name == "k_pet"
+                    || GltfMeshArray.children[3].name == "stoiki009") {
+                        newColor =  new THREE.Color("rgb(39, 39, 37)")
+                    } else {
+                        newColor =  new THREE.Color("rgb(43, 41, 29)")
+                    }
+                    GltfMeshArray.children[3].material = new THREE.MeshStandardMaterial({
+                        
+                        color: newColor,
+                        metalness: 1,
+                        roughness: 0.4
+                    });
+                }
+
+                if(GltfMeshArray.children[4] !== undefined) {
+                    GltfMeshArray.children[4].scale.set(1.2, 1.2, 1.2); // let stoiki
+
+                    if(GltfMeshArray.children[4].name == "pokryshki009") {
+                        newColor = new THREE.Color("rgb(43, 41, 29)") 
+                    } else if(GltfMeshArray.children[4].name == "b2_p2rv") {
+                        newColor = new THREE.Color("rgb(72, 61, 67)") 
+                    } else {
+                        newColor =  new THREE.Color("rgb(155, 154, 152)")
+                    }
+
+                    GltfMeshArray.children[4].material = new THREE.MeshStandardMaterial({
+                        color: newColor,
+                        metalness: 1,
+                        roughness: 0.4
+                    });
+                }
+                
+
+                if(GltfMeshArray.children[5] !== undefined) {
+
+                    if(GltfMeshArray.children[5].name == "stoiki010") {
+                        newColor = new THREE.Color("rgb(155, 154, 152)") 
+                    } else {
+                        newColor =  new THREE.Color("rgb(74, 63, 69)")
+                    }
+
+                    GltfMeshArray.children[5].material = new THREE.MeshStandardMaterial({
+                        color: newColor,
+                        metalness: 1,
+                        roughness: 0.4
+                    });
+                    GltfMeshArray.children[5].scale.set(1.2, 1.2, 1.2); // let stoiki
+                }
+                
+
+                if(GltfMeshArray.children[6] !== undefined) {
+                    GltfMeshArray.children[6].material = new THREE.MeshStandardMaterial({
+                        color: new THREE.Color("rgb(74, 63, 69)"),
+                        metalness: 1,
+                        roughness: 0.4
+                    });
+                    GltfMeshArray.children[6].scale.set(1.2, 1.2, 1.2); // let stoiki
+                }
+
+                if(GltfMeshArray.children[7] !== undefined) {
+                    GltfMeshArray.children[7].material = new THREE.MeshStandardMaterial({
+                        color: new THREE.Color("rgb(74, 63, 69)"),
+                        metalness: 1,
+                        roughness: 0.4
+                    });
+                    GltfMeshArray.children[7].scale.set(1.2, 1.2, 1.2); // let stoiki
+                }
+                
+                scene.add(GltfMeshArray);
+
                 animate();               
             }
         );

@@ -119,9 +119,9 @@ class SiteController extends Controller
         return view('user.products.p2pm2n');
     }
 
-    public function tm2()
+    public function pet()
     {
-        return view('user.products.tm2');
+        return view('user.products.pet');
     }
 
     public function p1pm3shnk()
