@@ -94,12 +94,6 @@
                             <a class="nav-link" data-toggle="collapse" id="collapseCatalogButton" href="#collapseCatalog">Каталог продукции</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{route('site.news')}}">Новости</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{route('site.articles')}}">Статьи</a>
-                        </li>
-                        <li class="nav-item">
                             <a class="nav-link" href="{{route('site.delivery')}}">Доставка</a>
                         </li>
                         <li class="nav-item">

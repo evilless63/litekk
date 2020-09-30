@@ -279,44 +279,7 @@
             </div>
         </div>
     </div>
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-11 newsCarousel">
-                @foreach($news as $new)
-                <div class="row news-block mt-5 mb-5">
-                    <div class="col-md-4 col-xs-12 news-block__image">
-                        <img src="{{$new->image}}" alt="{{$new->header}}" class="img-fluid">
-                    </div>
-                    <div class="col-md-6 col-xs-12 news-short-info">
-                        <div class="row news-short-info__misc d-flex align-items-center justify-content-start">
-                            <span class="mr-4 col-5">{{$new->published_at}}</span>
-                            <!-- <div class="col-5">
-                                <i class="fa fa-eye"></i>
-                                <span>222002</span>
-                            </div> -->
-                        </div>
-                        <h2 class="news-short-info__header mt-3 mb-3">
-                            {{$new->header}}
-                        </h2>
-                        <div class="news-short-info__short-desc">
-                            <p>{{$new->description}}</p>
-                        </div>
-                        <div class="">
-                            <a href="{{$new->slug}}" class="news-short-info__show-more">
-                                Узнать подробнее
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                @endforeach
-            </div>
-            <div class="col-1 news-controls flex-column justify-content-around d-none d-sm-block">
-                {{ $news->links() }}
-                <i class="fa fa-angle-up news-controls__up mb-5"></i>
-                <i class="fa fa-angle-down news-controls__down"></i>
-            </div>
-        </div>
-    </div>
+    
     <div id="map"></div>
 </main>
 @endsection
