@@ -68,13 +68,25 @@
         <div class="container">
             <div class="row calculators">
                 <div class="col mt-3 mb-3">
-                    <div class="calculators__one calculators__block"></div>
+                    <div class="calculators__one calculators__block">
+                        <iframe
+                            src="https://widgets.dellin.ru/calculator?derival_to_door=off&arrival_to_door=on&disabled_calculation=on&insurance=0&package=1"
+                            width="332"
+                            height="390"
+                            scrolling="no"
+                            frameborder="0">
+                        </iframe>
+                    </div>
                 </div>
                 <div class="col mt-3 mb-3">
-                    <div class="calculators__two calculators__block"></div>
+                    <div class="calculators__two calculators__block">
+                        <iframe allowtransparency="true" frameborder="0" width="250" height="345" scrolling="no" style="border:1px solid #ededed" src="https://pecom.ru/ru/newcalc/"></iframe> 
+                    </div>
                 </div>
                 <div class="col mt-3 mb-3">
-                    <div class="calculators__three calculators__block"></div>
+                    <div class="calculators__three calculators__block">
+                        <iframe src="https://api.baikalsr.ru/widget/calculator?" width="310" height="524.6" scrolling="no" frameborder="0"></iframe>
+                    </div>
                 </div>
             </div>
         </div>

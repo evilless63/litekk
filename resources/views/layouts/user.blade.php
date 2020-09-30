@@ -305,7 +305,7 @@
                     <div class="row d-md-flex justify-content-between footer-info">
                         <div class="col-md-5 col-xs-12 footer-info-about">
                             <a class="nav__navbar-brand navbar-brand d-md-flex justify-content-start pt-5 pb-3" href="{{route('site.index')}}">
-                                <img src="{{asset('images/template/logo.png')}}" width="30" height="30" class="d-inline-block align-top" alt="">
+                                <img src="{{asset('images/template/logo.png')}}" class="d-inline-block align-top" alt="">
 
                             </a>
                             <p>

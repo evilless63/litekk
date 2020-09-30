@@ -5897,6 +5897,8 @@ a.badge-dark.focus {
     margin-left: -1px;
     border-left-width: 1px;
   }
+
+
 }
 
 @media (min-width: 992px) {
@@ -7747,6 +7749,16 @@ button.bg-dark:focus {
 
   .align-self-sm-stretch {
     align-self: stretch !important;
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+    display: block !important;
+  }
+
+  .information-scene {
+    font-size: 0.75em;
   }
 }
 
@@ -10642,6 +10654,10 @@ button.bg-dark:focus {
     text-align: left !important;
   }
 
+  .calculators__block {
+    text-align: center !important;
+  }
+
   .text-md-right {
     text-align: right !important;
   }
@@ -11728,7 +11744,7 @@ svg {
 
 .calculators__block {
   background: rgba(255, 255, 255, 0.2);
-  height: 320px;
+  margin-bottom: 2em;
 }
 
 /* SLIDER */
