@@ -21,29 +21,7 @@
         </div>
         <div class="container-fluid statistics  pt-5 ">
             <div class="container">
-                <div class="row">
-                    <div class="col-md-4 col-xs-12 d-flex justify-content-around">
-                        <img class="img-fluid align-self-center statistic__image" src="images/template/company/gears.png" alt="">
-                        <div class="statistic__info">
-                            <div class="statistic-numbers">150 000</div>
-                            <div class="statistic-desc">Проданных<br>изделий</div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-xs-12 d-flex justify-content-around">
-                        <img class="img-fluid align-self-center statistic__image" src="images/template/company/people.png" alt="">
-                        <div class="statistic__info">
-                            <div class="statistic-numbers">+ 300</div>
-                            <div class="statistic-desc">Более 300<br>человек в штате</div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-xs-12 d-flex justify-content-around">
-                        <img class="img-fluid align-self-center statistic__image" src="images/template/company/calendar.png" alt="">
-                        <div class="statistic__info">
-                            <div class="statistic-numbers">30 лет</div>
-                            <div class="statistic-desc">30 лет работы<br>для вас</div>
-                        </div>
-                    </div>
-                </div>
+                
                 <div class="row mt-5">
                     <div class="col-md-2">
                         <hr>
