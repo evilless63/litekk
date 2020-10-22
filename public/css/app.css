@@ -12056,3 +12056,10 @@ a.model-show span span{
   margin: 25px 10px 10px 10px;
   display: block;
 }
+
+
+.company-info-block {
+  background: rgb(236,249,234);
+  background: linear-gradient(180deg, rgba(236,249,234,1) 0%, rgba(248,250,252,1) 66%);
+  border-radius: 10px;
+}
