@@ -8,7 +8,9 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>ЛИТЭК</title>
+    <link rel="icon" href="{{ URL::asset('/images/favicon.png') }}" type="image/x-icon"/>
+    <meta name="description" content="Основополагающей задачей Нашей Компании является обеспечение заказчиков эксклюзивной продукцией.">
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
