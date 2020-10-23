@@ -183,7 +183,7 @@ $(document).ready(function () {
             sliderCarouselIndex++;
             if (sliderCarouselIndex > x.length) { sliderCarouselIndex = 1 }
             x[sliderCarouselIndex - 1].style.display = "block";
-            setTimeout(sliderCarousel, 5000); // Change image every 2 seconds
+            setTimeout(sliderCarousel, 10000); // Change image every 2 seconds
         }
     }
 
