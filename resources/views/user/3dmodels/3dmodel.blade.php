@@ -22,9 +22,9 @@
 
         camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 1, 5000);
         camera.rotation.y = 45 / 180 * Math.PI;
-        camera.position.x = -28.32075525949297;
-        camera.position.y = 17.342529159278097;
-        camera.position.z = 20.210352308588313;
+        camera.position.x = -24.846488064103138;
+        camera.position.y = 7.615709348358541;
+        camera.position.z = 28.959946706568445;
 
         hlight = new THREE.AmbientLight(0x404040, 1);
         scene.add(hlight);
@@ -200,8 +200,17 @@
                     GltfMeshArray.children[7].scale.set(1.2, 1.2, 1.2); // let stoiki
                 }
                 
-                scene.add(GltfMeshArray);
+                scene.add(GltfMeshArray)
+                scene.position.y = -5
 
+                if("{{Request::getRequestUri()}}" == "/products/3dmodel/p2rv") 
+                    scene.position.y = -10
+
+                if("{{Request::getRequestUri()}}" == "/products/3dmodel/pet") 
+                    scene.position.y = -10
+
+                if("{{Request::getRequestUri()}}" == "/products/3dmodel/p3rpsh") 
+                    scene.position.y = -8
                 animate();               
             }
         );

@@ -89,11 +89,11 @@ class EmailController extends Controller
             
             if ($request->direction == 1) //Обратный звонок
             {
-                $to_email = 'vitaliy030589@gmail.com';
+                $to_email = 'call@litekk.ru';
                 Mail::to($to_email)->send(new \App\Mail\SendEmail($data));
             } else // Все остальное
             {
-                $to_email = 'vitaliy030589@gmail.com';
+                $to_email = 'info@litekk.ru';
                 Mail::to($to_email)->send(new \App\Mail\SendEmail($data));
             }
 
