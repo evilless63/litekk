@@ -2,10 +2,7 @@
 
 @section('content')
 <div class="information-scene">
-    <span>Описание управления положением 3d модели с помощью мыши:</span><br>
-    - Зажать левую кавишу и двигать мышью - крутить модель товара<br>
-    - Зажать правую клавишу и двикать мышью - перемещение модели по окну браузера<br>
-    - Колесо мыши - приблизить/отдалить модель товара
+    <span>Для того, чтобы двигать модель, используйте мышь (на компьютере) и жесты (на смартфоне и планшете)</span><br>
 </div>
 <script src="{{ asset('js/components/three.js')}}"></script>
 <script src="{{ asset('js/components/gltfloader.js')}}"></script>
@@ -63,14 +60,14 @@
         manager.onLoad = function ( ) {
             console.log( 'Loading complete!');
         };
-        
+
         const textureLoader = new THREE.TextureLoader();
         let loader = new THREE.GLTFLoader();
         loader.load(
-            
+
             //цепляем модель из аргумента laravel
-            "{{$path . '.gltf'}}", 
-        
+            "{{$path . '.gltf'}}",
+
             function (gltf) {
 
                 let GltfMeshArray = gltf.scene
@@ -93,7 +90,7 @@
                         metalness: 1,
                         roughness: 0.4
                     });
-                }   
+                }
 
                 if(GltfMeshArray.children[2] !== undefined) {
                     GltfMeshArray.children[2].scale.set(1.2, 1.2, 1.2); // let pokryshki
@@ -103,7 +100,7 @@
                     } else if(GltfMeshArray.children[2].name == "pokryshki008") {
                         newColor = new THREE.Color("rgb(43, 41, 29)")
                     } else if(GltfMeshArray.children[2].name == "p_pet") {
-                        newColor = new THREE.Color("rgb(120, 119, 115)") 
+                        newColor = new THREE.Color("rgb(120, 119, 115)")
                     } else {
                         newColor =  new THREE.Color("rgb(39, 39, 37)")
                     }
@@ -116,22 +113,22 @@
                 }
 
                 if(GltfMeshArray.children[3] !== undefined) {
-                    
+
                     GltfMeshArray.children[3].scale.set(1.2, 1.2, 1.2); // let kolpaki
 
                     if(GltfMeshArray.children[3].name == "stoiki004") {
-                        newColor = new THREE.Color("rgb(155, 154, 152)") 
+                        newColor = new THREE.Color("rgb(155, 154, 152)")
                     } else if (
-                        GltfMeshArray.children[3].name == "stoiki005" || 
+                        GltfMeshArray.children[3].name == "stoiki005" ||
                         GltfMeshArray.children[3].name == "stoiki007" ||
                         GltfMeshArray.children[3].name == "stoiki008"
                     ) {
-                        newColor = new THREE.Color("rgb(155, 154, 152)") 
+                        newColor = new THREE.Color("rgb(155, 154, 152)")
                     } else if( GltfMeshArray.children[3].name ==  "kolpaki005") {
                         newColor =  new THREE.Color("rgb(197, 123, 124)")
                     } else if(GltfMeshArray.children[3].name == "kolpaki002"
                     || GltfMeshArray.children[3].name ==  "kolpaki003") {
-                        newColor = new THREE.Color("rgb(120, 119, 115)") 
+                        newColor = new THREE.Color("rgb(120, 119, 115)")
                     } else if(GltfMeshArray.children[3].name == "k_pet"
                     || GltfMeshArray.children[3].name == "stoiki009") {
                         newColor =  new THREE.Color("rgb(39, 39, 37)")
@@ -139,7 +136,7 @@
                         newColor =  new THREE.Color("rgb(43, 41, 29)")
                     }
                     GltfMeshArray.children[3].material = new THREE.MeshStandardMaterial({
-                        
+
                         color: newColor,
                         metalness: 1,
                         roughness: 0.4
@@ -150,9 +147,9 @@
                     GltfMeshArray.children[4].scale.set(1.2, 1.2, 1.2); // let stoiki
 
                     if(GltfMeshArray.children[4].name == "pokryshki009") {
-                        newColor = new THREE.Color("rgb(43, 41, 29)") 
+                        newColor = new THREE.Color("rgb(43, 41, 29)")
                     } else if(GltfMeshArray.children[4].name == "b2_p2rv") {
-                        newColor = new THREE.Color("rgb(72, 61, 67)") 
+                        newColor = new THREE.Color("rgb(72, 61, 67)")
                     } else {
                         newColor =  new THREE.Color("rgb(155, 154, 152)")
                     }
@@ -163,12 +160,12 @@
                         roughness: 0.4
                     });
                 }
-                
+
 
                 if(GltfMeshArray.children[5] !== undefined) {
 
                     if(GltfMeshArray.children[5].name == "stoiki010") {
-                        newColor = new THREE.Color("rgb(155, 154, 152)") 
+                        newColor = new THREE.Color("rgb(155, 154, 152)")
                     } else {
                         newColor =  new THREE.Color("rgb(74, 63, 69)")
                     }
@@ -180,7 +177,7 @@
                     });
                     GltfMeshArray.children[5].scale.set(1.2, 1.2, 1.2); // let stoiki
                 }
-                
+
 
                 if(GltfMeshArray.children[6] !== undefined) {
                     GltfMeshArray.children[6].material = new THREE.MeshStandardMaterial({
@@ -199,19 +196,19 @@
                     });
                     GltfMeshArray.children[7].scale.set(1.2, 1.2, 1.2); // let stoiki
                 }
-                
+
                 scene.add(GltfMeshArray)
                 scene.position.y = -5
 
-                if("{{Request::getRequestUri()}}" == "/products/3dmodel/p2rv") 
+                if("{{Request::getRequestUri()}}" == "/products/3dmodel/p2rv")
                     scene.position.y = -10
 
-                if("{{Request::getRequestUri()}}" == "/products/3dmodel/pet") 
+                if("{{Request::getRequestUri()}}" == "/products/3dmodel/pet")
                     scene.position.y = -10
 
-                if("{{Request::getRequestUri()}}" == "/products/3dmodel/p3rpsh") 
+                if("{{Request::getRequestUri()}}" == "/products/3dmodel/p3rpsh")
                     scene.position.y = -8
-                animate();               
+                animate();
             }
         );
 
