@@ -12063,3 +12063,9 @@ a.model-show span span{
   background: linear-gradient(180deg, rgba(236,249,234,1) 0%, rgba(248,250,252,1) 66%);
   border-radius: 10px;
 }
+
+.parts-h2 {
+  font: 30px "Muller Bold", Arial, Helvetica, sans-serif;
+  color: #355f31;
+  text-transform: uppercase;
+}

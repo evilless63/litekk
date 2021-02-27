@@ -190,17 +190,14 @@
                                     </p>
                                 </a>
                             </div>
-                            {{-- <div class="mb-2 catalog-block">
+                            <div class="mb-2 catalog-block">
                                 <a href="{{route('products.parts')}}">
                                     <img src="{{ asset('images/template/catalog/parts.png')}}" class="catalog-block__image" alt="">
                                     <h2 class="catalog-block__header mt-3">
                                         Запасные части
                                     </h2>
-                                    <p class="catalog-block__description mt-2">
-                                        Катки, дышла, прочие запчасти для телег
-                                    </p>
                                 </a>
-                            </div> --}}
+                            </div>
                         </div>
                     </div>
 

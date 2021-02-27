@@ -249,17 +249,17 @@
                                             </div>
                                         </a>
                                     </div>
-                                    {{-- <div class="collapse-catalog-inner-item">
+                                    <div class="collapse-catalog-inner-item">
                                         <a href="{{route('products.parts')}}">
                                             <div class="collapse-catalog-inner-item__image d-flex align-items-end justify-content-center">
-                                                <img class="img-fluid" style="width: 50%;" src="{{asset('images/products/parts/perspective.png')}}" alt="Запасные части">
+                                                <img class="img-fluid" style="width: 100%;" src="{{asset('images/products/parts/perspective.png')}}" alt="Запасные части">
                                             </div>
                                             <h3 class="collapse-catalog-inner-item__name">Запасные части</h3>
                                             <div class="collapse-catalog-inner-item__number">
-                                                11
+                                                12
                                             </div>
                                         </a>
-                                    </div> --}}
+                                    </div>
 
                                 </div>
                             </div>
