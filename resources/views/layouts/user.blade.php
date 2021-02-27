@@ -84,7 +84,7 @@
                 <div class="container header-nav-inner">
                     <nav class="nav justify-content-around align-items-center mt-1">
                         <a class="nav__navbar-brand navbar-brand d-md-flex justify-content-between" href="{{route('site.index')}}">
-                            <img src="{{asset('images/template/logo.png')}}" class="d-inline-block align-top img-fluid" alt="">
+                            <img src="{{asset('images/template/logo.png')}}" style="height:100% !important" class="d-inline-block align-top img-fluid" alt="">
                         </a>
                         <li class="nav-item">
                             <a class="nav-link active" href="{{route('site.index')}}">Главная</a>
@@ -307,7 +307,7 @@
                     <div class="row d-md-flex justify-content-between footer-info">
                         <div class="col-md-5 col-xs-12 footer-info-about">
                             <a class="nav__navbar-brand navbar-brand d-md-flex justify-content-start pt-5 pb-3" href="{{route('site.index')}}">
-                                <img src="{{asset('images/template/logo.png')}}" class="d-inline-block align-top" alt="">
+                                <img src="{{asset('images/template/logo.png')}}" style="height:100% !important" class="d-inline-block align-top" alt="">
 
                             </a>
                             <p>
