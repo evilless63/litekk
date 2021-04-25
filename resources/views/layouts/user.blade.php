@@ -96,6 +96,9 @@
                             <a class="nav-link" data-toggle="collapse" id="collapseCatalogButton" href="#collapseCatalog">Каталог продукции</a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link" href="{{route('products.parts')}}">Запасные части</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link" href="{{route('site.delivery')}}">Доставка</a>
                         </li>
                         <li class="nav-item">
@@ -116,7 +119,18 @@
                             <div class="col-md-10">
                                 <div class="collapse-catalog-inner owl-carousel owl-theme">
 
-
+                                    <div class="collapse-catalog-inner-item">
+                                        <a href="{{route('products.nn1018')}}">
+                                            <div class="collapse-catalog-inner-item__image d-flex align-items-end justify-content-center">
+                                                <img class="img-fluid" src="{{asset('images/products/nn1018/perspective.png')}}" alt="Серия НН18">
+                                            </div>
+                                            <h3 class="collapse-catalog-inner-item__name">Серия НН1018</h3>
+                                            <div class="collapse-catalog-inner-item__number">
+                                                00
+                                            </div>
+                                        </a>
+                                    </div>
+                                    
                                     <div class="collapse-catalog-inner-item">
                                         <a href="{{route('products.p1rbg')}}">
                                             <div class="collapse-catalog-inner-item__image d-flex align-items-end justify-content-center">

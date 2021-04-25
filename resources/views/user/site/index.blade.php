@@ -59,6 +59,17 @@
                     <div class="row">
                         <div class="owl-carousel products-catalog">
                             <div class="mb-2 catalog-block">
+                                <a href="{{route('products.nn1018')}}">
+                                    <img src="{{ asset('images/template/catalog/nn1018.png')}}" class="catalog-block__image" alt="">
+                                    <h2 class="catalog-block__header mt-3">
+                                        Серия НН1018
+                                    </h2>
+                                    <p class="catalog-block__description mt-2">
+                                        10-крючковая нитенамоточная машина
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="mb-2 catalog-block">
                                 <a href="{{route('products.phrbg')}}">
                                     <img src="{{ asset('images/template/catalog/phrbg.png')}}" class="catalog-block__image" alt="">
                                     <h2 class="catalog-block__header mt-3">
@@ -170,45 +181,45 @@
                             </div>
                             {{-- <div class="mb-2 catalog-block">
                                 <a href="{{route('products.p1pm2')}}">
-                                    <img src="{{ asset('images/template/catalog/p1pm2.png')}}" class="catalog-block__image" alt="">
-                                    <h2 class="catalog-block__header mt-3">
-                                        Серия П1пм3-шнк
-                                    </h2>
-                                    <p class="catalog-block__description mt-2">
-                                        Тележка для сбора урожая и обслуживания теплиц
-                                    </p>
-                                </a>
-                            </div> --}}
-                            <div class="mb-2 catalog-block">
-                                <a href="{{route('products.pet')}}">
-                                    <img src="{{ asset('images/template/catalog/pet.png')}}" class="catalog-block__image" alt="">
-                                    <h2 class="catalog-block__header mt-3">
-                                        Серия ПЕТ
-                                    </h2>
-                                    <p class="catalog-block__description mt-2">
-                                        Тележка многоярусная для обслуживания теплиц
-                                    </p>
-                                </a>
-                            </div>
-                            <div class="mb-2 catalog-block">
-                                <a href="{{route('products.parts')}}">
-                                    <img src="{{ asset('images/template/catalog/parts.png')}}" class="catalog-block__image" alt="">
-                                    <h2 class="catalog-block__header mt-3">
-                                        Запасные части
-                                    </h2>
-                                </a>
-                            </div>
+                            <img src="{{ asset('images/template/catalog/p1pm2.png')}}" class="catalog-block__image" alt="">
+                            <h2 class="catalog-block__header mt-3">
+                                Серия П1пм3-шнк
+                            </h2>
+                            <p class="catalog-block__description mt-2">
+                                Тележка для сбора урожая и обслуживания теплиц
+                            </p>
+                            </a>
+                        </div> --}}
+                        <div class="mb-2 catalog-block">
+                            <a href="{{route('products.pet')}}">
+                                <img src="{{ asset('images/template/catalog/pet.png')}}" class="catalog-block__image" alt="">
+                                <h2 class="catalog-block__header mt-3">
+                                    Серия ПЕТ
+                                </h2>
+                                <p class="catalog-block__description mt-2">
+                                    Тележка многоярусная для обслуживания теплиц
+                                </p>
+                            </a>
+                        </div>
+                        <div class="mb-2 catalog-block">
+                            <a href="{{route('products.parts')}}">
+                                <img src="{{ asset('images/template/catalog/parts.png')}}" class="catalog-block__image" alt="">
+                                <h2 class="catalog-block__header mt-3">
+                                    Запасные части
+                                </h2>
+                            </a>
                         </div>
                     </div>
-
-
                 </div>
 
+
             </div>
-            <div class="collapse-catalog__arrow-right d-flex align-items-center owl-nav disabled">
-                <i class="fa fa-angle-right customNextBtnProduct"></i>
-            </div>
+
         </div>
+        <div class="collapse-catalog__arrow-right d-flex align-items-center owl-nav disabled">
+            <i class="fa fa-angle-right customNextBtnProduct"></i>
+        </div>
+    </div>
 
 
     </div>
@@ -250,6 +261,7 @@
                     <img src="images/template/about-slider/8.png" class="about-slider__item img-fluid" alt="Литек. Правильные технические решения">
                     <img src="images/template/about-slider/9.png" class="about-slider__item img-fluid" alt="Литек. Правильные технические решения">
                     <img src="images/template/about-slider/10.png" class="about-slider__item img-fluid" alt="Литек. Правильные технические решения">
+                    <img src="images/template/about-slider/11.png" class="about-slider__item img-fluid" alt="Литек. Правильные технические решения">
                 </div>
                 <div class="col-md-6 col-xs-12 about">
                     <img src="images/template/logo.png" class="about__logo img-fluid" alt="Литек. Правильные технические решения" title="Литек. Правильные технические решения" />
@@ -273,7 +285,7 @@
             </div>
         </div>
     </div>
-    
+
     <div id="map"></div>
 </main>
 @endsection

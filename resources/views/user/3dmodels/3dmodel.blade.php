@@ -85,6 +85,19 @@
                         metalness: 0,
                         roughness: 0.4
                     });
+
+                    
+                } else if(GltfMeshArray.children[0] !== undefined && GltfMeshArray.children[0].name == "HH1018step") {
+
+                    newColor = new THREE.Color("rgb(100, 72, 49)")
+
+                    GltfMeshArray.children[0].material = new THREE.MeshStandardMaterial({
+                        color: newColor,
+                        metalness: 0,
+                        roughness: 0.4
+                    });
+
+                    GltfMeshArray.children[0].scale.set(1.2, 1.2, 1.2); // let stoiki
                 }
 
                 if (GltfMeshArray.children[1] !== undefined) {
@@ -99,6 +112,8 @@
                     } else if (GltfMeshArray.children[1].name == "zhelezki") {
                         newColor = new THREE.Color("rgb(72, 72, 72)")
                         GltfMeshArray.children[1].scale.set(3, 3, 3)
+                    } else if (GltfMeshArray.children[1].name == "korpus") {
+                        newColor = new THREE.Color("rgb(108, 26, 30)")
                     } else {
                         newColor = new THREE.Color("rgb(55, 119, 95)")
                     }
@@ -122,6 +137,8 @@
                     } else if (GltfMeshArray.children[2].name == "Krasnenkye") {
                         newColor = new THREE.Color("rgb(130, 25, 24)")
                         GltfMeshArray.children[2].scale.set(3, 3, 3)
+                    } else if (GltfMeshArray.children[2].name == "yellow") {
+                        newColor = new THREE.Color("rgb(159, 128, 39)")
                     } else {
                         newColor = new THREE.Color("rgb(39, 39, 37)")
                     }
@@ -163,6 +180,8 @@
                     } else if (GltfMeshArray.children[3].name == "k_pet" ||
                         GltfMeshArray.children[3].name == "stoiki009") {
                         newColor = new THREE.Color("rgb(39, 39, 37)")
+                    } else if (GltfMeshArray.children[3].name == "silver") {
+                        newColor = new THREE.Color("rgb(123, 122, 117)")
                     } else {
                         newColor = new THREE.Color("rgb(43, 41, 29)")
                     }
@@ -181,6 +200,8 @@
                         newColor = new THREE.Color("rgb(43, 41, 29)")
                     } else if (GltfMeshArray.children[4].name == "b2_p2rv") {
                         newColor = new THREE.Color("rgb(72, 61, 67)")
+                    } else if (GltfMeshArray.children[4].name == "black_panel") {
+                        newColor = new THREE.Color("rgb(19, 9, 8)")
                     } else {
                         newColor = new THREE.Color("rgb(155, 154, 152)")
                     }
@@ -190,6 +211,8 @@
                         metalness: 1,
                         roughness: 0.4
                     });
+
+                    GltfMeshArray.children[4].scale.set(1.2, 1.2, 1.2); // let stoiki
                 }
 
 
@@ -197,6 +220,8 @@
 
                     if (GltfMeshArray.children[5].name == "stoiki010") {
                         newColor = new THREE.Color("rgb(155, 154, 152)")
+                    } else if (GltfMeshArray.children[5].name == "blue") {
+                        newColor = new THREE.Color("rgb(21, 7, 250)")
                     } else {
                         newColor = new THREE.Color("rgb(74, 63, 69)")
                     }
@@ -226,6 +251,33 @@
                         roughness: 0.4
                     });
                     GltfMeshArray.children[7].scale.set(1.2, 1.2, 1.2); // let stoiki
+                }
+
+                if (GltfMeshArray.children[8] !== undefined) {
+                    GltfMeshArray.children[8].material = new THREE.MeshStandardMaterial({
+                        color: new THREE.Color("rgb(74, 63, 69)"),
+                        metalness: 1,
+                        roughness: 0.4
+                    });
+                    GltfMeshArray.children[8].scale.set(1.2, 1.2, 1.2); // let stoiki
+                }
+
+                if (GltfMeshArray.children[9] !== undefined) {
+                    GltfMeshArray.children[9].material = new THREE.MeshStandardMaterial({
+                        color: new THREE.Color("rgb(74, 63, 69)"),
+                        metalness: 1,
+                        roughness: 0.4
+                    });
+                    GltfMeshArray.children[9].scale.set(1.2, 1.2, 1.2); // let stoiki
+                }
+
+                if (GltfMeshArray.children[10] !== undefined) {
+                    GltfMeshArray.children[10].material = new THREE.MeshStandardMaterial({
+                        color: new THREE.Color("rgb(74, 63, 69)"),
+                        metalness: 1,
+                        roughness: 0.4
+                    });
+                    GltfMeshArray.children[10].scale.set(1.2, 1.2, 1.2); // let stoiki
                 }
 
                 scene.add(GltfMeshArray)

@@ -133,5 +133,10 @@ class SiteController extends Controller
     {
         return view('user.products.p2rv');
     }
+
+    public function nn1018()
+    {
+        return view('user.products.nn1018');
+    }
     
 }
