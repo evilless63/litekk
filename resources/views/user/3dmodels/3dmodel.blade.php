@@ -295,6 +295,9 @@
                 if ("{{Request::getRequestUri()}}" == "/products/3dmodel/uzel_gidravlik")
                     scene.position.y = 1
 
+                if ("{{Request::getRequestUri()}}" == "/products/3dmodel/nn1018")
+                    scene.position.y = 1
+
                 animate();
             }
         );
