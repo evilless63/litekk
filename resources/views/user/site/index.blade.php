@@ -179,6 +179,7 @@
                                     </p>
                                 </a>
                             </div>
+                            
                             {{-- <div class="mb-2 catalog-block">
                                 <a href="{{route('products.p1pm2')}}">
                             <img src="{{ asset('images/template/catalog/p1pm2.png')}}" class="catalog-block__image" alt="">
@@ -207,6 +208,28 @@
                                 <h2 class="catalog-block__header mt-3">
                                     Запасные части
                                 </h2>
+                            </a>
+                        </div>
+                        <div class="mb-2 catalog-block">
+                            <a href="{{route('products.pet14')}}">
+                                <img src="{{ asset('images/template/catalog/pet14.png')}}" class="catalog-block__image" alt="">
+                                <h2 class="catalog-block__header mt-3">
+                                    Серия pet14
+                                </h2>
+                                <p class="catalog-block__description mt-2">
+                                    Тележка-рольганг для сбора урожая
+                                </p>
+                            </a>
+                        </div>
+                        <div class="mb-2 catalog-block">
+                            <a href="{{route('products.p2rn1')}}">
+                                <img src="{{ asset('images/template/catalog/p2rn1.png')}}" class="catalog-block__image" alt="">
+                                <h2 class="catalog-block__header mt-3">
+                                    Серия p2rn1
+                                </h2>
+                                <p class="catalog-block__description mt-2">
+                                    Тележка-рольганг для сбора урожая
+                                </p>
                             </a>
                         </div>
                     </div>
@@ -262,6 +285,8 @@
                     <img src="images/template/about-slider/9.png" class="about-slider__item img-fluid" alt="Литек. Правильные технические решения">
                     <img src="images/template/about-slider/10.png" class="about-slider__item img-fluid" alt="Литек. Правильные технические решения">
                     <img src="images/template/about-slider/11.png" class="about-slider__item img-fluid" alt="Литек. Правильные технические решения">
+                    <img src="images/template/about-slider/12.png" class="about-slider__item img-fluid" alt="Литек. Правильные технические решения">
+                    <img src="images/template/about-slider/13.png" class="about-slider__item img-fluid" alt="Литек. Правильные технические решения">
                 </div>
                 <div class="col-md-6 col-xs-12 about">
                     <img src="images/template/logo.png" class="about__logo img-fluid" alt="Литек. Правильные технические решения" title="Литек. Правильные технические решения" />

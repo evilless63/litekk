@@ -264,17 +264,39 @@
                                         </a>
                                     </div>
                                     <div class="collapse-catalog-inner-item">
+                                        <a href="{{route('products.p2rn1')}}">
+                                            <div class="collapse-catalog-inner-item__image d-flex align-items-end justify-content-center">
+                                                <img class="img-fluid" style="width: 100%;" src="{{asset('images/products/p2rn1/perspective.png')}}" alt="Серия p2rn1">
+                                            </div>
+                                            <h3 class="collapse-catalog-inner-item__name">Серия p2rn1</h3>
+                                            <div class="collapse-catalog-inner-item__number">
+                                                12
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="collapse-catalog-inner-item">
+                                        <a href="{{route('products.pet14')}}">
+                                            <div class="collapse-catalog-inner-item__image d-flex align-items-end justify-content-center">
+                                                <img class="img-fluid" style="width: 50%;" src="{{asset('images/products/pet14/perspective.png')}}" alt="Серия pet14">
+                                            </div>
+                                            <h3 class="collapse-catalog-inner-item__name">Серия pet14</h3>
+                                            <div class="collapse-catalog-inner-item__number">
+                                                13
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="collapse-catalog-inner-item">
                                         <a href="{{route('products.parts')}}">
                                             <div class="collapse-catalog-inner-item__image d-flex align-items-end justify-content-center">
                                                 <img class="img-fluid" style="width: 100%;" src="{{asset('images/products/parts/perspective.png')}}" alt="Запасные части">
                                             </div>
                                             <h3 class="collapse-catalog-inner-item__name">Запасные части</h3>
                                             <div class="collapse-catalog-inner-item__number">
-                                                12
+                                                14
                                             </div>
                                         </a>
                                     </div>
-
+                                    
                                 </div>
                             </div>
                             <div class="col-md-1 collapse-catalog__arrow-right d-flex align-items-center owl-nav disabled">

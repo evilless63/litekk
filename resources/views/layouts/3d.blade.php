@@ -10,6 +10,11 @@
 
     <title>{{ config('app.name', 'Laravel') }}</title>
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <style>
+        @if(Route::current()->getName() == 'products.nn101')
+           {transform: scaleX(-1);}
+        @endif
+    </style>
 </head>
 
 <body>

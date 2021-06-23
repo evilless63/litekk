@@ -138,5 +138,15 @@ class SiteController extends Controller
     {
         return view('user.products.nn1018');
     }
+
+    public function pet14()
+    {
+        return view('user.products.pet14');
+    }
+
+    public function p2rn1()
+    {
+        return view('user.products.p2rn-1');
+    }
     
 }

@@ -38,6 +38,8 @@ Route::get('products/p2pm2n', 'SiteController@p2pm2n')->name('products.p2pm2n');
 Route::get('products/pet', 'SiteController@pet')->name('products.pet');
 Route::get('products/p2rv', 'SiteController@p2rv')->name('products.p2rv');
 Route::get('products/nn1018', 'SiteController@nn1018')->name('products.nn1018');
+Route::get('products/pet14', 'SiteController@pet14')->name('products.pet14');
+Route::get('products/p2rn1', 'SiteController@p2rn1')->name('products.p2rn1');
 
 Route::get('products/3dmodel/{slug}', function($slug) {
     return view('user.3dmodels.3dmodel')->with(['path' => asset('3dmodels/' . $slug . '/' . $slug ) ]);
