@@ -268,7 +268,7 @@
                                             <div class="collapse-catalog-inner-item__image d-flex align-items-end justify-content-center">
                                                 <img class="img-fluid" style="width: 100%;" src="{{asset('images/products/p2rn1/perspective.png')}}" alt="Серия p2rn1">
                                             </div>
-                                            <h3 class="collapse-catalog-inner-item__name">Серия p2rn1</h3>
+                                            <h3 class="collapse-catalog-inner-item__name">Серия П2рн 0,65х0,85</h3>
                                             <div class="collapse-catalog-inner-item__number">
                                                 12
                                             </div>
@@ -279,7 +279,7 @@
                                             <div class="collapse-catalog-inner-item__image d-flex align-items-end justify-content-center">
                                                 <img class="img-fluid" style="width: 50%;" src="{{asset('images/products/pet14/perspective.png')}}" alt="Серия pet14">
                                             </div>
-                                            <h3 class="collapse-catalog-inner-item__name">Серия pet14</h3>
+                                            <h3 class="collapse-catalog-inner-item__name">Серия ПЕТ 14</h3>
                                             <div class="collapse-catalog-inner-item__number">
                                                 13
                                             </div>

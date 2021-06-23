@@ -4,17 +4,17 @@
 <main class="pb-5 pt-5 text-sm-center text-md-left product-background product">
 
     <div class="container breadcrumbs">
-        <a href="/">Главная</a> > <a data-toggle="collapse" href="#collapseCatalog">Товары</a> > <a href="">Серия ПЭТ 14</a>
+        <a href="/">Главная</a> > <a data-toggle="collapse" href="#collapseCatalog">Товары</a> > <a href="">Серия ПЕТ 14</a>
     </div>
     <div class="container pt-5">
         <div class="row product d-flex align-items-center">
             <div class="col-md-6 col-xs-12">
-                <img src="{{asset('images/products/pet14/perspective.png')}}" class="img-fluid product__image" alt="Серия ПЭТ 14" style="
+                <img src="{{asset('images/products/pet14/perspective.png')}}" class="img-fluid product__image" alt="Серия ПЕТ 14" style="
                 width: 50%;
             ">
             </div>
             <div class="col-md-6 col-xs-12">
-                <h1 class="product__header">Серия ПЭТ 14</h1>
+                <h1 class="product__header">Серия ПЕТ 14</h1>
                 <p class="product__subheader">
                     Описание скоро появится
                 </p>

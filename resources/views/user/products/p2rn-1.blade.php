@@ -4,15 +4,15 @@
 <main class="pb-5 pt-5 text-sm-center text-md-left product-background product">
 
     <div class="container breadcrumbs">
-        <a href="/">Главная</a> > <a data-toggle="collapse" href="#collapseCatalog">Товары</a> > <a href="">Серия p2rn1</a>
+        <a href="/">Главная</a> > <a data-toggle="collapse" href="#collapseCatalog">Товары</a> > <a href="">Серия П2рн 0,65х0,85</a>
     </div>
     <div class="container pt-5">
         <div class="row product d-flex align-items-center">
             <div class="col-md-6 col-xs-12">
-                <img src="{{asset('images/products/p2rn1/perspective.png')}}" class="img-fluid product__image" alt="Серия p2rn1">
+                <img src="{{asset('images/products/p2rn1/perspective.png')}}" class="img-fluid product__image" alt="Серия П2рн 0,65х0,85">
             </div>
             <div class="col-md-6 col-xs-12">
-                <h1 class="product__header">Серия p2rn1</h1>
+                <h1 class="product__header">Серия П2рн 0,65х0,85</h1>
                 <p class="product__subheader">
                     Описание скоро появится
                 </p>

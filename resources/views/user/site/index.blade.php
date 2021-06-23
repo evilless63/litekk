@@ -203,18 +203,21 @@
                             </a>
                         </div>
                         <div class="mb-2 catalog-block">
-                            <a href="{{route('products.parts')}}">
-                                <img src="{{ asset('images/template/catalog/parts.png')}}" class="catalog-block__image" alt="">
+                            <a href="{{route('products.p2rn1')}}">
+                                <img src="{{ asset('images/template/catalog/p2rn1.png')}}" class="catalog-block__image" alt="">
                                 <h2 class="catalog-block__header mt-3">
-                                    Запасные части
+                                    Серия П2рн 0,65х0,85
                                 </h2>
+                                <p class="catalog-block__description mt-2">
+                                    Описание скоро появится
+                                </p>
                             </a>
                         </div>
                         <div class="mb-2 catalog-block">
                             <a href="{{route('products.pet14')}}">
                                 <img src="{{ asset('images/template/catalog/pet14.png')}}" class="catalog-block__image" alt="">
                                 <h2 class="catalog-block__header mt-3">
-                                    Серия pet14
+                                    Серия ПЕТ 14
                                 </h2>
                                 <p class="catalog-block__description mt-2">
                                     Описание скоро появится
@@ -222,14 +225,11 @@
                             </a>
                         </div>
                         <div class="mb-2 catalog-block">
-                            <a href="{{route('products.p2rn1')}}">
-                                <img src="{{ asset('images/template/catalog/p2rn1.png')}}" class="catalog-block__image" alt="">
+                            <a href="{{route('products.parts')}}">
+                                <img src="{{ asset('images/template/catalog/parts.png')}}" class="catalog-block__image" alt="">
                                 <h2 class="catalog-block__header mt-3">
-                                    Серия p2rn1
+                                    Запасные части
                                 </h2>
-                                <p class="catalog-block__description mt-2">
-                                    Описание скоро появится
-                                </p>
                             </a>
                         </div>
                     </div>
