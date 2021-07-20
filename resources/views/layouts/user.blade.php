@@ -286,13 +286,24 @@
                                         </a>
                                     </div>
                                     <div class="collapse-catalog-inner-item">
+                                        <a href="{{route('products.p2rpm2')}}">
+                                            <div class="collapse-catalog-inner-item__image d-flex align-items-end justify-content-center">
+                                                <img class="img-fluid" style="width: 100%;" src="{{asset('images/products/p2rpm2/perspective.png')}}" alt="Серия П2-РПМ2">
+                                            </div>
+                                            <h3 class="collapse-catalog-inner-item__name">Серия П2-РПМ2</h3>
+                                            <div class="collapse-catalog-inner-item__number">
+                                                14
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="collapse-catalog-inner-item">
                                         <a href="{{route('products.parts')}}">
                                             <div class="collapse-catalog-inner-item__image d-flex align-items-end justify-content-center">
                                                 <img class="img-fluid" style="width: 100%;" src="{{asset('images/products/parts/perspective.png')}}" alt="Запасные части">
                                             </div>
                                             <h3 class="collapse-catalog-inner-item__name">Запасные части</h3>
                                             <div class="collapse-catalog-inner-item__number">
-                                                14
+                                                15
                                             </div>
                                         </a>
                                     </div>

@@ -148,5 +148,10 @@ class SiteController extends Controller
     {
         return view('user.products.p2rn-1');
     }
+
+    public function p2rpm2()
+    {
+        return view('user.products.p2rpm2');
+    }
     
 }

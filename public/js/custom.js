@@ -311,3 +311,9 @@ function init() {
     //Элементы управления    
 
 }
+
+$( document ).ready(function(){
+    $('.catalog-block').hover(function(){ // задаем функцию при наведении курсора на элемент	
+        $(this).find('.show-product-header').toggleClass('show')
+    })
+})

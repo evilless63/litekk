@@ -100,6 +100,18 @@
                         });
 
                         GltfMeshArray.children[0].scale.set(1.2, 1.2, 1.2); // let stoiki
+                    } else if (GltfMeshArray.children[0] !== undefined && GltfMeshArray.children[0].name ==
+                        "green") {
+
+                        newColor = newColor = new THREE.Color("rgb(12, 61, 38)")
+
+                        GltfMeshArray.children[0].material = new THREE.MeshStandardMaterial({
+                            color: newColor,
+                            metalness: 0,
+                            roughness: 0.4
+                        });
+
+                        GltfMeshArray.children[0].scale.set(1.2, 1.2, 1.2); // let stoiki
                     } else {
 
                         newColor = new THREE.Color("rgb(155, 154, 152)")
@@ -130,6 +142,10 @@
                         } else if (GltfMeshArray.children[1].name == "silver") {
                             newColor = new THREE.Color("rgb(155, 154, 152)")
                         }
+
+                        else if (GltfMeshArray.children[1].name == "black") {
+                            newColor = new THREE.Color("rgb(38, 34, 35)")
+                        }
                         else if (GltfMeshArray.children[1].name == "wheels") {
                             newColor = new THREE.Color("rgb(197, 123, 124)")
                         } 
@@ -158,6 +174,8 @@
                             GltfMeshArray.children[2].scale.set(3, 3, 3)
                         } else if (GltfMeshArray.children[2].name == "yellow") {
                             newColor = new THREE.Color("rgb(159, 128, 39)")
+                        } else if (GltfMeshArray.children[2].name == "silver") {
+                            newColor = new THREE.Color("rgb(123, 122, 117)")
                         } else {
                             newColor = new THREE.Color("rgb(39, 39, 37)")
                         }

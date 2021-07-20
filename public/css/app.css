@@ -12050,6 +12050,7 @@ a.model-show span span{
   position: fixed;
   top: 0;
   left: 0;
+  font-size: 1.75em;
 }
 
 .information-scene span {
@@ -12068,4 +12069,13 @@ a.model-show span span{
   font: 30px "Muller Bold", Arial, Helvetica, sans-serif;
   color: #355f31;
   text-transform: uppercase;
+}
+
+.show-product-header {
+  font: 17px "Muller Black", Arial, Helvetica, sans-serif;
+  display: none;
+}
+
+.show {
+  display: block;
 }
